@@ -57,5 +57,10 @@ app.use('/', indexRouter);
 const authRouter = require('./routes/auth.routes')
 app.use('/', authRouter)
 
+const profileRouter = require('./routes/profile.routes')
+app.use('/', profileRouter)
+
+const recipesRouter = require('./routes/recipes.routes')
+app.use('/', recipesRouter)
 
 module.exports = app;
