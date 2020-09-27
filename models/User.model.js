@@ -6,18 +6,18 @@ const userSchema = new Schema({
   username: {	
 		type: String,
 		trim: true,
-		required: [true, "Nom d'utilisateur obligatoire"],
+		required: [true, "Username is required"],
 		unique: true
   },
 
   email : {	
 		type: String,
-		required: [true, " Email obligatoire"]
+		required: [true, " Email is required"]
   },
 
-  password : {	
+  passwordHash : {	
 		type: String,
-		required: [true, "Mot de passe obligatoire"],
+		required: [true, "Password is required"],
   },
 
   favoriteRecipes: [ { type : Schema.Types.ObjectId, ref: 'Recipe' } ],
