@@ -10,7 +10,6 @@ router.get("/signup", (req, res, next) => {
   res.render('auth/signup')
 })
 
-
 // POST route for signup
 const salt = bcryptjs.genSaltSync(10);
 router.post('/signup', (req, res, next) => {
@@ -34,7 +33,7 @@ router.post('/signup', (req, res, next) => {
 
       if (err instanceof mongoose.Error.ValidationError || err.code === 11000) {
         res.render("auth/signup", {
-          errorMessage: err.message
+          errorMessage: "All fields are required"
         })}
         else {
           next(err) 
@@ -48,7 +47,36 @@ router.get("/login", (req, res, next) => {
 });
 
 // POST route for login
+router.post("/login", (req, res, next) => {
+  console.log('SESSION =====> ', req.session);
+  
+  const {email, password} = req.body;
 
+  if (email === '' || password === '') {
+    res.render('auth/login', {
+      errorMessage: 'Please enter both, email and password to login.'
+    });
+    return;
+  }
+
+  User.findOne({email})
+    .then(user => {
+      if(!user) {
+        res.render('auth/login', {errorMessage: "Incorrect mail or password"})
+        return;
+      }
+      if(bcryptjs.compareSync(password, user.passwordHash)) {
+        req.session.user = user;
+        res.render("profile/profile-user", {
+          user
+        });
+      } else {
+        res.render('auth/login', {errorMessage : "Incorrect mail or password"})
+        return;
+      }
+    })
+    .catch(err => next(err))
+})
 
 
 // export router
