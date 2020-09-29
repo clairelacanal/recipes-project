@@ -13,12 +13,13 @@
   --orange: #F28F3B;
   --rose: #FFD5C2;
   --bleu: #588B8B;
-  --rosefonce: #C8553D; }
+  --rosefonce: #CF6F3F;
+  --gris: #ecf0f1; }
 
 body {
   padding: 0px;
   margin: 0px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font-family: 'Inter', sans-serif; }
 
 a {
   color: inherit; }
@@ -31,7 +32,8 @@ a {
   justify-content: space-between; }
 
 .logo img {
-  width: 100px; }
+  width: 100px;
+  margin-left: 1em; }
 
 nav ul {
   display: flex;
@@ -52,7 +54,8 @@ nav ul li a {
   text-decoration: none;
   color: var(--vertfonce);
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: Inter; }
 
 nav ul li a:hover {
   text-decoration: none;
@@ -115,15 +118,63 @@ nav ul li a:hover {
   text-transform: uppercase; }
 
 .cards {
+  margin-top: 1em;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around; }
+
+.card {
+  width: 17em;
+  height: 12em;
+  margin: 0; }
+
+.card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px; }
+
+.card-text {
+  margin: 0;
+  font-size: 12px; }
 
 /*FOOTER*/
 footer {
-  background-color: var(--rosefonce);
-  text-align: center;
-  margin-top: 10em; }
+  background-color: var(--rosefonce); }
+
+.elements-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5em;
+  height: 3em;
+  width: 60em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.elements-footer p {
+  font-size: 15px;
+  font-weight: 700; }
+
+/*SIGNUP*/
+#signup-section {
+  background-color: lawngreen;
+  margin-top: 7em; }
+
+form {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 300px;
+  margin-left: 5em; }
+
+form input {
+  background-color: var(--gris);
+  border: 1px solid var(--gris);
+  width: 30em;
+  padding: 0.3em;
+  border-radius: 0.2em; }
 
 /*# sourceMappingURL=style.css.map */
