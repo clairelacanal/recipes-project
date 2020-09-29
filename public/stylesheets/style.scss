@@ -199,10 +199,7 @@ footer {
   margin-left: 4.5em;
 }
 
-
-/*FORMS SIGNUP ET LOGIN */
-
-form {
+#signup-section form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,6 +209,35 @@ form {
   margin-left: 5em;
   margin-top: 3em;
 }
+
+/*LOGIN*/
+
+#login-section {
+  margin-top: 7em;
+  height: 485px;
+}
+
+#login-section h2 {
+  color: var(--rouge);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 22em;
+}
+
+#login-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+/*FORMS SIGNUP ET LOGIN */
+
 
 form input {
   background-color: var(--gris);
@@ -224,7 +250,7 @@ form input {
 button {
   background-color:var(--rouge);
   border: 1px solid var(--rouge);
-  border-radius: 0.2em;
+  border-radius: 10em;
   color:var(--blanc);
   font-weight: 700;
   width: 15em;
@@ -232,5 +258,21 @@ button {
   text-transform: uppercase;
 }
 
+/*ACCOUNT CREATED*/
 
+.container-account-created {
+  margin-top: 7em;
+  height: 485px;
+  margin-left: 8em;
+}
+
+.container-account-created h1 {
+  color:var(--vertfonce);
+  font-weight: 700;
+  width: 10em;
+}
+
+.container-account-created button {
+  margin-top: 3em;
+}
 

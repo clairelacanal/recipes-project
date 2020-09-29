@@ -26,7 +26,7 @@ router.post('/signup', (req, res, next) => {
       passwordHash:hashedPassword,
     })
       .then(userFromDB => {
-        res.render("profile/profile-user")
+        res.render("profile/account-created")
       })
       .catch(err => {
         next(err);
