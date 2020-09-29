@@ -45,9 +45,9 @@ Promise.all(promises)
     let recipesDetails;
 
     arr.forEach(el => {
-      recipesDetails = axios.get(`https://api.spoonacular.com/recipes/${el}/information&apiKey=${key}`
-      .then(resultFromApi => {
-      console.log(resultFromApi)
+      axios.get(`https://api.spoonacular.com/recipes/${el}/information&apiKey=${key}`)
+        .then(resultFromApi => {
+          console.log(resultFromApi)
     })
 
     //Promise.all(promises2)
