@@ -77,7 +77,7 @@ Promise.all(promises)
         console.log(JSON.stringify(recipesDetails, null, 3));
       
       }).catch(err => console.log(err));
-      })
+      })      
   })
   .catch(err => {
     console.log(err)
