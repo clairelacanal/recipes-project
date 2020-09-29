@@ -1,0 +1,32 @@
+<section id="signup-section">
+  <h2>Account settings</h2>
+  <form action="/" method="POST">
+    <label class="form-labels" enctype="multipart/form-data">
+      <input class="form-input" type="text" name="username" value="{{user.username}}">
+    </label>
+
+    <label class="form-labels">
+      <input class="form-input" type="email" name="email" value="{{user.email}}">
+    </label>
+
+    <label class="form-labels">
+      <input class="form-input" type="password" name="password" placeholder="Password">
+    </label>
+
+    <label class="form-labels">
+      Profile picture:
+        <input class="form-input" type="file" name="image" class="form-control-file" />
+    </label>
+    </div>
+
+
+    <button>Save changes</button>
+
+
+    {{#if errorMessage}}
+        <p>{{errorMessage}}</p>
+    {{/if}}
+
+  </form>
+
+</section>
