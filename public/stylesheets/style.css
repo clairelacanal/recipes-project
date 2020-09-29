@@ -13,8 +13,11 @@
   --orange: #F28F3B;
   --rose: #FFD5C2;
   --bleu: #588B8B;
-  --rosefonce: #CF6F3F;
-  --gris: #ecf0f1; }
+  --rosefonce: rgba(207, 111, 63, 0.7);
+  --gris: #ecf0f1; 
+  --cabin:'Cabin', sans-serif;
+  --roboto:'Roboto', sans-serif;
+}
 
 body {
   padding: 0px;
