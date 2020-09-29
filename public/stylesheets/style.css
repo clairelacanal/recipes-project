@@ -96,6 +96,11 @@ nav ul li a:hover {
 .bar-search {
   margin-bottom: 2em; }
 
+.bar-search p {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0px; }
+
 .bar-search input {
   width: 500px;
   height: 3em;
