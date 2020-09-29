@@ -14,14 +14,16 @@
   --orange: #F28F3B;
   --rose: #FFD5C2;
   --bleu: #588B8B;
-  --rosefonce: #CF6F3F;
+  --rosefonce: rgba(200, 85, 61, 0.7);
   --gris: #ecf0f1;
+  --cabin:'Cabin', sans-serif;
+  --roboto:'Roboto', sans-serif;
 }
 
 body {
   padding: 0px;
   margin: 0px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--roboto);
 }
 
 a {
@@ -32,14 +34,15 @@ a {
 
 .navbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-family: var(--cabin);
+
 }
 
 .logo img {
   width: 100px;
-  margin-left: 1em;
+  margin: 0.5em 1.5em;
 }
 
 nav ul {
@@ -48,7 +51,7 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   width: 600px;
-  margin-right: 0.8em;
+  margin: 0 0.8em 0 0;
 }
 
 nav ul li {
@@ -65,7 +68,6 @@ nav ul li a {
   color: var(--vertfonce);
   font-weight: 700;
   text-transform: uppercase;
-  font-family: Inter;
 }
 
 nav ul li a:hover {
@@ -77,38 +79,46 @@ nav ul li a:hover {
 
 /*CONTAINER RESEARCH*/
 
+#homepage-container {
+  position:relative;
+  left: 0px;
+  top: 0px;
+  height:90vh;
+  background-image: url(../images/Fond-HP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container-research {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  width: 500px;
-  height: 300px;
-  margin: 5em 5em 10em 5em;
-  
+  width: 60%;
+  margin: 0em 5em 0em 5em;
+  padding-top:150px;
 }
 
 .container-titles  {
   margin: 0;
-  width: 500px;
 }
 
 .container-titles h2 {
-  font-size: 40px;
-  color: var(--rose);
+  font-size: 70px;
+  color: var(--rosefonce);
   text-transform: uppercase;
   margin: 0;
   padding:0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .container-titles h1 {
-  font-size: 45px;
+  font-size: 90px;
   color: var(--rouge);
   text-transform: uppercase;
   margin: 0;
   padding:0;
   font-weight: 700;
+  transform:translate(0, -35px)
 }
 
 .bar-search {
@@ -124,7 +134,7 @@ nav ul li a:hover {
 .bar-search input {
   width: 500px;
   height: 3em;
-  border-width: 3px;
+  border-width: 2px;
   border-color: var(--rose);
   border-radius: 40px;
   padding: 0.8em;
