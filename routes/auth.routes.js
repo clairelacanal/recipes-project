@@ -13,7 +13,7 @@ router.get("/signup", (req, res, next) => {
 
 // POST route for signup
 const salt = bcryptjs.genSaltSync(10);
-router.post('/signup', (req, res, next) => {
+router.post('/signup',fileUploader.single('image'),(req, res, next) => {
     //console.log(req.body)
     const {username, email} = req.body;
 

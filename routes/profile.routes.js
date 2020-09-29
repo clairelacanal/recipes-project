@@ -6,7 +6,7 @@ const fileUploader = require('../configs/cloudinary.config');
 
 
 //Route d'affichage de mon userProfile
-router.get('/userProfile', (req, res, next) => {
+router.get('/userProfile',(req, res, next) => {
   res.render("profile/profile-user", {
     userInSession: req.session.CurrentUser
   })
@@ -19,7 +19,7 @@ router.get('/userProfile/:id/accountSettings', (req, res, next) => {
 })
 
 //Route de traitement de mon formulaire account settings
-router.post('/userProfile/:id/accountSettings', (req, res, next) => {
+router.post('/userProfile/:id/accountSettings', fileUploader.single('image'),(req, res, next) => {
   const {username, email, password} = req.body;
 
   User.findByIdAndUpdate({
