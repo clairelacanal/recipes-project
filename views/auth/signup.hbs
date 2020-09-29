@@ -1,6 +1,6 @@
 <section id="signup-section">
   <h2>Sign up</h2>
-  <form action="/signup" method="POST">
+  <form action="/signup" method="POST" enctype="multipart/form-data">
     <label class="form-labels">
       <input class="form-input" type="text" name="username" placeholder="Username">
     </label>
@@ -12,6 +12,12 @@
     <label class="form-labels">
       <input class="form-input" type="password" name="password" placeholder="Password">
     </label>
+
+    <label class="form-labels">
+      Profile picture:
+        <input class="form-input" type="file" name="image" class="form-control-file" />
+    </label>
+    </div>
 
     <button>Create my account</button>
 

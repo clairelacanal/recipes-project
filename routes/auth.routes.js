@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const bcryptjs = require('bcryptjs')
+const fileUploader = require('../configs/cloudinary.config');
 
 const User = require('../models/User.model')
 
