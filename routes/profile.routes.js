@@ -8,27 +8,44 @@ const fileUploader = require('../configs/cloudinary.config');
 //Route d'affichage de mon userProfile
 router.get('/userProfile',(req, res, next) => {
   res.render("profile/profile-user", {
-    userInSession: req.session.CurrentUser
+    user: req.session.CurrentUser
   })
 })
 
 
 //Route d'affichage de mon account settings
-router.get('/userProfile/:id/accountSettings', (req, res, next) => {
-  res.render("profile/account-settings")
+router.get('/userProfile/:id/account-settings',fileUploader.single('image'),(req, res, next) => {
+  User.findById(req.params.id).then((user) => {
+    res.render('profile/account-settings', {
+      user:user
+    })
+  }).catch(err => {
+    next(err)
+  })
 })
 
+
 //Route de traitement de mon formulaire account settings
-router.post('/userProfile/:id/accountSettings', fileUploader.single('image'),(req, res, next) => {
+router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(req, res, next) => {
   const {username, email, password} = req.body;
 
-  User.findByIdAndUpdate({
+  let photoUser;
+  if (req.file) {
+    photoUser = req.file.path;
+  } else {
+    photoUser = req.body.existingImage;
+  }
+
+
+  User.findByIdAndUpdate(req.params.id,{
     username,
     email,
     password,
-    photoUser: req.file.path
-  }).then(modifyAccountFromDB => {
-    newAccount: modifyAccountFromDB;
+    photoUser
+  },{ new: true }).then((userUpdated) => {
+    res.render("profile/profile-user", {
+      userUpdated
+    });
   }).catch(err =>{
     next(err);
   })
@@ -36,10 +53,12 @@ router.post('/userProfile/:id/accountSettings', fileUploader.single('image'),(re
 
 
 
-
-
-
-
-
 // export router
 module.exports = router;
+
+
+
+
+
+
+
