@@ -45,37 +45,41 @@ Promise.all(promises)
     let recipesDetails;
 
     arr.forEach(el => {
-      recipesDetails = axios.get(`https://api.spoonacular.com/recipes/${el}/information&apiKey=${key}`
+      recipesDetails = axios.get(`https://api.spoonacular.com/recipes/${el}/information?includeNutrition=false&apiKey=${key}`)
       .then(resultFromApi => {
-      console.log(resultFromApi)
-    })
+        return resultFromApi.data.map(el => {
+          return {
+            id : el.id,
+            vegetarian : el.vegetarian,
+            vegan : el.vegan,
+            glutenFree : el.glutenFree,
+            dairyFree : el.dairyFree,
+            veryHealthy : el.veryHealthy,
+            title : el.title,
+            extendedIngredients : el.extendedIngredients,
+            readyInMinutes : el.readyInMinutes,
+            servings : el.servings,
+            image : el.image,
+            summary : el.summary,
+            cuisines : el.cuisines,
+            dishTypes : el.dishTypes,
+            diets :el.diets,
+            instructions : el.instructions,
+            analyzedInstructions : el.analyzedInstructions,
+          }
+        })        
+      })
+      promises2.push(recipesDetails)
 
-    //Promise.all(promises2)
-    })
+      console.log(promises2)
+
+      Promise.all(promises2).then(recipesDetails => {
+        console.log(JSON.stringify(recipesDetails, null, 3));
+      
+      }).catch(err => console.log(err));
+      })      
   })
   .catch(err => {
     console.log(err)
   });
 
-//4. Pour chaque recette, faire une requête aller récupérer les instructions
-// cuisineType + Intolerance + mealTypes + diet
-// Enregistrer ces informations dans les recettes 
-
-
-
-
-
-
-
-
-
-// 5. Pusher toutes ces informations dans fichier .json pour base de données propre
-
-/*
-
-Promise.all(promises).then(recipesDetails => {
-  JSON.stringify(recipesDetails, null, 3);
-
-}).catch(err => console.log(err));
-*/
-// 
