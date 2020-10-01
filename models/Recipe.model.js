@@ -1,11 +1,24 @@
 const { Schema, model } = require('mongoose');
 
 const recipeSchema = new Schema({
-  title: String,
-  image: String,
-  ingredients: [ { type : Schema.Types.ObjectId, ref: 'Ingredient' } ],
+	id: Number,
+	vegetarian: Boolean,
+	vegan: Boolean,
+	glutenFree: Boolean,
+	dairyFree: Boolean,
+	title: String,
+	extendedIngredients: [Object],
+	readyInMinutes: Number,
+	servings: Number,
+	image: String,
+	summary: String,
+	cuisines: Array,
+	dishTypes: [String],
+	diets: [String],
+	instructions: String,
+	analyzedInstructions: [Object],
 
-  instructions: {
+  /*instructions: {
     name: String,
     steps: [{
       number: Number,
@@ -51,7 +64,7 @@ const recipeSchema = new Schema({
 		lactovegetarian: Boolean,	
 		vegan : Boolean,	
   },
-
+*/
   review: [ { type : Schema.Types.ObjectId, ref: 'Comment' } ] 
 },
 {		

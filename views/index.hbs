@@ -1,5 +1,20 @@
 
 <section id="homepage-container">
+  <header>
+    <div class="navbar">
+    <div class="logo">
+      <img src="/images/logo.png" alt="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Recipes</a></li>
+        <li><a href="/">Create</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+        <li><a href="/login">Log In</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
   <div class="container-research">
     <div class="container-titles">
       <h2>Stop Wasting</h2>
@@ -10,7 +25,10 @@
       <p>Enter the list of ingredients and find 100% Zero Waste recipes !</p>
     </div>
     <div class="bar-search">
-      <input type="search" id="recipes-search" name="recipes-search" placeholder="Ingredients">
+      <form action="/recipes/ingredients={{ingredient.title}}" method="POST">
+        <input type="search" id="recipes-search" name="recipes-search" placeholder="Ingredients">
+        <button>search</button>
+      </form>
       <p>Is this your first visit?</p>
       <p>Basile invites you to click on <a href="/signup">SIGN UP</a></p>
     </div>
