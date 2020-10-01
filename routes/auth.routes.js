@@ -66,16 +66,16 @@ router.post("/login", (req, res, next) => {
       if(!user) {
         res.render('auth/login', {errorMessage: "Incorrect username, mail or password"})
         return;
-      }
-      if(bcryptjs.compareSync(password, user.passwordHash)) {
-        req.session.user = user;
-        res.render("profile/profile-user", {
-          user
-        });
       } else {
-        res.render('auth/login', {errorMessage : "Incorrect username, mail or password"})
-        return;
-      }
+        if(bcryptjs.compareSync(password, user.passwordHash)) {
+          req.session.user = user;
+          res.render("profile/profile-user", {
+            user
+          });
+        } else {
+          res.render('auth/login', {errorMessage : "Incorrect username, mail or password"})
+          return;
+        }}
     })
     .catch(err => next(err))
 })

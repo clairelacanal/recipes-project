@@ -1,10 +1,10 @@
 const axios = require('axios')
 
 // 1. Créer la liste d'ingrédients 
-const ingredients = ['chicken','zucchini','pasta'];
+const ingredients = ['chicken'];
 
 // 2. API KEY 
-const key = '4067d48c7079498691f1064e9e61796d'//process.env.APIKEY
+const key = '0e0bfd87a30f48e4898abb41bd8b08fa'//process.env.APIKEY
 
 // 3. Pour chaque ingrédient, faire une requête pour trouver les recettes.
 // Enregistrer les recettes dans un tableau 
@@ -46,38 +46,41 @@ Promise.all(promises)
 
     arr.forEach(el => {
       recipesDetails = axios.get(`https://api.spoonacular.com/recipes/${el}/information?includeNutrition=false&apiKey=${key}`)
-      .then(resultFromApi => {
-        return resultFromApi.data.map(el => {
-          return {
-            id : el.id,
-            vegetarian : el.vegetarian,
-            vegan : el.vegan,
-            glutenFree : el.glutenFree,
-            dairyFree : el.dairyFree,
-            veryHealthy : el.veryHealthy,
-            title : el.title,
-            extendedIngredients : el.extendedIngredients,
-            readyInMinutes : el.readyInMinutes,
-            servings : el.servings,
-            image : el.image,
-            summary : el.summary,
-            cuisines : el.cuisines,
-            dishTypes : el.dishTypes,
-            diets :el.diets,
-            instructions : el.instructions,
-            analyzedInstructions : el.analyzedInstructions,
-          }
-        })        
-      })
-      promises2.push(recipesDetails)
-
-      console.log(promises2)
-
-      Promise.all(promises2).then(recipesDetails => {
-        console.log(JSON.stringify(recipesDetails, null, 3));
+        .then(resultFromApi => {
+          //console.log(resultFromApi)
+          return resultFromApi.map(el => {
+            return {
+              id : el.id,
+              vegetarian : el.vegetarian,
+              vegan : el.vegan,
+              glutenFree : el.glutenFree,
+              dairyFree : el.dairyFree,
+              veryHealthy : el.veryHealthy,
+              title : el.title,
+              extendedIngredients : el.extendedIngredients,
+              readyInMinutes : el.readyInMinutes,
+              servings : el.servings,
+              image : el.image,
+              summary : el.summary,
+              cuisines : el.cuisines,
+              dishTypes : el.dishTypes,
+              diets :el.diets,
+              instructions : el.instructions,
+              analyzedInstructions : el.analyzedInstructions,
+            }
+          })        
+        })
       
-      }).catch(err => console.log(err));
-      })      
+      promises2.push(recipesDetails)
+    })   
+    console.log(promises2)
+
+    Promise.all(promises2).then(recipesInfo => {
+      //console.log(recipesInfo)
+      console.log(JSON.stringify(recipesInfo, null, 3));
+    }).catch(err => console.log(err));
+
+    
   })
   .catch(err => {
     console.log(err)
