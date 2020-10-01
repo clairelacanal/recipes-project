@@ -7,7 +7,7 @@ const fileUploader = require('../configs/cloudinary.config');
 const User = require('../models/User.model')
 
 // GET route for signup
-router.get("/signup", (req, res, next) => {
+router.get("/signup", fileUploader.single('image'), (req, res, next) => {
   res.render('auth/signup')
 })
 
@@ -42,6 +42,7 @@ router.post('/signup',fileUploader.single('image'),(req, res, next) => {
   }) 
 })
 
+
 // GET route for login
 router.get("/login", (req, res, next) => {
   res.render("auth/login")
@@ -51,11 +52,11 @@ router.get("/login", (req, res, next) => {
 router.post("/login", (req, res, next) => {
   console.log('SESSION =====> ', req.session);
   
-  const {email, password} = req.body;
+  const {username, email, password} = req.body;
 
-  if (email === '' || password === '') {
+  if (username == '' || email === '' || password === '') {
     res.render('auth/login', {
-      errorMessage: 'Please enter both, email and password to login.'
+      errorMessage: 'Please enter username, email and password to login.'
     });
     return;
   }
@@ -63,7 +64,7 @@ router.post("/login", (req, res, next) => {
   User.findOne({email})
     .then(user => {
       if(!user) {
-        res.render('auth/login', {errorMessage: "Incorrect mail or password"})
+        res.render('auth/login', {errorMessage: "Incorrect username, mail or password"})
         return;
       }
       if(bcryptjs.compareSync(password, user.passwordHash)) {
@@ -72,12 +73,24 @@ router.post("/login", (req, res, next) => {
           user
         });
       } else {
-        res.render('auth/login', {errorMessage : "Incorrect mail or password"})
+        res.render('auth/login', {errorMessage : "Incorrect username, mail or password"})
         return;
       }
     })
     .catch(err => next(err))
 })
+
+
+// ROUTES LOG OUT
+
+//router.post('/logout', (req, res) => {
+  //req.session.destroy();
+  //res.redirect('/');
+//});
+
+//router.get('/userProfile', routeGuard, (req, res) => {
+  //res.render('users/user-profile');
+//});
 
 
 // export router

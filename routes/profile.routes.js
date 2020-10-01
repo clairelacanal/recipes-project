@@ -46,7 +46,7 @@ router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(r
   User.findByIdAndUpdate(req.params.id,{
     username,
     email,
-    password:hashedPassword,
+    passwordHash:hashedPassword,
     photoUser
   },{ new: true }).then((user) => {
     res.render("profile/profile-user", {
