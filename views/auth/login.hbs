@@ -3,6 +3,9 @@
 
 <form action="/login" method="POST">
   <label>
+    <input type="text" name="username" placeholder="Your username">
+  </label>
+  <label>
     <input type="email" name="email" placeholder="Your email">
   </label>
   <label>
@@ -11,11 +14,10 @@
   <button type="submit">Login</button>
 
 
-<!-- POUR METTRE MESSAGE D'ERREUR
+{{!--POUR METTRE MESSAGE D'ERREUR--}}
 {{#if errorMessage}}
       <p class="error">{{errorMessage}}</p>
-    {{/if}}
--->
+{{/if}}
 
 </form>
 </section>

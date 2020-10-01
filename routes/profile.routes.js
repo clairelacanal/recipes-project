@@ -1,11 +1,13 @@
 const express = require('express');
 const router  = express.Router();
-
-const User = require('../models/User.model')
+const mongoose = require('mongoose');
+const bcryptjs = require('bcryptjs');
 const fileUploader = require('../configs/cloudinary.config');
 
+const User = require('../models/User.model');
 
-//Route d'affichage de mon userProfile
+
+//GET route - Route d'affichage de mon userProfile
 router.get('/userProfile',(req, res, next) => {
   res.render("profile/profile-user", {
     user: req.session.CurrentUser
@@ -13,7 +15,7 @@ router.get('/userProfile',(req, res, next) => {
 })
 
 
-//Route d'affichage de mon account settings
+//GET route - Route d'affichage de mon account settings
 router.get('/userProfile/:id/account-settings',fileUploader.single('image'),(req, res, next) => {
   User.findById(req.params.id).then((user) => {
     res.render('profile/account-settings', {
@@ -25,9 +27,13 @@ router.get('/userProfile/:id/account-settings',fileUploader.single('image'),(req
 })
 
 
-//Route de traitement de mon formulaire account settings
+//POST - Route de traitement de mon formulaire account settings
+const salt = bcryptjs.genSaltSync(10);
 router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(req, res, next) => {
-  const {username, email, password} = req.body;
+  const {username, email} = req.body;
+
+  const plainPassword = req.body.password;
+  const hashedPassword = bcryptjs.hashSync(plainPassword, salt);
 
   let photoUser;
   if (req.file) {
@@ -40,11 +46,11 @@ router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(r
   User.findByIdAndUpdate(req.params.id,{
     username,
     email,
-    password,
+    password:hashedPassword,
     photoUser
-  },{ new: true }).then((userUpdated) => {
+  },{ new: true }).then((user) => {
     res.render("profile/profile-user", {
-      userUpdated
+      user:user
     });
   }).catch(err =>{
     next(err);
