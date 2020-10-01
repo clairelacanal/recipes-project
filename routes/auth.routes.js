@@ -69,7 +69,7 @@ router.post("/login", (req, res, next) => {
       }
       if(bcryptjs.compareSync(password, user.passwordHash)) {
         req.session.user = user;
-        res.render("profile/profile-user", {
+        res.render('profile/profile-user', {
           user
         });
       } else {
