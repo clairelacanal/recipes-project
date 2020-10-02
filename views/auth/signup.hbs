@@ -13,33 +13,43 @@
     </nav>
     </div>
   </header>
-<section id="signup-section">
+<div id="main">
+  <section id="signup-section">
   <h2>Sign up</h2>
-  <form action="/signup" method="POST" enctype="multipart/form-data">
-    <label class="form-labels">
-      <input class="form-input" type="text" name="username" placeholder="Username">
-    </label>
+    <form action="/signup" method="POST" enctype="multipart/form-data">
+      <label class="form-labels">
+        <input class="form-input" type="text" name="username" placeholder="Username">
+      </label>
 
-    <label class="form-labels">
-      <input class="form-input" type="email" name="email" placeholder="Email">
-    </label>
+      <label class="form-labels">
+        <input class="form-input" type="email" name="email" placeholder="Email">
+      </label>
 
-    <label class="form-labels">
-      <input class="form-input" type="password" name="password" placeholder="Password">
-    </label>
+      <label class="form-labels">
+        <input class="form-input" type="password" name="password" placeholder="Password">
+      </label>
 
-    <label class="form-labels">
+      <label class="form-labels">
         <input class="form-input" type="file" name="image" class="form-control-file" />
-    </label>
-    </div>
+      </label>
 
-    <button>Create my account</button>
-
-
+      <button>Create my account</button>
+    
     {{#if errorMessage}}
         <p>{{errorMessage}}</p>
     {{/if}}
 
   </form>
-
 </section>
+<footer id="footer-signup">
+      <div class="elements-footer">
+        <p>Index of ingredients</p>
+        <p>About us</p>
+        <p>Contact</p>
+      </div>
+</footer>
+</div>
+
+
+
+

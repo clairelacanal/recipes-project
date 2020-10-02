@@ -56,7 +56,7 @@ router.post("/login", (req, res, next) => {
 
   if (username == '' || email === '' || password === '') {
     res.render('auth/login', {
-      errorMessage: 'Please enter username, email and password to login.'
+      errorMessage: 'Please enter your email and password to login.'
     });
     return;
   }
@@ -64,12 +64,12 @@ router.post("/login", (req, res, next) => {
   User.findOne({email})
     .then(user => {
       if(!user) {
-        res.render('auth/login', {errorMessage: "Incorrect username, mail or password"})
+        res.render('auth/login', {errorMessage: "Incorrect mail or password"})
         return;
       } else {
         if(bcryptjs.compareSync(password, user.passwordHash)) {
           req.session.user = user;
-          res.redirect('/userProfile', {
+          res.render('profile/profile-user', {
             user
           });
         } else {

@@ -122,12 +122,17 @@ nav ul li a:hover {
   transform:translate(0, -35px)
 }
 
+.presentation p {
+  margin: 0;
+}
+
 .bar-search {
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .bar-search p {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   margin: 0px;
 }
@@ -141,6 +146,17 @@ nav ul li a:hover {
   padding: 0.8em;
 }
 
+#btn-search {
+  background-color:var(--rouge);
+  border: 1px solid var(--rouge);
+  border-radius: 20em;
+  color:var(--blanc);
+  font-weight: 700;
+  width: 7em;
+  height: 3em;
+  text-transform: uppercase;
+}
+
 
 /* CONTAINER RECIPES POSTED */
 
@@ -150,6 +166,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 5em;
 }
 
 .container-recipes-posted h3 {
@@ -171,20 +188,41 @@ nav ul li a:hover {
   margin: 0;
 }
 
+.back {
+  background-color: #dcdde1;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding: 0.5em;
+}
+
+
+.text-muted {
+  text-align: center;
+  display: block;
+}
+
+.card img {
+  height: 270px;
+  
+}
+
 .card-title {
   margin: 0;
   font-weight: 700;
   font-size: 15px;
+  text-align: center;
 }
 
 .card-text {
   margin: 0;
   font-size: 12px;
+  text-align: center;
 }
 
 /*FOOTER*/
 footer {
-  background-color: var(--rosefonce);  
+  background-color: var(--rosefonce);
+  margin-top: 260px;  
 }
 
 .elements-footer {
@@ -204,16 +242,20 @@ footer {
 }
 
 /*SIGNUP*/
-#signup-section {
-  margin-top: 7em;
-  height: 469px;
+#main {
+  background-image: url(../images/Signup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
 }
 
 #signup-section h2 {
   color: var(--rouge);
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 4.5em;
+  margin-left: 3em;
+  padding-top: 6em;
+  
 }
 
 #signup-section form {
@@ -223,15 +265,25 @@ footer {
   justify-content: space-between;
   width: 600px;
   height: 300px;
-  margin-left: 5em;
-  margin-top: 3em;
+  margin-left: 2em;
+  margin-top: 2em;
 }
+
+
+#footer-signup {
+  margin-top: 20em;
+  
+}
+
 
 /*LOGIN*/
 
+
 #login-section {
-  margin-top: 7em;
-  height: 469px;
+  
+  background-image: url(../images/Login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #login-section h2 {
