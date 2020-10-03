@@ -1,13 +1,13 @@
 const { Schema, model } = require('mongoose');
+const IngredientsModel = require('./Ingredients.model');
 
 const recipeSchema = new Schema({
-	id: Number,
 	title: String,
 	summary: String,
 	servings: Number,
 	image: String,
 	readyInMinutes: Number,
-	extendedIngredients: [Object],
+	ingredients: [{ type : Schema.Types.ObjectId, ref: 'Ingredient' }],
 	instructions: String,
 	analyzedInstructions: [Object],
 	vegetarian: Boolean,
