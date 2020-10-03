@@ -1,10 +1,10 @@
 const axios = require('axios')
 
 // 1. Créer la liste d'ingrédients 
-const ingredients = ['chicken'];
+const ingredients = ['lettuce', 'meat', 'orange'];
 
 // 2. API KEY 
-const key = '0e0bfd87a30f48e4898abb41bd8b08fa'//process.env.APIKEY
+const key = 'e5d276a1ba1049efb47cfbcfee13134a'//process.env.APIKEY
 
 // 3. Pour chaque ingrédient, faire une requête pour trouver les recettes.
 // Enregistrer les recettes dans un tableau 
@@ -48,7 +48,7 @@ Promise.all(promises)
       recipesDetails = axios.get(`https://api.spoonacular.com/recipes/${el}/information?includeNutrition=false&apiKey=${key}`)
         .then(resultFromApi => {
           //console.log(resultFromApi)
-          return resultFromApi.map(el => {
+          return resultFromApi.data/*.map(el => {
             return {
               id : el.id,
               vegetarian : el.vegetarian,
@@ -68,7 +68,7 @@ Promise.all(promises)
               instructions : el.instructions,
               analyzedInstructions : el.analyzedInstructions,
             }
-          })        
+          })*/        
         })
       
       promises2.push(recipesDetails)
