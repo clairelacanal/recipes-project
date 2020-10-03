@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Recipe = require('../models/Recipe.model.js')
+const Ingredient = require('../models/Ingredients.model.js')
 
 const DB_NAME = "recipes-project";
 
@@ -30173,4 +30174,6 @@ Recipe.create(recipes).then(allRecipes => {
     .catch(err => {
         console.log('ooops', err)
     })
+
+    
 
