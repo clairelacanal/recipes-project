@@ -279,11 +279,12 @@ footer {
 /*LOGIN*/
 
 
-#login-section {
+.background-log {
   
   background-image: url(../images/Login.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  height: 90vh;
 }
 
 #login-section h2 {
@@ -303,6 +304,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
+}
+
+#footer-log {
+  margin-top: 30em;
+  
 }
 
 /*FORMS SIGNUP ET LOGIN */

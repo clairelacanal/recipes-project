@@ -30166,6 +30166,8 @@ const recipes = [
   
 ]
 
+
+
 Recipe.create(recipes).then(allRecipes => {
         console.log(`réussi !! ${allRecipes.length}`)
         mongoose.connection.close;
