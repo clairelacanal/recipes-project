@@ -25,10 +25,10 @@ router.post('/', (req,res,next) => {
   allIngredients.push(ingredient1, ingredient2, ingredient3);
   console.log(allIngredients)
   
-  let ingredientsId = [];
-
+  let ingredientsId;
+  let promises = [];
   allIngredients.forEach(el => {
-    Ingredient.find({name : el})
+    ingredientsId = Ingredient.find({name : el})
       .then(ingredientFromDB => {
         /*
         [
@@ -42,15 +42,24 @@ router.post('/', (req,res,next) => {
           }
         ]
         */
-        console.log(ingredientFromDB[0].id)
-        ingredientsId.push(ingredientFromDB[0].id)
+        //console.log(ingredientFromDB[0].id)
+        return ingredientFromDB[0].id
+        //ingredientsId.push(ingredientFromDB[0].id)
       })
-      .catch(err => {
-        next(err) })
+      //.catch(err => {
+      //  next(err) })
+      promises.push(ingredientsId);
   })
-  //console.log(ingredientsId)
-
   
+  Promise.all(promises)
+    .then(responses => {
+      Recipe.find({ingredients : {$in : responses}})
+        .then(recipesFromDB => {
+          res.render('recipes/all-recipes-filter', {
+            recipes:recipesFromDB
+          })
+        })
+    }).catch(err => console.log(err))
 })
 
 
