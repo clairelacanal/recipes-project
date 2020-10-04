@@ -30,6 +30,13 @@ a {
   color: inherit;
 }
 
+h2{
+  font-size: 70px;
+  color: var(--rosefonce);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /*NAVBAR*/
 
 .navbar {
@@ -80,10 +87,10 @@ nav ul li a:hover {
 /*CONTAINER RESEARCH*/
 
 #homepage-container {
-  position:relative;
-  left: 0px;
-  top: 0px;
-  height:90vh;
+  pposition:relative;
+  lleft: 0px;
+  ttop: 0px;
+  height:108vh;
   background-image: url(../images/Fond-HP.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,16 +190,23 @@ nav ul li a:hover {
 }
 
 .card {
-  width: 17em;
-  height: 12em;
-  margin: 0;
+  width: 20em;
+  height: 25em;
+  margin: 1em;
+
 }
 
 .back {
+  display:flex;
+  flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
   background-color: #dcdde1;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   padding: 0.5em;
+  height:6em;
 }
 
 
@@ -219,6 +233,23 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/*RECIPES PAGE*/
+#recipes-page {
+  display:flex;
+}
+
+#recipes-filter {
+  width:30%;
+}
+
+.recipes-zone {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  margin:0 auto;
+
+}
 /*FOOTER*/
 footer {
   background-color: var(--rosefonce);
