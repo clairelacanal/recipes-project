@@ -31,10 +31,11 @@ a {
 }
 
 h2{
-  font-size: 70px;
-  color: var(--rosefonce);
+  font-size: 80px;
+  color: var(--rouge);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: var(--cabin);
 }
 
 /*NAVBAR*/
@@ -90,10 +91,11 @@ nav ul li a:hover {
   pposition:relative;
   lleft: 0px;
   ttop: 0px;
-  height:108vh;
+  height:87vh;
   background-image: url(../images/Fond-HP.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 
@@ -111,16 +113,16 @@ nav ul li a:hover {
 }
 
 .container-titles h2 {
-  font-size: 70px;
+  font-size: 75px;
   color: var(--rosefonce);
   text-transform: uppercase;
+  font-weight: 700;
   margin: 0;
   padding:0;
-  font-weight: 600;
 }
 
 .container-titles h1 {
-  font-size: 90px;
+  font-size: 85px;
   color: var(--rouge);
   text-transform: uppercase;
   margin: 0;
@@ -131,6 +133,7 @@ nav ul li a:hover {
 
 .presentation p {
   margin: 0;
+  font-weight: 500;
 }
 
 .bar-search {
@@ -139,29 +142,37 @@ nav ul li a:hover {
 }
 
 .bar-search p {
-  font-size: 10px;
-  font-weight: 700;
-  margin: 0px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.bar-search a {
+  color:var(--red)
 }
 
 .bar-search input {
-  width: 500px;
+  width: 450px;
   height: 3em;
   border-width: 2px;
   border-color: var(--rose);
-  border-radius: 40px;
+  border-radius: 28px;
   padding: 0.8em;
+  margin-top:1em;
+  display:block;
 }
 
 #btn-search {
   background-color:var(--rouge);
   border: 1px solid var(--rouge);
-  border-radius: 20em;
+  border-radius: 28px;
   color:var(--blanc);
   font-weight: 700;
   width: 7em;
   height: 3em;
   text-transform: uppercase;
+  margin:1em 0;
+  display:block;
 }
 
 
@@ -253,14 +264,14 @@ nav ul li a:hover {
 /*FOOTER*/
 footer {
   background-color: var(--rosefonce);
-  margin-top: 260px;  
+  mmargin-top: 260px;  
 }
 
 .elements-footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 5em;
+  mmargin-top: 5em;
   height: 3em;
   width: 60em;
   margin-left: auto;
@@ -276,14 +287,12 @@ footer {
 #main {
   background-image: url(../images/Signup.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 110vh;
+  background-size: 90%;
+  height: 87vh;
+  background-position:right bottom;
 }
 
 #signup-section h2 {
-  color: var(--rouge);
-  text-transform: uppercase;
-  font-weight: 700;
   margin-left: 3em;
   padding-top: 6em;
   
@@ -311,18 +320,17 @@ footer {
 
 
 .background-log {
-  
   background-image: url(../images/Login.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 90vh;
+  background-size: 30%;
+  background-position:bottom left;
+  height: 87vh;
 }
 
 #login-section h2 {
-  color: var(--rouge);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-left: 22em;
+  padding-top : 150px;
+  font-size: 60px;
+  text-align:center;
 }
 
 #login-section form {
@@ -338,7 +346,7 @@ footer {
 }
 
 #footer-log {
-  margin-top: 30em;
+  mmargin-top: 30em;
   
 }
 
