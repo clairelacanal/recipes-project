@@ -1,11 +1,51 @@
-User profile page 
-{{#if user}}
-    <h2>Welcome, {{ user.username }}!</h2>
-    <p>This is your profile page my friend!</p>
+<section id="user-profil">
+    <header>
+    <div class="navbar">
+    <div class="logo">
+      <img src="/images/logo.png" alt="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Recipes</a></li>
+        <li><a href="/">Create</a></li>
+        <li><a href="/">LOGO</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <div class="container-user">
+      <div class="container-user-img">
+          {{#if user}}
+        <img src="{{user.photoUser}}" alt="photo de profil">
+      </div>
+      <h2>Welcome {{ user.username }}</h2>
+
+      <div class="container-activities-user">
+          <article class="activitie">
+              <img src="" alt="logo-account-settings">
+              <a href="/userProfile/{{user.id}}/account-settings">Account Settings</a>
+          </article>
+          <article class="activitie">
+              <img src="" alt="logo-favorite-recipes">
+              <a href="/userProfile/{{user.id}}/favorite-recipes">My favorite recipes</a>
+          </article>
+          <article class="activitie">
+              <img src="" alt="logo-my-recipes">
+              <a href="/userProfile/{{user.id}}/my-own-recipes">My recipes</a>
+          </article>
+      </div>
     <button>
-        <a href="/userProfile">Reload the page</a>
+        <a href="/userProfile/{{user.id}}/logout">Log Out</a>
     </button>
-    <a href="/userProfile/{{user.id}}/account-settings">Setting account</a>
 {{else}}
     <p>Still no logged in user, sorry!</p>
 {{/if}}
+  </div>
+</section>
+<footer id="footer-user">
+      <div class="elements-footer">
+        <p>Index of ingredients</p>
+        <p>About us</p>
+        <p>Contact</p>
+      </div>
+</footer>

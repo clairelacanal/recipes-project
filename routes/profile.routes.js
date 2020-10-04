@@ -57,6 +57,17 @@ router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(r
   })
 })
 
+router.get('/userProfile/:id/favorite-recipes',(req,res,next) => {
+  res.render('profile/favorite-recipes')
+})
+
+router.get('/userProfile/:id/my-own-recipes',(req,res,next) => {
+  res.render('profile/my-own-recipes')
+})
+
+router.get('/userProfile/:id/logout',(req,res,next) => {
+  res.render('profile/logout')
+})
 
 
 // export router

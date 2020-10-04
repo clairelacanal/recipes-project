@@ -73,7 +73,7 @@ router.post("/login", (req, res, next) => {
             user
           });
         } else {
-          res.render('auth/login', {errorMessage : "Incorrect username, mail or password"})
+          res.render('auth/login', {errorMessage : "Incorrect mail or password"})
           return;
         }
       }
