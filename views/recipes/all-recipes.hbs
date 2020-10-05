@@ -1,11 +1,13 @@
-{{#each recipes}}
-<div class="card-deck">
-    <div class="card">
-      <img src={{image}} class="card-img-top" alt="{{title}}-image">
-      <div class="card-body">
-        <p class="card-title">{{title}}</p>
-        <p class="card-text">{{readyInMinutes}} min</p>
-      </div>
-  </div>
+{{> navbar}}
+
+<div class="recipes-zone">
+  {{#each recipes}}
+      <div class="card">
+        <img src={{image}} class="card-img-top" alt="{{title}}-image">
+        <div class="card-body">
+          <p class="card-title">{{title}}</p>
+          <p class="card-text">{{readyInMinutes}} min</p>
+        </div>
+    </div>
+  {{/each}}
 </div>
-{{/each}}

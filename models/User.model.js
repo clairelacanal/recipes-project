@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema({
-  photoUser: String,
 
   username: {	
 		type: String,
@@ -19,6 +18,8 @@ const userSchema = new Schema({
 		type: String,
 		required: [true, "Password is required"],
   },
+
+  photoUser: String,
 
   favoriteRecipes: [ { type : Schema.Types.ObjectId, ref: 'Recipe' } ],
   

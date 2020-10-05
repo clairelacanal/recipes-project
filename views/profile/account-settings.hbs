@@ -1,21 +1,9 @@
-<header>
-    <div class="navbar">
-    <div class="logo">
-      <img src="/images/logo.png" alt="logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/">Recipes</a></li>
-        <li><a href="/">Create</a></li>
-        <li><a href="/">LOGO</a></li>
-      </ul>
-    </nav>
-    </div>
-  </header>
+{{> navbar}}
+
 <section id="signup-section-settings">
   <h2>Account settings</h2>
-  <form action="/userProfile/{{user.id}}/account-settings" method="POST">
-    <label class="form-labels" enctype="multipart/form-data">
+  <form action="/userProfile/{{user.id}}/account-settings" method="POST" enctype="multipart/form-data">
+    <label class="form-labels">
       <input class="form-input" type="text" name="username" value="{{user.username}}">
     </label>
 
@@ -28,10 +16,8 @@
     </label>
 
     <label class="form-labels">
-
         <input class="form-input" type="file" name="image" value="{{user.photoUser}}" class="form-control-file" />
     </label>
-    </div>
 
 
     <button>SAVE CHANGES</button>
@@ -42,13 +28,5 @@
     {{/if}}
 
   </form>
-
 </section>
 
-<footer id="footer-account-settings">
-      <div class="elements-footer">
-        <p>Index of ingredients</p>
-        <p>About us</p>
-        <p>Contact</p>
-      </div>
-</footer>

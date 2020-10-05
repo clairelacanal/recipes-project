@@ -30,6 +30,13 @@ a {
   color: var(--rouge);
 }
 
+h2{
+  font-size: 70px;
+  color: var(--rosefonce);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /*NAVBAR*/
 
 .navbar {
@@ -83,7 +90,7 @@ nav ul li a:hover {
   position:relative;
   left: 0px;
   top: 0px;
-  height:90vh;
+  height:108vh;
   background-image: url(../images/Fond-HP.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,16 +199,23 @@ nav ul li a:hover {
 }
 
 .card {
-  width: 20.5em;
-  height: 9em;
-  margin: 0;
+  width: 20em;
+  height: 25em;
+  margin: 1em;
+
 }
 
 .back {
+  display:flex;
+  flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
   background-color: #dcdde1;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   padding: 0.5em;
+  height:6em;
 }
 
 
@@ -228,10 +242,27 @@ nav ul li a:hover {
   text-align: center;
 }
 
+/*RECIPES PAGE*/
+#recipes-page {
+  display:flex;
+}
+
+#recipes-filter {
+  width:30%;
+}
+
+.recipes-zone {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  margin:0 auto;
+
+}
 /*FOOTER*/
 footer {
   background-color: var(--rosefonce);
-  margin-top: 260px;  
+
 }
 
 .elements-footer {
@@ -283,12 +314,6 @@ footer {
 }
 
 
-#footer-signup {
-  margin-top: 7.8em;
-  text-transform: uppercase;
-  
-}
-
 
 /*LOGIN*/
 
@@ -322,11 +347,6 @@ footer {
   margin-top: 3em;
 }
 
-#footer-log {
-  margin-top: 12.2em;
-  text-transform: uppercase;
-  
-}
 
 /*FORMS SIGNUP ET LOGIN */
 
@@ -381,10 +401,7 @@ button {
   text-decoration: none;
 }
 
-#footer-account {
-  margin-top: 21.5em;
-  text-transform: uppercase; 
-}
+
 
 /* USER-PROFIL */
 
@@ -400,8 +417,8 @@ button {
   margin-top: 2em;
 }
 
-.container-user-img {
-  background-color: blue;
+
+.container-user-img img {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -469,10 +486,6 @@ button {
   text-decoration: none;
 } 
 
-#footer-user {
-  margin: 0px;
-  text-transform: uppercase; 
-}
 
 /*ACCOUNT SECTION SETTINGS */
 
@@ -495,10 +508,6 @@ button {
   margin-left: 5em;
   padding-top: 3em;
   font-size: 35px; 
-}
-
-#footer-account-settings {
-  margin-top: 10.4em;
 }
 
 

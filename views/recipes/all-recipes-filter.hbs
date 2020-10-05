@@ -1,0 +1,19 @@
+{{> navbar}}
+
+<section id="recipes-page">
+  <div id="recipes-filter">
+    FILTER
+  </div>
+  <div class="recipes-zone">
+    {{#each recipes}}
+        <div class="card">
+            <img src={{image}} class="card-img-top" alt="{{title}}-image">
+            <div class="back">
+              <p class="card-title">{{title}}</p>
+              <p class="card-text">{{readyInMinutes}} min</p>
+            </div>
+        </div>     
+    {{/each}}
+  </div>
+
+</section>

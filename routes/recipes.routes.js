@@ -22,35 +22,44 @@ router.post('/', (req,res,next) => {
   const {ingredient1, ingredient2, ingredient3} = req.body;
 
   let allIngredients = [];
-  allIngredients.push(ingredient1, ingredient2, ingredient3);
+  if(ingredient1 !== "") {
+    allIngredients.push(ingredient1)
+  }
+  if(ingredient2 !== "") {
+    allIngredients.push(ingredient2)
+  }
+  if(ingredient3 !== "") {
+    allIngredients.push(ingredient3)
+  }
   console.log(allIngredients)
   
-  let ingredientsId = [];
-
+  let ingredientsId;
+  let promises = [];
   allIngredients.forEach(el => {
-    Ingredient.find({name : el})
+    ingredientsId = Ingredient.find({name : el})
       .then(ingredientFromDB => {
-        /*
-        [
-          {
+        /*[{
             _id: 5f787bb33f466f126497dc1a,
             image: 'zucchini.jpg',
             name: 'zucchini',
             createdAt: 2020-10-03T13:25:07.987Z,
             updatedAt: 2020-10-03T13:25:07.987Z,
             __v: 0
-          }
-        ]
-        */
-        console.log(ingredientFromDB[0].id)
-        ingredientsId.push(ingredientFromDB[0].id)
+          }]*/
+        return ingredientFromDB[0].id
       })
-      .catch(err => {
-        next(err) })
+      promises.push(ingredientsId);
   })
-  //console.log(ingredientsId)
-
   
+  Promise.all(promises)
+    .then(responses => {
+      Recipe.find({ingredients : {$in : responses}})
+        .then(recipesFromDB => {
+          res.render('recipes/all-recipes-filter', {
+            recipes:recipesFromDB
+          })
+        })
+    }).catch(err => console.log(err))
 })
 
 
