@@ -171,6 +171,10 @@ nav ul li a:hover {
   display:block;
 }
 
+.bar-search ul {
+  list-style-type: none;
+}
+
 #btn-search {
   background-color:var(--rouge);
   border: 1px solid var(--rouge);

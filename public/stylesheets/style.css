@@ -143,6 +143,9 @@ nav ul li a:hover {
   margin-top: 1em;
   display: block; }
 
+.bar-search ul {
+  list-style-type: none; }
+
 #btn-search {
   background-color: var(--rouge);
   border: 1px solid var(--rouge);
@@ -291,6 +294,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em; }
+
+#footer-log {
+  mmargin-top: 30em; }
 
 /*FORMS SIGNUP ET LOGIN */
 form input {
