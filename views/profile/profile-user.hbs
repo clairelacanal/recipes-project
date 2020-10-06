@@ -1,12 +1,32 @@
-{{> navbar}}
+ {{> navbar}}
+<section id="user-profil">
+  <div class="container-user">
+      <div class="container-user-img">
+          {{#if user}}
+        <img src="{{user.photoUser}}" alt="photo de profil">
+      </div>
+      <h2>Welcome {{ user.username }}</h2>
 
-{{#if user}}
-    <h2>Welcome, {{ user.username }}!</h2>
-    <p>This is your profile page my friend!</p>
+      <div class="container-activities-user">
+          <article class="activitie">
+              <img src="" alt="logo-account-settings">
+              <a href="/userProfile/{{user.id}}/account-settings">Account Settings</a>
+          </article>
+          <article class="activitie">
+              <img src="" alt="logo-favorite-recipes">
+              <a href="/userProfile/{{user.id}}/favorite-recipes">My favorite recipes</a>
+          </article>
+          <article class="activitie">
+              <img src="" alt="logo-my-recipes">
+              <a href="/userProfile/{{user.id}}/my-own-recipes">My recipes</a>
+          </article>
+      </div>
     <button>
-        <a href="/userProfile">Reload the page</a>
+        <a href="/userProfile/{{user.id}}/logout">Log Out</a>
     </button>
-    <a href="/userProfile/{{user.id}}/account-settings">Setting account</a>
 {{else}}
     <p>Still no logged in user, sorry!</p>
 {{/if}}
+  </div>
+</section>
+

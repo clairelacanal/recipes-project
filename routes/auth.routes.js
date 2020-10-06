@@ -16,8 +16,9 @@ const salt = bcryptjs.genSaltSync(10);
 router.post('/signup',fileUploader.single('image'),(req, res, next) => {
     //console.log(req.body)
     const {username, email} = req.body;
-
+    let photoUser = req.file.path;
     const plainPassword = req.body.password;
+
     const hashedPassword = bcryptjs.hashSync(plainPassword, salt)
     //console.log("hashed = ", hashedPassword)
 
@@ -25,6 +26,7 @@ router.post('/signup',fileUploader.single('image'),(req, res, next) => {
       username,
       email,
       passwordHash:hashedPassword,
+      photoUser,
     })
       .then(userFromDB => {
         res.render("profile/account-created")
@@ -73,7 +75,7 @@ router.post("/login", (req, res, next) => {
             user
           });
         } else {
-          res.render('auth/login', {errorMessage : "Incorrect username, mail or password"})
+          res.render('auth/login', {errorMessage : "Incorrect mail or password"})
           return;
         }
       }

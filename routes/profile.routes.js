@@ -31,11 +31,12 @@ router.get('/userProfile/:id/account-settings',fileUploader.single('image'),(req
 const salt = bcryptjs.genSaltSync(10);
 router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(req, res, next) => {
   const {username, email} = req.body;
+  let photoUser;
 
   const plainPassword = req.body.password;
   const hashedPassword = bcryptjs.hashSync(plainPassword, salt);
 
-  let photoUser;
+
   if (req.file) {
     photoUser = req.file.path;
   } else {
@@ -57,6 +58,17 @@ router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(r
   })
 })
 
+router.get('/userProfile/:id/favorite-recipes',(req,res,next) => {
+  res.render('profile/favorite-recipes')
+})
+
+router.get('/userProfile/:id/my-own-recipes',(req,res,next) => {
+  res.render('profile/my-own-recipes')
+})
+
+router.get('/userProfile/:id/logout',(req,res,next) => {
+  res.render('profile/logout')
+})
 
 
 // export router

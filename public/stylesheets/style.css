@@ -24,7 +24,7 @@ body {
   font-family: var(--roboto); }
 
 a {
-  color: inherit; }
+  color: var(--rouge); }
 
 h2 {
   font-size: 80px;
@@ -117,6 +117,13 @@ nav ul li a:hover {
 .bar-search {
   margin-bottom: 2em;
   margin-top: 2em; }
+
+.bar-search a {
+  color: var(--rouge); }
+
+.bar-search a:hover {
+  color: var(--rouge);
+  text-decoration: none; }
 
 .bar-search p {
   font-size: 12px;
@@ -219,8 +226,7 @@ nav ul li a:hover {
 
 /*FOOTER*/
 footer {
-  background-color: var(--rosefonce);
-  mmargin-top: 260px; }
+  background-color: var(--rosefonce); }
 
 .elements-footer {
   display: flex;
@@ -234,15 +240,17 @@ footer {
 
 .elements-footer p {
   font-size: 15px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase; }
 
 /*SIGNUP*/
 #main {
   background-image: url(../images/Signup.png);
   background-repeat: no-repeat;
-  background-size: 90%;
-  height: 100vh;
-  background-position: right bottom; }
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  height: 662px; }
 
 #signup-section h2 {
   margin-left: 3em;
@@ -256,23 +264,22 @@ footer {
   width: 600px;
   height: 300px;
   margin-left: 2em;
-  margin-top: 2em; }
-
-#footer-signup {
-  margin-top: 20em; }
+  margin-top: 0em; }
 
 /*LOGIN*/
 .background-log {
   background-image: url(../images/Login.png);
   background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: bottom left;
-  height: 100vh; }
+  background-size: contain;
+  height: 63.5vh;
+  margin-top: 10em; }
 
 #login-section h2 {
-  padding-top: 150px;
-  font-size: 60px;
-  text-align: center; }
+  color: var(--rouge);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 22em;
+  padding-top: 0em; }
 
 #login-section form {
   display: flex;
@@ -284,9 +291,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em; }
-
-#footer-log {
-  mmargin-top: 30em; }
 
 /*FORMS SIGNUP ET LOGIN */
 form input {
@@ -307,17 +311,118 @@ button {
   text-transform: uppercase; }
 
 /*ACCOUNT CREATED*/
-.container-account-created {
-  margin-top: 7em;
-  height: 485px;
-  margin-left: 8em; }
+#main-account {
+  background-image: url(../images/Signup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  height: 662px; }
 
-.container-account-created h1 {
+#account-section h2 {
   color: var(--vertfonce);
+  text-transform: uppercase;
   font-weight: 700;
-  width: 10em; }
+  margin-left: 3em;
+  padding-top: 6em; }
 
-.container-account-created button {
+#account-section button {
+  margin-left: 11.5em;
+  margin-top: 2em;
+  color: var(--blanc); }
+
+#account-section a {
+  color: var(--blanc);
+  text-decoration: none; }
+
+/* USER-PROFIL */
+.container-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 550px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em; }
+
+.container-user-img img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 10em;
+  height: 10em;
+  border-radius: 100px; }
+
+.container-user h2 {
+  font-size: 30px;
+  color: var(--rouge);
+  margin-bottom: 1em; }
+
+.container-activities-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.activitie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--jaune);
+  margin-left: 3em;
+  margin-right: 3em;
+  width: 15em;
+  height: 13em;
+  margin-bottom: 3em;
+  border-radius: 0.8em; }
+
+.activitie a {
+  color: var(--noir);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center; }
+
+.activitie a:hover {
+  color: var(--noir);
+  text-decoration: none; }
+
+.container-user button {
+  text-transform: uppercase;
+  color: var(--gris);
+  background-color: var(--vertpomme);
+  border-color: var(--vertpomme);
+  border-radius: 0.2em; }
+
+.container-user button a {
+  color: var(--blanc); }
+
+.container-user button a:hover {
+  color: var(--blanc);
+  text-decoration: none; }
+
+/*ACCOUNT SECTION SETTINGS */
+#signup-section-settings form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3em; }
+
+#signup-section-settings h2 {
+  color: var(--rouge);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 5em;
+  padding-top: 3em;
+  font-size: 35px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,9 @@
 {{> navbar}}
 
-<section id="signup-section">
+<section id="signup-section-settings">
   <h2>Account settings</h2>
-  <form action="/userProfile/{{user.id}}/account-settings" method="POST">
-    <label class="form-labels" enctype="multipart/form-data">
+  <form action="/userProfile/{{user.id}}/account-settings" method="POST" enctype="multipart/form-data">
+    <label class="form-labels">
       <input class="form-input" type="text" name="username" value="{{user.username}}">
     </label>
 
@@ -16,13 +16,11 @@
     </label>
 
     <label class="form-labels">
-      Profile picture:
         <input class="form-input" type="file" name="image" value="{{user.photoUser}}" class="form-control-file" />
     </label>
-    </div>
 
 
-    <button>Save changes</button>
+    <button>SAVE CHANGES</button>
 
 
     {{#if errorMessage}}
@@ -30,5 +28,5 @@
     {{/if}}
 
   </form>
-
 </section>
+
