@@ -73,10 +73,10 @@ nav ul li a:hover {
 
 /*CONTAINER RESEARCH*/
 #homepage-container {
-  pposition: relative;
-  lleft: 0px;
-  ttop: 0px;
-  height: 87vh;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
   background-image: url(../images/Fond-HP.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +241,7 @@ footer {
   background-image: url(../images/Signup.png);
   background-repeat: no-repeat;
   background-size: 90%;
-  height: 87vh;
+  height: 100vh;
   background-position: right bottom; }
 
 #signup-section h2 {
@@ -267,7 +267,7 @@ footer {
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: bottom left;
-  height: 87vh; }
+  height: 100vh; }
 
 #login-section h2 {
   padding-top: 150px;
