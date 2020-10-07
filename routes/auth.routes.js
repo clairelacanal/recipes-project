@@ -16,7 +16,12 @@ const salt = bcryptjs.genSaltSync(10);
 router.post('/signup',fileUploader.single('image'),(req, res, next) => {
     //console.log(req.body)
     const {username, email} = req.body;
-    let photoUser = req.file.path;
+    let photoUser;
+
+    if (req.file) {
+      photoUser = req.file.path;
+    }
+
     const plainPassword = req.body.password;
 
     const hashedPassword = bcryptjs.hashSync(plainPassword, salt)
@@ -67,13 +72,17 @@ router.post("/login", (req, res, next) => {
     .then(user => {
       if(!user) {
         res.render('auth/login', {errorMessage: "Incorrect mail or password"})
-        return;
+        return
       } else {
         if(bcryptjs.compareSync(password, user.passwordHash)) {
+          // mdp ok
+          
+          // infos du user ds son casier
           req.session.user = user;
-          res.render('profile/profile-user', {
-            user
-          });
+          // j'ai remis l'id ailleurs car l'id du user copié dans la session est perdu pendant le redirect (???)
+          req.session.userid = user.id;
+
+          res.redirect('/userProfile')
         } else {
           res.render('auth/login', {errorMessage : "Incorrect mail or password"})
           return;

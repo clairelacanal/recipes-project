@@ -6,7 +6,6 @@ const fileUploader = require('../configs/cloudinary.config');
 
 // GET route pour afficher toutes les recettes
 router.get('/recipes', (req,res,next) => {
-
     Recipe.find()
       .then(recipesFromDB => {
         res.render('recipes/all-recipes', {
@@ -62,10 +61,18 @@ router.post('/', (req,res,next) => {
     }).catch(err => console.log(err))
 })
 
-
-
-
-///search?city=Barcelona&start-date=2018-01-18
+//GET route pour afficher le détail d'une recette
+router.get('/recipes/:id/detail-recipe', (req, res, next) => {
+  Recipe.findById(req.params.id)
+  .populate('ingredients')
+  .then((recipesDetails) => {
+    res.render('recipes/detail-recipe', {
+      recipes:recipesDetails
+    })
+  }).catch(err => {
+    next(err)
+  })  
+})
 
 
 
