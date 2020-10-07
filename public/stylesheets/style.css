@@ -155,14 +155,58 @@ nav ul li a:hover {
   overflow: scroll;
   overflow-x: hidden; }
 
+#suggestions-input-2 {
+  padding-right: 10px;
+  position: absolute;
+  height: 105px;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+#suggestions-input-3 {
+  padding-right: 10px;
+  position: absolute;
+  height: 105px;
+  overflow: scroll;
+  overflow-x: hidden; }
+
 #suggestions-input-1 div {
   margin-left: 10px;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 390px; }
+  width: 390px;
+  border: solid 0.5px var(--rosefonce); }
+
+#suggestions-input-2 div {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 390px;
+  border: solid 0.5px var(--rosefonce); }
+
+#suggestions-input-3 div {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 390px;
+  border: solid 0.5px var(--rosefonce); }
 
 #suggestions-input-1 div:hover {
   padding-left: 5px;
   background-color: var(--rosefonce); }
+
+#suggestions-input-2 div:hover {
+  padding-left: 5px;
+  background-color: var(--rosefonce); }
+
+#suggestions-input-3 div:hover {
+  padding-left: 5px;
+  background-color: var(--rosefonce); }
+
+.suggestion1 {
+  padding: 3px 0 5px 3px; }
+
+.suggestion2 {
+  padding: 3px 0 5px 3px; }
+
+.suggestion3 {
+  padding: 3px 0 5px 3px; }
 
 #btn-search {
   background-color: var(--rouge);
