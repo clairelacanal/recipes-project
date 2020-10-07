@@ -63,10 +63,22 @@ router.post('/', (req,res,next) => {
 })
 
 
-
-
-///search?city=Barcelona&start-date=2018-01-18
-
+//GET footer page ingredints-index
+router.get('/ingredients-index', (req,res,next) => {
+  Ingredient.find({}, {name:1, _id:0})
+    .then(ingredientsFromDB => {
+      let orderedIngredients = [];
+      ingredientsFromDB.forEach(el => {
+        orderedIngredients.push(el.name)
+      })
+      orderedIngredients.sort();
+      console.log(orderedIngredients);
+      res.render('recipes/ingredients-index', {
+        ingredients: orderedIngredients
+      })
+    })
+    .catch(err => next(err))
+})
 
 
 
