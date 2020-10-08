@@ -1,7 +1,11 @@
 
 <section id="homepage-container">
   <header>
-    {{> navbar}}
+    {{#if user}}
+      {{> navbaruser}}
+    {{else}}
+      {{> navbar}}
+    {{/if}}
   </header>
   <div class="container-research">
     <div class="container-titles">

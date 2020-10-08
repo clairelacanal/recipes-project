@@ -11,7 +11,6 @@ module.exports = app => {
       // pour enregistrer les coies
       cookie: { maxAge: 60000 },
       store: new MongoStore({
-        // <== ADDED !!!
         mongooseConnection: mongoose.connection,
         // ttl => time to live
         ttl: 60 * 60 * 24 // 60sec * 60min * 24h => 1 day
