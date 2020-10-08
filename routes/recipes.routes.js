@@ -67,14 +67,14 @@ router.post('/', (req,res,next) => {
 router.get('/ingredients-index', (req,res,next) => {
   Ingredient.find({}, {name:1, _id:0})
     .then(ingredientsFromDB => {
-      let orderedIngredients = [];
+      /*let orderedIngredients = [];
       ingredientsFromDB.forEach(el => {
         orderedIngredients.push(el.name)
       })
       orderedIngredients.sort();
-      console.log(orderedIngredients);
+      console.log(orderedIngredients);*/
       res.render('recipes/ingredients-index', {
-        ingredients: orderedIngredients
+        ingredients: ingredientsFromDB
       })
     })
     .catch(err => next(err))

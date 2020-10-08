@@ -1,4 +1,5 @@
-let ingredients = ['Chicken','Tomatoes','banana','zucchini','cheese'];
+let ingredients = ['gouda','eggs','mozzarella cheese', 'parmesan cheese', 'gruyere chesse','cream', 'milk', 'goat cheese', 'queso fresco', 'cinnamon', 'fresh basil leaves', 'thyme sprigs', 'fresh rosemary', 'fresh mint leaves', 'sesame oil', 'chicken', 'turkey breast', 'chicken breast', 'teriaky sauce', 'bbq sauce', 'apple', 'avocado', 'bananas', 'cranberries', 'dates', 'grapefruit', 'grape', 'lemon', 'lemon juice', 'lime', 'lime juice', 'olive', 'orange', 'pineapple', 'strawberries', 'watermelon', 'ham', 'pork loin roast', 'bacon', 'green beans', 'fresh corn', 'cucumber', 'garlic', 'lettuce', 'portobello mushrooms', 'button mushrooms', 'onions', 'peas', 'potatoes', 'zucchini', 'tomatoes', 'almonds', 'coconut', 'nuts', 'wine', 'vodka', 'white wine', 'tofu', 'bread', 'white bread', 'pita breads', 'milk chocolate', 'white chocolate', 'dark chocolate','brown rice', 'rice', 'pesto sauce', 'roast beef', 'pizza mix', 'plain yogurt', 'herbs', 'chocolat chips', 'fresh herbs', 'spaghetti'
+];
   
 var $input1 = document.getElementById('ingredients-search-1');
 var $input2 = document.getElementById('ingredients-search-2');
