@@ -2,7 +2,6 @@
 
 <section id="post-your-recipe">
   <h1>POST YOUR RECIPE</h1>
-
   <div class="formulaire-create-recipe">
     <form action="/create" method="POST" enctype="multipart/form-data">
     
@@ -14,13 +13,19 @@
       <input class="form-input" type="text" name="readyInMinutes" placeholder="Time to cook">
     </label>
 
-    <label class="form-labels">
-      <input class="form-input" type="text" name="ingredient1" placeholder="Ingredient 1" >
-    </label>
+    <div class="add-things-ing">
+      <label class="form-labels">
+        <input class="form-input" type="text" name="ingredient1" placeholder="Ingredient 1" >
+      </label>
+      <a href="">Add an ingredient</a>
+    </div>
 
-    <label class="form-labels">
-      <input class="form-input" type="text" name="step" placeholder="Step 1" >
-    </label>
+    <div class="add-things">
+      <label class="form-labels">
+        <input class="form-input" type="text" name="step" placeholder="Step 1" >
+      </label>
+      <a href="">Add a step</a>
+    </div>
     
     <label class="form-labels">
         <input class="form-input" type="file" name="image" class="form-control-file" placeholder="Download a photo" />
