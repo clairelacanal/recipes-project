@@ -525,4 +525,15 @@ button {
   margin-right: auto;
   margin-bottom: 3em; }
 
+/*FORMULAIRE CREATE RECIPE*/
+.formulaire-create-recipe {
+  background-color: lawngreen; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8em; }
+
 /*# sourceMappingURL=style.css.map */
