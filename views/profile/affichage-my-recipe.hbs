@@ -1,0 +1,42 @@
+{{> navbar}}
+
+<section id="details-recipes">
+  <div class="name-of-recipe">
+    <h1>{{recipe.title}}</h1>
+  </div>
+
+
+  <div class="infos">
+    <h5>Time To Cook :</h5>
+    <ul>
+      <li>{{recipe.readyInMinutes}} min</li>
+    </ul>
+  </div>
+
+  <div class="ingredients-used">
+    <h5>Ingredients :</h5>
+    <div class="ingredients">
+      {{#each recipe.ingredients}}
+      <ul>
+        <li>{{this.name}}</li>
+      </ul>
+      {{/each}}
+    </div>
+  </div>
+
+  {{#if recipe.analyzedInstructions}}
+  <div class="recipe">
+    <h5>Instructions :</h5>
+    {{#each recipe.analyzedInstructions}}
+    <ul>
+      {{#each this.steps}}
+      <ol>
+        <b>{{this.number}}</b> - {{this.step}}
+      </ol>
+      {{/each}}
+    </ul>
+    {{/each}}
+  </div>
+  {{/if}}
+
+</section>
