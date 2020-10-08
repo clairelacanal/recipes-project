@@ -1,1 +1,57 @@
 {{> navbar}}
+
+<section id="details-recipes">
+  <div class="name-of-recipe">
+    <h1>{{recipes.title}}</h1>
+    <div class="logos">
+      <img src="" alt="logo-heart">
+      <img src="" alt="logo-arrow">
+    </div>
+  </div>
+
+
+  <div class="infos">
+    <h5>Infos :</h5>
+    <ul>
+      <li>{{recipes.readyInMinutes}} min</li>
+      {{#if recipes.servings}} <li>persons</li>{{/if}}
+      {{#if recipes.vegetarian }}<li>Vegetarian </li>{{/if}}
+      {{#if recipes.vegan}}<li>Vegan</li>{{/if}}
+      {{#if recipes.glutenFree}}<li>Gluten Free</li>{{/if}}
+      {{#if recipes.dairyFree}}<li>Dairy Free</li>{{/if}}
+    </ul>
+  </div>
+
+  <div class="ingredients-used">
+    <h5>Ingredients :</h5>
+    <div class="ingredients">
+      {{#each recipes.ingredients}}
+      <ul>
+        <li>{{this.name}}</li>
+      </ul>
+      {{/each}}
+    </div>
+  </div>
+
+  {{#if recipes.analyzedInstructions}}
+  <div class="recipe">
+    <h5>Instructions :</h5>
+    {{#each recipes.analyzedInstructions}}
+    <ul>
+      {{#each this.steps}}
+      <ol>
+        <b>{{this.number}}</b> - {{this.step}}
+      </ol>
+      {{/each}}
+    </ul>
+    {{/each}}
+  </div>
+  {{/if}}
+
+  <div class="comment">
+    <h5>Comment :</h5>
+    <div class="comm">
+      {{recipes.comment}}
+    </div>
+  </div>
+</section>

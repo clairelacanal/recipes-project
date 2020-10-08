@@ -1,1 +1,33 @@
 {{> navbar}}
+
+<section id="post-your-recipe">
+  <h1>POST YOUR RECIPE</h1>
+
+  <div class="formulaire">
+    <form action="/create" method="POST" enctype="multipart/form-data">
+    
+    <label class="form-labels">
+      <input class="form-input" type="text" name="title" placeholder="Name of the recipe ">
+    </label>
+
+    <label class="form-labels">
+      <input class="form-input" type="text" name="readyInMinutes" placeholder="Time to cook">
+    </label>
+
+    <label class="form-labels">
+      <input class="form-input" type="text" name="ingredient1" placeholder="Ingredient 1" >
+    </label>
+
+    <label class="form-labels">
+      <input class="form-input" type="text" name="step" placeholder="Step 1" >
+    </label>
+    
+    <label class="form-labels">
+        <input class="form-input" type="file" name="image" class="form-control-file" placeholder="Download a photo" />
+    </label>
+
+    <button>SAVE THE RECIPE</button>
+  </form>
+  </div> 
+</section>
+

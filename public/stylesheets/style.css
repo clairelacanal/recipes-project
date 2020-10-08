@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -492,5 +493,101 @@ button {
   margin-left: 5em;
   padding-top: 3em;
   font-size: 35px; }
+
+/*DETAILS RECIPES */
+.name-of-recipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em; }
+
+.name-of-recipe h1 {
+  margin-left: 1em;
+  color: var(--rouge); }
+
+.infos {
+  background-color: var(--rose);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 3em;
+  padding: 1.5em;
+  border-radius: 0.8em; }
+
+.infos h5 {
+  margin-left: 2em;
+  color: var(--vertfonce); }
+
+.infos ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px; }
+
+.infos ul li {
+  list-style: none;
+  margin-left: 1em; }
+
+.ingredients-used {
+  background-color: var(--rose);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 1.5em;
+  padding: 1.5em;
+  border-radius: 0.8em; }
+
+.ingredients-used h5 {
+  margin-left: 2em;
+  color: var(--vertfonce); }
+
+.ingredients-used ul li {
+  list-style: none;
+  margin-top: 1em; }
+
+.ingredients-used ul li:before {
+  content: "→ ";
+  /* caractère UTF-8 */ }
+
+.recipe {
+  background-color: var(--rose);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 2em;
+  padding: 1.5em;
+  border-radius: 0.8em; }
+
+.recipe h5 {
+  margin-left: 2em;
+  color: var(--vertfonce); }
+
+.recipe ul ol {
+  margin-top: 1em; }
+
+.comment {
+  background-color: var(--rose);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2em;
+  padding: 1.5em;
+  border-radius: 0.8em; }
+
+.comment h5 {
+  margin-left: 2em;
+  color: var(--vertfonce); }
+
+#details-recipes {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em; }
 
 /*# sourceMappingURL=style.css.map */
