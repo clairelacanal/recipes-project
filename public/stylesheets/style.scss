@@ -160,15 +160,94 @@ nav ul li a:hover {
   color:var(--red)
 }
 
+.bar-search form {
+  position:relative;
+  overflow:hidden;
+}
 .bar-search input {
-  width: 450px;
-  height: 3em;
-  border-width: 2px;
-  border-color: var(--rose);
-  border-radius: 28px;
+  width: 55%;
+  height: 2.2em;
+  border-width: 1px;
+  border-color: var(--rosefonce);
+  border-radius: 20px;
   padding: 0.8em;
   margin-top:1em;
   display:block;
+  outline: none;
+}
+
+#suggestions-input-1 {
+  padding-right:10px;
+  position:absolute;
+  height:105px;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+#suggestions-input-2 {
+  padding-right:10px;
+  position:absolute;
+  height:105px;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+#suggestions-input-3 {
+  padding-right:10px;
+  position:absolute;
+  height:105px;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+
+#suggestions-input-1 div {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 390px;
+  border: solid 0.5px var(--rosefonce);
+}
+
+#suggestions-input-2 div {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 390px;
+  border: solid 0.5px var(--rosefonce);
+}
+
+#suggestions-input-3 div {
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 390px;
+  border: solid 0.5px var(--rosefonce);
+}
+
+
+#suggestions-input-1 div:hover {
+  padding-left:5px;
+  background-color: var(--rosefonce);
+} 
+
+#suggestions-input-2 div:hover {
+  padding-left:5px;
+  background-color: var(--rosefonce);
+} 
+
+#suggestions-input-3 div:hover {
+  padding-left:5px;
+  background-color: var(--rosefonce);
+} 
+
+.suggestion1 {
+  padding: 3px 0 5px 3px;
+}
+
+.suggestion2 {
+  padding: 3px 0 5px 3px;
+}
+
+.suggestion3 {
+  padding: 3px 0 5px 3px;
 }
 
 #btn-search {
