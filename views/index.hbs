@@ -13,15 +13,14 @@
       <p>Enter the list of ingredients and find 100% Zero Waste recipes !</p>
     </div>
     <div class="bar-search">
-      <form action="/" method="POST">
-        <input type="search" id="ingredients-search-1" name="ingredient1" placeholder="First ingredient">
-        <ul id="autocomplete-ingredient-1"></ul>
-        <input type="search" id="ingredients-search-2" name="ingredient2" placeholder="Second ingredient">
-        <ul></ul>
-        <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Third ingredient">
-        <ul></ul>
-        <button id="btn-search">search</button>
-        <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Example: Egg">
+      <form action="/" method="POST" autocomplete="off">
+          <input type="search" id="ingredients-search-1" name="ingredient1" placeholder="Chicken">
+          <div id="suggestions-input-1">
+          </div>
+        <input type="search" id="ingredients-search-2" name="ingredient2" placeholder="Tomatoes">
+        <div id="suggestions-input-2"></div>
+        <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Egg">
+        <div id="suggestions-input-3"></div>
         <button id="btn-search">search</button>
         
   

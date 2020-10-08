@@ -74,6 +74,7 @@ router.get('/recipes/:id/detail-recipe', (req, res, next) => {
   })  
 })
 
+<<<<<<< HEAD
 // GET route pour afficher le formulaire de création de notre recette
 router.get('/create', fileUploader.single('image'), (req, res, next) => {
   res.render('profile/create-recipe')
@@ -118,6 +119,24 @@ router.post('/create', fileUploader.single('image'), (req, res, next) => {
     })
 })
 
+=======
+//GET footer page ingredints-index
+router.get('/ingredients-index', (req,res,next) => {
+  Ingredient.find({}, {name:1, _id:0})
+    .then(ingredientsFromDB => {
+      /*let orderedIngredients = [];
+      ingredientsFromDB.forEach(el => {
+        orderedIngredients.push(el.name)
+      })
+      orderedIngredients.sort();
+      console.log(orderedIngredients);*/
+      res.render('recipes/ingredients-index', {
+        ingredients: ingredientsFromDB
+      })
+    })
+    .catch(err => next(err))
+})
+>>>>>>> 092b2b0483d64712ec7791890107e7cd2d6d20ce
 
 
 
