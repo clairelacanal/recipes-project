@@ -8,9 +8,15 @@ const User = require('../models/User.model');
 
 
 //GET route - Route d'affichage de mon userProfile
-router.get('/userProfile',(req, res, next) => {
+router.get('/userProfile', (req, res, next) => {
+  req.session.user.id = req.session.userid;
+  // verifier que le user est logge
+  if (!req.session.user) {
+    res.redirect('/login')
+    return
+  }
   res.render("profile/profile-user", {
-    user: req.session.CurrentUser
+    user: req.session.user
   })
 })
 
@@ -50,7 +56,7 @@ router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(r
     passwordHash:hashedPassword,
     photoUser
   },{ new: true }).then((user) => {
-    res.render("profile/profile-user", {
+    res.render('profile/profile-user', {
       user:user
     });
   }).catch(err =>{

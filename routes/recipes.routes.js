@@ -6,7 +6,6 @@ const fileUploader = require('../configs/cloudinary.config');
 
 // GET route pour afficher toutes les recettes
 router.get('/recipes', (req,res,next) => {
-
     Recipe.find()
       .then(recipesFromDB => {
         res.render('recipes/all-recipes', {
@@ -62,10 +61,62 @@ router.post('/', (req,res,next) => {
     }).catch(err => console.log(err))
 })
 
+//GET route pour afficher le détail d'une recette
+router.get('/recipes/:id/detail-recipe', (req, res, next) => {
+  Recipe.findById(req.params.id)
+  .populate('ingredients')
+  .then((recipesDetails) => {
+    res.render('recipes/detail-recipe', {
+      recipes:recipesDetails
+    })
+  }).catch(err => {
+    next(err)
+  })  
+})
 
+// GET route pour afficher le formulaire de création de notre recette
+router.get('/create', fileUploader.single('image'), (req, res, next) => {
+  res.render('profile/create-recipe')
+})
 
+//POST route pour traiter les données du formulaire
+router.post('/create', fileUploader.single('image'), (req, res, next) => {
+  const {title, readyInMinutes, ingredient1, step} = req.body;
+  let ingredients = [];
+  let ingredientPromises = [];
+  ingredientPromises.push(Ingredient.findOne({name: ingredient1}, (err, ingredient)=> {
+    if (!ingredient) {
+      ingredientPromises.push(Ingredient.create({name: ingredient1})
+        .then(createdIngredient => {ingredients.push(createdIngredient)}));
+    } else {
+      ingredients.push(ingredient);
+    }
+  }));
+  let objInstructions = [{name: 'instructions', steps : [{ number:1, step: step }]}];
+  let image;
 
-///search?city=Barcelona&start-date=2018-01-18
+    if (req.file) {
+      image = req.file.path;
+    }
+
+    Promise.all(ingredientPromises)
+    .then(responses => {
+      Recipe.create({
+        title,
+        readyInMinutes,
+        ingredients: ingredients,
+        analyzedInstructions: objInstructions,
+        image
+      })
+      .then(recipeUser => {
+        res.render('profile/affichage-my-recipe', {
+          recipe:recipeUser
+        })
+      }).catch(err => {
+        next(err)
+      })
+    })
+})
 
 
 
