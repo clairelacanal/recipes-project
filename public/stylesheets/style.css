@@ -298,7 +298,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  mmargin-top: 5em;
+  margin-top: 5em;
   height: 3em;
   width: 60em;
   margin-left: auto;
@@ -612,28 +612,38 @@ form {
   align-items: center;
   justify-content: space-between; }
 
-.add-things a {
-  margin-left: 2em;
-  color: inherit;
-  text-decoration: underline; }
-
-.add-things a:hover {
-  color: inherit;
-  text-decoration: underline; }
-
 .add-things input {
-  margin-left: 7em; }
+  margin-left: 6.5em; }
 
 .add-things-ing {
-  margin-left: 10em; }
+  margin-left: 9.5em; }
 
-.add-things-ing a {
-  margin-left: 2em;
-  color: inherit;
-  text-decoration: underline; }
+.container-ingredient {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
 
-.add-things-ing a:hover {
+.container-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.container-ingredient a {
   color: inherit;
-  text-decoration: underline; }
+  text-decoration: underline;
+  margin-left: 2em; }
+
+.container-ingredient a:hover {
+  color: inherit; }
+
+.container-step a {
+  color: inherit;
+  text-decoration: underline;
+  margin-left: 2em; }
+
+.container-step a:hover {
+  color: inherit; }
 
 /*# sourceMappingURL=style.css.map */
