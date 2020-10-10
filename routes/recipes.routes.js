@@ -3,6 +3,7 @@ const router  = express.Router();
 const Recipe = require('../models/Recipe.model');
 const Ingredient = require('../models/Ingredients.model');
 const fileUploader = require('../configs/cloudinary.config');
+const User = require('../models/User.model');
 
 // GET route pour afficher toutes les recettes
 router.get('/recipes', (req,res,next) => {
@@ -176,8 +177,17 @@ router.post('/create', fileUploader.single('image'), (req, res, next) => {
         image
       })
       .then(recipeUser => {
-        res.render('profile/affichage-my-recipe', {
-          recipe:recipeUser
+        User.findById(req.session.userid).then((user)=> {
+          user.myRecipes.push(recipeUser);
+          let newRecipes = user.myRecipes;
+          User.findByIdAndUpdate(req.session.userid, {myRecipes:newRecipes}, {new: true})
+          .populate('myRecipes')
+          .then((myuser) => {
+            res.render('profile/my-own-recipes', {
+              recipes:myuser.myRecipes,
+              numberOfRecipes:myuser.myRecipes.length
+            })
+          })
         })
       }).catch(err => {
         next(err)
@@ -186,6 +196,36 @@ router.post('/create', fileUploader.single('image'), (req, res, next) => {
 })
 
 
+// GET route pour afficher ses recettes
+router.get('/userProfile/:id/my-own-recipes', fileUploader.single('image'), (req, res, next) => {
+    User.findById(req.params.id)
+    .populate('myRecipes')
+    .then((user) => {
+      res.render('profile/my-own-recipes', {
+        recipes:user.myRecipes,
+        numberOfRecipes:user.myRecipes.length
+      }) 
+    }).catch(err => {
+      next(err)
+})
+})
+
+//POST route pour delete mes propres recettes
+router.post('/recipes/:id/delete',(req,res,next)=> {
+  Recipe.findByIdAndDelete(req.params.id).then(recipe => {
+    User.findById(req.session.userid)
+    .populate('myRecipes')
+    .then((user) => {
+      console.log(user)
+      res.render('profile/my-own-recipes', {
+        recipes:user.myRecipes,
+        numberOfRecipes:user.myRecipes.length
+      }) 
+    }).catch(err => {
+      next(err)
+  })
+  }).catch(err => next(err))
+})
 
 
 
