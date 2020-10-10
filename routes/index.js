@@ -6,9 +6,7 @@ const Ingredient = require('../models/Ingredients.model')
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index');
-
-  
+  res.render('index', {layout:false});
 })
 
 

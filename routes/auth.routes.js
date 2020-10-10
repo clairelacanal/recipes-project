@@ -34,7 +34,7 @@ router.post('/signup',fileUploader.single('image'),(req, res, next) => {
       photoUser,
     })
       .then(userFromDB => {
-        res.render("profile/account-created")
+        res.render("/userProfile")
       })
       .catch(err => {
         next(err);
@@ -93,12 +93,10 @@ router.post("/login", (req, res, next) => {
 })
 
 
-// ROUTES LOG OUT
-
-//router.post('/logout', (req, res) => {
-  //req.session.destroy();
-  //res.redirect('/');
-//});
+router.get('/logout', (req, res) => {
+  req.session.destroy();
+  res.redirect('/');
+});
 
 //router.get('/userProfile', routeGuard, (req, res) => {
   //res.render('users/user-profile');

@@ -54,8 +54,13 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
+// to have user evrywhere
+app.use(function (req, res, next) {
+  res.locals.user = req.session.user; // dans chq template, on dispose de `user`
+  next()
+})
 
-
+// routers 
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
