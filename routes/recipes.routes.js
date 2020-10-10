@@ -63,13 +63,11 @@ router.post('/', (req,res,next) => {
 
 // POST route pour filtrer les recettes 
 
-// Créer un formulaire des différents filtres possibles ? // ou mettre les filtres dans l'utrl puis les récupérer ? 
-// récupérer les infos du formulaire en req.body
-// faire passer les données dans un .find() pour afficher seulement les recettes 
 
 router.get('/search', (req, res, next) => {
+  
   let queries = Object.keys(req.query);
-  console.log(queries)
+  console.log(queries) // [ 'french', 'main' ]
 
   let diets = [];
   let cuisines = [];
@@ -77,45 +75,35 @@ router.get('/search', (req, res, next) => {
   
   queries.forEach(el => {
     console.log(el)
-    if (el === "vegetarian" || "vegan" || "gluten" || "dairy") {
+    if (el === "lacto ovo vegetarian" || el ==="vegan" || el ==="gluten free" || el ==="dairy free") {
       diets.push(el);
-      console.log("diets:", diets);
-    } else if (el === "main" || "side" || "dessert" || "appetizer" || "salad" || "breakfast" || "soup") {
+      //console.log("diets:", diets);
+    } else if (el === "main course" || el === "main dish"|| el === "side dish" || el === "dessert" || el === "appetizer" || el === "salad" || el ==="breakfast" || el === "soup" || el ==="condiment") {
       dishTypes.push(el)
-      console.log("dishtypes:", dishTypes);
     } else {
       cuisines.push(el)
-      console.log("cuisines:", cuisines);
+      //console.log("cuisines:", cuisines);
     }
-  })
+  });
 
-  //diets operation to fit with the database
-  // ['vegetarian']
-  /*
-      "vegetarian": false,
-      "vegan": false,
-      "glutenFree": false,
-      "dairyFree": true,
-  */ 
- 
 
-  
-  Recipe.find({$and: [ 
-    {dishTypes : {$in : dishTypes }}, 
+
+
+
+  Recipe.find({$or : [
+    {dishTypes : {$in : dishTypes }},
     {cuisines : {$in : cuisines}},
-    
-
-    ] })
+    {diets: {$in: diets}}
+    ]})
 
     .then(recipesFromDB => {
-      res.render('recipes/all-recipes-filter'), {
-        recipes:recipesFromDB
-      }
-    })
+      console.log("recipes from DBbbbb",recipesFromDB);
+      res.render('recipes/all-recipes-filter', {
+        recipes: recipesFromDB
+      })
+    }).catch(err => console.log(err))
   
 })
-//.catch(err => console.log(err))
-
 
 //GET route pour afficher le détail d'une recette
 router.get('/recipes/:id/detail-recipe', (req, res, next) => {

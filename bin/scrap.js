@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 // 1. Créer la liste d'ingrédients 
-const ingredients = ['lettuce', 'meat', 'orange'];
+const ingredients = ['pasta', 'carrots', 'chickpea', 'chocolate', 'fish'];
 
 // 2. API KEY 
 const key = 'e5d276a1ba1049efb47cfbcfee13134a'//process.env.APIKEY
