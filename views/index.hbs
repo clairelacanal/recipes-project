@@ -1,76 +1,87 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/style.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
 <section id="homepage-container">
-  <header>
-    {{> navbar}}
-  </header>
-  <div class="container-research">
-    <div class="container-titles">
-      <h2>Stop Wasting</h2>
-      <h1>Start Cooking</h1>
-    </div>
-    <div class="presentation">
-      <p>Stuff lying around in your fridge and you don't know what to do with it ? </p>
-      <p>Enter the list of ingredients and find 100% Zero Waste recipes !</p>
-    </div>
-    <div class="bar-search">
-      <form action="/" method="POST" autocomplete="off">
-          <input type="search" id="ingredients-search-1" name="ingredient1" placeholder="Chicken">
-          <div id="suggestions-input-1">
+    </header>
+      {{#if user}}
+        <div class="navbar">
+          <div class="logo">
+            <a href="/"><img src="/images/logo.png" alt="logo"></a>
           </div>
-        <input type="search" id="ingredients-search-2" name="ingredient2" placeholder="Tomatoes">
-        <div id="suggestions-input-2"></div>
-        <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Egg">
-        <div id="suggestions-input-3"></div>
-        <button id="btn-search">search</button>
-        
-  
-      </form>
-      <p>First visit? Think about <a href="/signup">signing up!</a> </p>
-    </div>
-  </div>
-</section>
-<!--
-<div class="container-recipes-posted">
-  <h3>Last Recipes Posted</h3>
-    <div class="cards">
-        <div class="card-deck">
-            <div class="card">
-              <img src="../images/photo-food1.jpeg" class="card-img-top" alt="...">
-              <div class="back">
-                <p class="card-title">Name of recipe</p>
-                <p class="card-text">30 min</p>
-                <small class="text-muted">Last updated 3 mins ago</small>
+          <nav>
+            <ul>
+              <li><a href="/recipes">Recipes</a></li>
+              <li><a href="/">Create</a></li>
+              <li><a href="/userProfile"><img src="/images/user.png" alt="user" class="nav-img"></a></li>
+              <li><a href="/logout"><img src="/images/logout.png" alt="" class="nav-img"></a></li>
+            </ul>
+          </nav>
+        </div>
+
+      {{else}}
+        <div class="navbar">
+          <div class="logo">
+            <a href="/"><img src="/images/logo.png" alt="logo"></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/recipes">Recipes</a></li>
+              <li><a href="/create">Create</a></li>
+              <li><a href="/signup">Sign Up</a></li>
+              <li><a href="/login">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+      {{/if}}
+
+      <div class="container-research">
+        <div class="container-titles">
+          <h2>Stop Wasting</h2>
+          <h1>Start Cooking</h1>
+        </div>
+        <div class="presentation">
+          <p>Stuff lying around in your fridge and you don't know what to do with it ? </p>
+          <p>Enter the list of ingredients and find 100% Zero Waste recipes !</p>
+        </div>
+        <div class="bar-search">
+          <form action="/" method="POST" autocomplete="off">
+              <input type="search" id="ingredients-search-1" name="ingredient1" placeholder="Chicken">
+              <div id="suggestions-input-1">
               </div>
-            </div>
-            <div class="card">
-              <img src="../images/photo-food2.jpeg" class="card-img-top" alt="...">
-              <div class="back">
-                <p class="card-title">Name of recipe</p>
-                <p class="card-text">30 min</p>
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../images/photo-food3.jpeg" class="card-img-top" alt="...">
-              <div class="back">
-                <p class="card-title">Name of recipe</p>
-                <p class="card-text">30 min</p>
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../images/photo-food4.jpeg" class="card-img-top" alt="...">
-              <div class="back">
-                <p class="card-title">Name of recipe</p>
-                <p class="card-text">30 min</p>
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-      </div>     
-    </div>
-</div>
--->
-</div>
+            <input type="search" id="ingredients-search-2" name="ingredient2" placeholder="Tomatoes">
+            <div id="suggestions-input-2"></div>
+            <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Egg">
+            <div id="suggestions-input-3"></div>
+            <button id="btn-search">search</button>
+          </form>
+          <p>First visit? Think about <a href="/signup">signing up!</a> </p>
+        </div>
+      </div>
+    </header>
+  </section>
+  <footer>
+      <div class="elements-footer">
+        <p><a href="/ingredients-index">Index of ingredients</a></p>
+        <p>About us</p>
+        <p>Contact</p>
+      </div>
+    </footer>
+
+
+  <script src="/javascripts/autocompletion.js"></script>
+
+
 
 
 
