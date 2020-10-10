@@ -34,7 +34,7 @@ router.post('/signup',fileUploader.single('image'),(req, res, next) => {
       photoUser,
     })
       .then(userFromDB => {
-        res.render("/userProfile")
+        res.render("profile/account-created")
       })
       .catch(err => {
         next(err);
