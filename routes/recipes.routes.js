@@ -285,6 +285,32 @@ router.post('/recipes/:id/delete',(req,res,next)=> {
 
 
 
+//GET route - Affichage du formulaire pour editer
+router.get('/recipes/:id/edit', (req, res, next) => {
+  Recipe.findById(req.params.id).then((oneRecipe) => {
+    res.render('profile/my-recipes-edit', {
+      recipe:oneRecipe
+    })
+  }).catch(err => next(err))
+})
+
+//POST route - Traitement du formulaire
+router.post('/recipes/:id/edit', (req, res, next) => {
+
+  Recipe.findByIdAndUpdate(req.params.id, {
+      title: req.body.title,
+      readyInMinutes: req.body.readyInMinutes,
+      ingredient1: req.body.ingredient1,
+      step1: req.body.step1,
+      image: req.body.image
+  }, {new: true}).then((recipeUpdated) => {
+      res.redirect(`/profile/${recipeUpdated.id}`)
+  }).catch(err => next(err))
+})
+
+
+
+
 
 
 

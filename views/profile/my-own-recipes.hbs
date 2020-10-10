@@ -12,8 +12,8 @@
           <p class="card-text">{{readyInMinutes}} min</p>
           {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">EN SAVOIR PLUS</a></button>{{/if}}
           <div class="modify-and-delete">
-            <a href="">MODIFY</a>
-             <form action="/recipes/{{id}}/delete" method="POST"><button>DELETE</button></form>
+            <a href="/recipes/{{id}}/edit">MODIFY</a>
+            <form action="/recipes/{{id}}/delete" method="POST"><button>DELETE</button></form>
           </div>
         </div>
     </div>

@@ -1,21 +1,21 @@
 <section id="Edit-your-recipe">
   <h1>EDIT YOUR RECIPE</h1>
   <div class="formulaire-edit-recipe">
-    <form action="/recipes/{{recipes.id}}/edit" method="POST" enctype="multipart/form-data">
+    <form action="/recipes/{{recipe.id}}/edit" method="POST" enctype="multipart/form-data">
     
     <label class="form-labels">
-      <input class="form-input" type="text" name="title" placeholder="Name of the recipe ">
+      <input class="form-input" type="text" name="title" value="{{recipe.title}}" placeholder="Name of the recipe ">
     </label>
 
     <label class="form-labels">
-      <input class="form-input" type="text" name="readyInMinutes" placeholder="Time to cook">
+      <input class="form-input" type="text" name="readyInMinutes" value="{{recipe.readyInMinutes}}" placeholder="Time to cook">
     </label>
 
     <div class="container-ingredient">
       <div id="all-ingredients">
       <div class="add-things-ing">
       <label class="form-labels" id="input-parent">
-        <input class="form-input" type="text" name="ingredient1" placeholder="Ingredient 1" >
+        <input class="form-input" type="text" name="ingredient1" value="{{recipe.ingredient1}}" placeholder="Ingredient 1" >
       </label>
     </div>
     </div>
