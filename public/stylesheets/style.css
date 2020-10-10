@@ -50,7 +50,7 @@ nav ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 600px;
+  width: 500px;
   margin: 0 0.8em 0 0; }
 
 nav ul li {
@@ -71,6 +71,9 @@ nav ul li a:hover {
   color: var(--rosefonce);
   font-weight: 700;
   text-transform: uppercase; }
+
+.nav-img {
+  width: 25px; }
 
 /*CONTAINER RESEARCH*/
 #homepage-container {

@@ -11,6 +11,38 @@
 </head>
 <body>
 
+
+  {{#if user}}
+    <div class="navbar">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/recipes">Recipes</a></li>
+          <li><a href="/">Create</a></li>
+          <li><a href="/userProfile"><img src="/images/user.png" alt="user" class="nav-img"></a></li>
+          <li><a href="/logout"><img src="/images/logout.png" alt="" class="nav-img"></a></li>
+        </ul>
+      </nav>
+    </div>
+
+  {{else}}
+    <div class="navbar">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/recipes">Recipes</a></li>
+          <li><a href="/create">Create</a></li>
+          <li><a href="/signup">Sign Up</a></li>
+          <li><a href="/login">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+  {{/if}}
+
   {{{body}}}
 
   <footer>
@@ -22,9 +54,7 @@
   </footer>
   
 
-  <script src="/javascripts/autocompletion.js"></script>
   <script src="/javascripts/script.js"></script>
-
 
 </body>
 </html>
