@@ -1,7 +1,6 @@
 <section id="post-your-recipe">
   <h1>POST YOUR RECIPE</h1>
-
-  <div class="formulaire">
+  <div class="formulaire-create-recipe">
     <form action="/create" method="POST" enctype="multipart/form-data">
     
     <label class="form-labels">
@@ -12,13 +11,29 @@
       <input class="form-input" type="text" name="readyInMinutes" placeholder="Time to cook">
     </label>
 
-    <label class="form-labels">
-      <input class="form-input" type="text" name="ingredient1" placeholder="Ingredient 1" >
-    </label>
-
-    <label class="form-labels">
-      <input class="form-input" type="text" name="step" placeholder="Step 1" >
-    </label>
+    <div class="container-ingredient">
+      <div id="all-ingredients">
+      <div class="add-things-ing">
+      <label class="form-labels" id="input-parent">
+        <input class="form-input" type="text" name="ingredient1" placeholder="Ingredient 1" >
+      </label>
+    </div>
+    </div>
+    <a href="javascript: addIngredient()">Add an ingredient</a>
+    </div>
+    
+    
+    <div class="container-step">
+      <div id="all-steps">
+      <div class="add-things">
+        <label class="form-labels">
+          <input class="form-input" type="text" name="step1" placeholder="Step 1" >
+        </label>
+      </div>
+    </div>
+    <a href="javascript: addStep()">Add a step</a>
+    </div>
+    
     
     <label class="form-labels">
         <input class="form-input" type="file" name="image" class="form-control-file" placeholder="Download a photo" />
@@ -26,6 +41,15 @@
 
     <button>SAVE THE RECIPE</button>
   </form>
+
   </div> 
 </section>
+
+
+
+	
+
+
+
+
 

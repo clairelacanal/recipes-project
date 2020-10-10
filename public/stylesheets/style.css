@@ -301,7 +301,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  mmargin-top: 5em;
+  margin-top: 5em;
   height: 3em;
   width: 60em;
   margin-left: auto;
@@ -592,5 +592,61 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em; }
+
+/*FORMULAIRE CREATE RECIPE*/
+#post-your-recipe {
+  height: 69vh; }
+
+#post-your-recipe h1 {
+  margin-top: 3em;
+  margin-left: 2em;
+  color: var(--rouge); }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em; }
+
+.add-things {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.add-things input {
+  margin-left: 6.5em; }
+
+.add-things-ing {
+  margin-left: 9.5em; }
+
+.container-ingredient {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.container-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.container-ingredient a {
+  color: inherit;
+  text-decoration: underline;
+  margin-left: 2em; }
+
+.container-ingredient a:hover {
+  color: inherit; }
+
+.container-step a {
+  color: inherit;
+  text-decoration: underline;
+  margin-left: 2em; }
+
+.container-step a:hover {
+  color: inherit; }
 
 /*# sourceMappingURL=style.css.map */

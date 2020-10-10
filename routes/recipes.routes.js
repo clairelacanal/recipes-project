@@ -81,18 +81,85 @@ router.get('/create', fileUploader.single('image'), (req, res, next) => {
 
 //POST route pour traiter les données du formulaire
 router.post('/create', fileUploader.single('image'), (req, res, next) => {
-  const {title, readyInMinutes, ingredient1, step} = req.body;
+  const {title, readyInMinutes, ingredient1, ingredient2, ingredient3, ingredient4,
+    ingredient5, step1, step2, step3, step4, step5} = req.body;
+    
   let ingredients = [];
   let ingredientPromises = [];
-  ingredientPromises.push(Ingredient.findOne({name: ingredient1}, (err, ingredient)=> {
-    if (!ingredient) {
-      ingredientPromises.push(Ingredient.create({name: ingredient1})
-        .then(createdIngredient => {ingredients.push(createdIngredient)}));
-    } else {
-      ingredients.push(ingredient);
-    }
-  }));
-  let objInstructions = [{name: 'instructions', steps : [{ number:1, step: step }]}];
+  if (ingredient1) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient1}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient1})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient2) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient2}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient2})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient3) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient3}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient3})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient4) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient4}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient4})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient5) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient5}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient5})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+
+  let objInstructions = [{name: 'instructions', steps : []}];
+  let steps = objInstructions[0].steps;
+  if (step1) {
+    let step1Obj = {number:1, step:step1};
+    steps.push(step1Obj)
+  }
+  if (step2) {
+    let step2Obj = {number:2, step:step2};
+    steps.push(step2Obj)
+  }
+  if (step3) {
+    let step3Obj = {number:3, step:step3};
+    steps.push(step3Obj)
+  }
+  if (step4) {
+    let step4Obj = {number:4, step:step4};
+    steps.push(step4Obj)
+  }
+  if (step5) {
+    let step5Obj = {number:5, step:step5};
+    steps.push(step5Obj)
+  }
+
   let image;
 
     if (req.file) {
@@ -117,6 +184,7 @@ router.post('/create', fileUploader.single('image'), (req, res, next) => {
       })
     })
 })
+
 
 
 
