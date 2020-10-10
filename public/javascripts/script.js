@@ -58,4 +58,3 @@ function addStep() {
   divStep.appendChild(labelStep);
 	document.getElementById('all-steps').appendChild(divStep);
 }
-
