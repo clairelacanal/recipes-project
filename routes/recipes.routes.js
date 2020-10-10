@@ -286,27 +286,166 @@ router.post('/recipes/:id/delete',(req,res,next)=> {
 
 
 //GET route - Affichage du formulaire pour editer
-router.get('/recipes/:id/edit', (req, res, next) => {
-  Recipe.findById(req.params.id).then((oneRecipe) => {
+router.get('/recipes/:id/edit', fileUploader.single('image'), (req, res, next) => {
+  Recipe.findById(req.params.id)
+  .populate('ingredients')
+  .then((oneRecipe) => {
+    let ingredient1;
+    if (oneRecipe.ingredients.length>0) {
+      ingredient1 = oneRecipe.ingredients[0].name;
+    }
+    let ingredient2;
+    if (oneRecipe.ingredients.length>1) {
+      ingredient2 = oneRecipe.ingredients[1].name;
+    }
+    let ingredient3;
+    if (oneRecipe.ingredients.length>2) {
+      ingredient3 = oneRecipe.ingredients[2].name;
+    }
+    let ingredient4;
+    if (oneRecipe.ingredients.length>3) {
+      ingredient4 = oneRecipe.ingredients[3].name;
+    }
+    let ingredient5;
+    if (oneRecipe.ingredients.length>4) {
+      ingredient5 = oneRecipe.ingredients[4].name;
+    }
+    let step1;
+    if (oneRecipe.analyzedInstructions[0].steps.length>0) {
+      step1 = oneRecipe.analyzedInstructions[0].steps[0].step;
+    }
+    let step2;
+    if (oneRecipe.analyzedInstructions[0].steps.length>1) {
+      step2 = oneRecipe.analyzedInstructions[0].steps[1].step;
+    }
+    let step3;
+    if (oneRecipe.analyzedInstructions[0].steps.length>2) {
+      step3 = oneRecipe.analyzedInstructions[0].steps[2].step;
+    }
+    let step4;
+    if (oneRecipe.analyzedInstructions[0].steps.length>3) {
+      step4 = oneRecipe.analyzedInstructions[0].steps[3].step;
+    }
+    let step5;
+    if (oneRecipe.analyzedInstructions[0].steps.length>4) {
+      step5 = oneRecipe.analyzedInstructions[0].steps[4].step;
+    }
     res.render('profile/my-recipes-edit', {
-      recipe:oneRecipe
+      recipe:oneRecipe,
+      ingredient1,
+      ingredient2,
+      ingredient3,
+      ingredient4,
+      ingredient5,
+      step1,
+      step2,
+      step3,
+      step4,
+      step5
     })
   }).catch(err => next(err))
 })
 
 //POST route - Traitement du formulaire
-router.post('/recipes/:id/edit', (req, res, next) => {
+router.post('/recipes/:id/edit', fileUploader.single('image'), (req, res, next) => {
+  let image;
+  if (req.file) {
+    image = req.file.path;
+  }
+  const {ingredient1, ingredient2, ingredient3, ingredient4, ingredient5, 
+    step1, step2, step3, step4, step5, title, readyInMinutes} = req.body;
 
-  Recipe.findByIdAndUpdate(req.params.id, {
-      title: req.body.title,
-      readyInMinutes: req.body.readyInMinutes,
-      ingredient1: req.body.ingredient1,
-      step1: req.body.step1,
-      image: req.body.image
-  }, {new: true}).then((recipeUpdated) => {
-      res.redirect(`/profile/${recipeUpdated.id}`)
-  }).catch(err => next(err))
-})
+  let ingredients = [];
+  let ingredientPromises = [];
+  if (ingredient1) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient1}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient1})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient2) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient2}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient2})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient3) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient3}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient3})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient4) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient4}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient4})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+  if (ingredient5) {
+    ingredientPromises.push(Ingredient.findOne({name: ingredient5}, (err, ingredient)=> {
+      if (!ingredient) {
+        ingredientPromises.push(Ingredient.create({name: ingredient5})
+          .then(createdIngredient => {ingredients.push(createdIngredient)}));
+      } else {
+        ingredients.push(ingredient);
+      }
+    }));
+  }
+
+  let objInstructions = [{name: 'instructions', steps : []}];
+  let steps = objInstructions[0].steps;
+  if (step1) {
+    let step1Obj = {number:1, step:step1};
+    steps.push(step1Obj)
+  }
+  if (step2) {
+    let step2Obj = {number:2, step:step2};
+    steps.push(step2Obj)
+  }
+  if (step3) {
+    let step3Obj = {number:3, step:step3};
+    steps.push(step3Obj)
+  }
+  if (step4) {
+    let step4Obj = {number:4, step:step4};
+    steps.push(step4Obj)
+  }
+  if (step5) {
+    let step5Obj = {number:5, step:step5};
+    steps.push(step5Obj)
+  }
+
+  Promise.all(ingredientPromises)
+    .then(responses => {
+      console.log(JSON.stringify(ingredients));
+    Recipe.findByIdAndUpdate(req.params.id, {
+        title,
+        readyInMinutes,
+        ingredients,
+        analyzedInstructions: objInstructions,
+        image
+      }, {new: true}).then((recipeUpdated) => {
+        let userid = req.session.userid;
+        res.redirect('/userProfile/'+ userid + '/my-own-recipes')
+    }).catch(err => next(err))
+  })
+  })
 
 
 

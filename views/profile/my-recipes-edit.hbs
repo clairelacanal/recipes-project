@@ -13,11 +13,39 @@
 
     <div class="container-ingredient">
       <div id="all-ingredients">
-      <div class="add-things-ing">
-      <label class="form-labels" id="input-parent">
-        <input class="form-input" type="text" name="ingredient1" value="{{recipe.ingredient1}}" placeholder="Ingredient 1" >
-      </label>
-    </div>
+        <div class="add-things-ing">
+          <label class="form-labels" id="input-parent">
+            <input class="form-input" type="text" name="ingredient1" value="{{ingredient1}}" placeholder="Ingredient 1" >
+          </label>
+        </div>
+        {{#if ingredient2}}
+        <div class="add-things-ing">
+          <label class="form-labels" id="input-parent">
+            <input class="form-input" type="text" name="ingredient2" value="{{ingredient2}}" placeholder="Ingredient 1" >
+          </label>
+        </div>
+        {{/if}}
+        {{#if ingredient3}}
+        <div class="add-things-ing">
+          <label class="form-labels" id="input-parent">
+            <input class="form-input" type="text" name="ingredient3" value="{{ingredient3}}" placeholder="Ingredient 1" >
+          </label>
+        </div>
+        {{/if}}
+        {{#if ingredient4}}
+        <div class="add-things-ing">
+          <label class="form-labels" id="input-parent">
+            <input class="form-input" type="text" name="ingredient4" value="{{ingredient4}}" placeholder="Ingredient 1" >
+          </label>
+        </div>
+        {{/if}}
+        {{#if ingredient5}}
+        <div class="add-things-ing">
+          <label class="form-labels" id="input-parent">
+            <input class="form-input" type="text" name="ingredient5" value="{{ingredient5}}" placeholder="Ingredient 1" >
+          </label>
+        </div>
+        {{/if}}
     </div>
     <a href="javascript: addIngredient()">Add an ingredient</a>
     </div>
@@ -25,11 +53,39 @@
     
     <div class="container-step">
       <div id="all-steps">
-      <div class="add-things">
-        <label class="form-labels">
-          <input class="form-input" type="text" name="step1" value="{{recipe.step1}}" placeholder="Step 1" >
-        </label>
-      </div>
+        <div class="add-things">
+          <label class="form-labels">
+            <input class="form-input" type="text" name="step1" value="{{step1}}" placeholder="Step 1" >
+          </label>
+        </div>
+        {{#if step2}}
+        <div class="add-things">
+          <label class="form-labels">
+            <input class="form-input" type="text" name="step2" value="{{step2}}" placeholder="Step 2" >
+          </label>
+        </div>
+        {{/if}}
+        {{#if step3}}
+        <div class="add-things">
+          <label class="form-labels">
+            <input class="form-input" type="text" name="step3" value="{{step3}}" placeholder="Step 3" >
+          </label>
+        </div>
+        {{/if}}
+        {{#if step4}}
+        <div class="add-things">
+          <label class="form-labels">
+            <input class="form-input" type="text" name="step4" value="{{step4}}" placeholder="Step 4" >
+          </label>
+        </div>
+        {{/if}}
+        {{#if step5}}
+        <div class="add-things">
+          <label class="form-labels">
+            <input class="form-input" type="text" name="step5" value="{{step5}}" placeholder="Step 5" >
+          </label>
+        </div>
+        {{/if}}
     </div>
     <a href="javascript: addStep()">Add a step</a>
     </div>
