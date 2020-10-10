@@ -593,6 +593,9 @@ button {
   margin-right: auto;
   margin-bottom: 3em; }
 
+#details-recipes img {
+  width: 30px; }
+
 /*FORMULAIRE CREATE RECIPE*/
 #post-your-recipe {
   height: 69vh; }
@@ -602,7 +605,7 @@ button {
   margin-left: 2em;
   color: var(--rouge); }
 
-form {
+.formulaire-create-recipe form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -648,5 +651,34 @@ form {
 
 .container-step a:hover {
   color: inherit; }
+
+/*RECIPES FILTERS*/
+#recipes-filter {
+  margin: 20px 10px 0px 40px; }
+
+#recipes-filter p {
+  font-family: var(--cabin);
+  color: var(--vertfonce);
+  font-size: 1.5em;
+  margin: 0;
+  padding: 20px 0px 5px 0px;
+  font-weight: 700; }
+
+#recipes-filter div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-left: 10px; }
+
+#recipes-filter input {
+  width: auto;
+  font-family: var(--roboto); }
+
+#recipes-filter label {
+  margin: 0;
+  padding-left: 10px; }
+
+#recipes-filter button {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
