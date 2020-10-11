@@ -447,6 +447,20 @@ router.post('/recipes/:id/edit', fileUploader.single('image'), (req, res, next) 
   })
   })
 
+// GET route pour afficher les recettes favorites de la base de données 
+router.get('/userProfile/:id/favorite-recipes', fileUploader.single('image'), (req, res, next) => {
+  User.findById(req.params.id)
+  .populate('myRecipes')
+  .then((user) => {
+    res.render('profile/my-own-recipes', {
+      recipes:user.myRecipes,
+      numberOfRecipes:user.myRecipes.length
+    }) 
+  }).catch(err => {
+    next(err)
+})
+})
+
 
 
 
