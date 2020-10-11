@@ -25,6 +25,10 @@ body {
   margin: 0px;
   font-family: var(--roboto);
   background: linear-gradient(246deg, rgba(231,244,1,0.4458158263305322) 0%, rgba(255,255,255,1) 12%);
+  background-repeat: no-repeat;
+  height:100vh;
+  display:flex; 
+  flex-direction:column; 
 }
 
 h2{
@@ -85,9 +89,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-  ccolor: var(--rosefonce);
-  ffont-weight: 700;
-  ttext-transform: uppercase;
+  color: var(--vertfonce);
 }
 
 .nav-img {
@@ -503,6 +505,7 @@ nav ul li a:hover {
 ##        #######   #######     ##    ######## ##     ## */
 footer {
   background-color: var(--rosefonce);
+  margin-top:auto; 
 }
 
 .elements-footer {
@@ -661,6 +664,7 @@ button {
   display:flex;
   flex-direction:column;
   align-content:center;
+  align-items: center;
 }
 
 #account-section h2 {
@@ -791,6 +795,10 @@ button {
 ##    ## ##          ##       ##     ##  ##   ### ##    ##  ##    ## 
  ######  ########    ##       ##    #### ##    ##  ######    ######   */
 
+#signup-section-settings {
+   height:85vh;
+}
+
 #signup-section-settings form {
   display: flex;
   flex-direction: column;
@@ -804,13 +812,14 @@ button {
 }
 
 #signup-section-settings h2 {
-  color: var(--rouge);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-left: 5em;
-  padding-top: 3em;
-  font-size: 35px; 
+  text-align:center;
+  padding:40px 40px 20px 40px;
+  
 }
+
+
+
+
 
 /*
 ########  ######## ########    ###    #### ##        ######     ########  ########  ######  #### ########  ########  ######  
