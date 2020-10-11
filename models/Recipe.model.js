@@ -16,7 +16,8 @@ const recipeSchema = new Schema({
 	dairyFree: Boolean,
 	dishTypes: [String],
 	cuisines: [String],
-  review: [ { type : Schema.Types.ObjectId, ref: 'Comment' } ] 
+	diets: [String]
+  //review: [ { type : Schema.Types.ObjectId, ref: 'Comment' } ] 
 },
 {		
     timestamps: true		
