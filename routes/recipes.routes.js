@@ -62,8 +62,6 @@ router.post('/', (req,res,next) => {
 })
 
 // POST route pour filtrer les recettes 
-
-
 router.get('/search', (req, res, next) => {
   
   let queries = Object.keys(req.query);
@@ -85,10 +83,6 @@ router.get('/search', (req, res, next) => {
       //console.log("cuisines:", cuisines);
     }
   });
-
-
-
-
 
   Recipe.find({$or : [
     {dishTypes : {$in : dishTypes }},

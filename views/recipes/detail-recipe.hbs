@@ -1,54 +1,68 @@
-<section id="details-recipes">
-  <div class="name-of-recipe">
-    <h1>{{recipes.title}}</h1>
-    <div class="logos">
-      <img src="/images/heart.png" alt="logo-heart" id="heart">
+  <section id="details-recipes">
+    <div class="name-of-recipe">
+      <h2>{{recipes.title}}</h2>
+      <div class="logos">
+        <img src="/images/heart.png" alt="logo-heart" id="heart">
+      </div>
     </div>
-  </div>
 
 
-  <div class="infos">
-    <h5>Infos :</h5>
-    <ul>
-      <li>{{recipes.readyInMinutes}} min</li>
-      {{#if recipes.servings}}<li>{{recipes.servings}} persons</li>{{/if}}
-      {{#if recipes.vegetarian }}<li>Vegetarian </li>{{/if}}
-      {{#if recipes.vegan}}<li>Vegan</li>{{/if}}
-      {{#if recipes.glutenFree}}<li>Gluten Free</li>{{/if}}
-      {{#if recipes.dairyFree}}<li>Dairy Free</li>{{/if}}
-    </ul>
-  </div>
-
-  <div class="ingredients-used">
-    <h5>Ingredients :</h5>
-    <div class="ingredients">
-      {{#each recipes.ingredients}}
+    <div class="infos">
       <ul>
-        <li>{{this.name}}</li>
+        <li>{{recipes.readyInMinutes}} min</li>
+        {{#if recipes.servings}}
+        <li>-</li>
+        <li>{{recipes.servings}} persons</li>{{/if}}
+        {{#if recipes.vegetarian }}
+        <li>-</li>
+        <li>Vegetarian </li>{{/if}}
+        {{#if recipes.vegan}}
+        <li>-</li>
+        <li>Vegan</li>{{/if}}
+        {{#if recipes.glutenFree}}
+        <li>-</li>
+        <li>Gluten Free</li>{{/if}}
+        {{#if recipes.dairyFree}}
+        <li>-</li>
+        <li>Dairy Free</li>{{/if}}
+      </ul>
+    </div>
+
+    <div id="img-container">
+      <div class="ingredients-used">
+        <h5>Ingredients</h5>
+        <div class="ingredients">
+          {{#each recipes.ingredients}}
+          <div>
+            <img src="{{this.image}}" alt="">
+            <p>{{this.name}}</p>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <img id="photo-recipe" src="{{recipes.image}}" alt="">
+    </div>
+
+    {{#if recipes.analyzedInstructions}}
+    <div class="recipe">
+      <h5>Instructions :</h5>
+      {{#each recipes.analyzedInstructions}}
+      <ul>
+        {{#each this.steps}}
+        <ol>
+          <b>{{this.number}}</b> - {{this.step}}
+        </ol>
+        {{/each}}
       </ul>
       {{/each}}
     </div>
-  </div>
-
-  {{#if recipes.analyzedInstructions}}
-  <div class="recipe">
-    <h5>Instructions :</h5>
-    {{#each recipes.analyzedInstructions}}
-    <ul>
-      {{#each this.steps}}
-      <ol>
-        <b>{{this.number}}</b> - {{this.step}}
-      </ol>
-      {{/each}}
-    </ul>
-    {{/each}}
-  </div>
-  {{/if}}
-
-  <div class="comment">
-    <h5>Comment :</h5>
-    <div class="comm">
-      {{recipes.comment}}
+    {{/if}}
+<!--
+    <div class="comment">
+      <h5>Comment :</h5>
+      <div class="comm">
+        {{recipes.comment}}
+      </div>
     </div>
-  </div>
-</section>
+-->
+  </section>

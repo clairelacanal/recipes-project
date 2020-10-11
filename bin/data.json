@@ -21,7 +21,7 @@
          {
             "id": 18334,
             "aisle": "Refrigerated",
-            "image": "pie-crust.jpg",
+            "image": "https://bit.ly/3iPvKV5",
             "consistency": "solid",
             "name": "pie crust",
             "original": "Easy Taco Pie",
@@ -47,7 +47,7 @@
          {
             "id": 1033,
             "aisle": "Cheese",
-            "image": "parmesan.jpg",
+            "image": "https://bit.ly/2GDf8D3",
             "consistency": "solid",
             "name": "parmesan",
             "original": "Zucchini Parmesan Frittata",
@@ -73,7 +73,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "Grilled Zucchini Lasagna",
@@ -99,7 +99,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "Zucchini Chips with Smoked Paprika",
@@ -256,7 +256,7 @@
          {
             "id": 1123,
             "aisle": "Milk, Eggs, Other Dairy",
-            "image": "egg.png",
+            "image": "https://bit.ly/30SsoKN",
             "consistency": "solid",
             "name": "eggs",
             "original": "2 organic eggs, beaten",
@@ -288,7 +288,7 @@
          {
             "id": 10018079,
             "aisle": "Bakery/Bread;Ethnic Foods;Oil, Vinegar, Salad Dressing;Baking",
-            "image": "panko.jpg",
+            "image": "https://bit.ly/3deOoVd",
             "consistency": "solid",
             "name": "panko bread crumbs",
             "original": "1-2 cups panko bread crumbs",
@@ -314,9 +314,9 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
-            "name": "zucchinis",
+            "name": "zucchini",
             "original": "4 Large green zucchinis, cut lengthwise",
             "originalString": "4 Large green zucchinis, cut lengthwise",
             "originalName": "Large green zucchinis, cut lengthwise",
@@ -378,19 +378,19 @@
                         "id": 10018079,
                         "name": "panko",
                         "localizedName": "panko",
-                        "image": "panko.jpg"
+                        "image": "https://bit.ly/3deOoVd"
                      },
                      {
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 1123,
                         "name": "egg",
                         "localizedName": "egg",
-                        "image": "egg.png"
+                        "image": "https://bit.ly/30SsoKN"
                      },
                      {
                         "id": 0,
@@ -438,7 +438,7 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      }
                   ],
                   "equipment": [
@@ -496,7 +496,7 @@
          {
             "id": 1008020,
             "aisle": "Bakery/Bread;Oil, Vinegar, Salad Dressing;Baking",
-            "image": "cornflakes.jpg",
+            "image": "https://bit.ly/3jNDQil",
             "consistency": "solid",
             "name": "cornflake crumbs",
             "original": "1/2 – 1 cup Bread crumbs or cornflake crumbs",
@@ -522,7 +522,7 @@
          {
             "id": 1117,
             "aisle": "Milk, Eggs, Other Dairy",
-            "image": "plain-yogurt.jpg",
+            "image": "https://cache.magicmaman.com/data/photo/w600_c18/xo/yaourtcitron.jpg",
             "consistency": "liquid",
             "name": "low fat yogurt",
             "original": "1/2 cup Yogurt (I used low-fat)",
@@ -554,7 +554,7 @@
          {
             "id": 2047,
             "aisle": "Spices and Seasonings",
-            "image": "salt.jpg",
+            "image": "https://bit.ly/3jP4hnL",
             "consistency": "solid",
             "name": "salt",
             "original": "1/4 teaspoon salt",
@@ -580,7 +580,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "1-2 Zucchini, cut into 3 x 1/2-inch sticks",
@@ -681,7 +681,7 @@
                         "id": 18079,
                         "name": "breadcrumbs",
                         "localizedName": "breadcrumbs",
-                        "image": "breadcrumbs.jpg"
+                        "image": "https://bit.ly/34Os9Bs"
                      },
                      {
                         "id": 2009,
@@ -693,13 +693,13 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 1116,
                         "name": "yogurt",
                         "localizedName": "yogurt",
-                        "image": "plain-yogurt.jpg"
+                        "image": "https://cache.magicmaman.com/data/photo/w600_c18/xo/yaourtcitron.jpg"
                      }
                   ],
                   "equipment": [
@@ -719,7 +719,7 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 11408,
@@ -768,7 +768,7 @@
          {
             "id": 98849,
             "aisle": "Canned and Jarred",
-            "image": "tomatoes-canned.png",
+            "image": "https://bit.ly/30V0UnH",
             "consistency": "solid",
             "name": "canned fire roasted tomatoes",
             "original": "1 14.5 oz. can FIRE ROASTED TOMATOES (regular or garlic), undrained",
@@ -804,7 +804,7 @@
          {
             "id": 11215,
             "aisle": "Produce",
-            "image": "garlic.png",
+            "image": "https://bit.ly/34HK5Oc",
             "consistency": "solid",
             "name": "garlic cloves",
             "original": "2-3 GARLIC CLOVES, minced or crushed",
@@ -836,7 +836,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "2 small ZUCCHINI, sliced into half moons",
@@ -976,7 +976,7 @@
                         "id": 1017,
                         "name": "cream cheese",
                         "localizedName": "cream cheese",
-                        "image": "cream-cheese.jpg"
+                        "image": "https://bit.ly/2SGHVsy"
                      },
                      {
                         "id": 11529,
@@ -988,7 +988,7 @@
                         "id": 11215,
                         "name": "garlic",
                         "localizedName": "garlic",
-                        "image": "garlic.png"
+                        "image": "https://bit.ly/34HK5Oc"
                      },
                      {
                         "id": 2044,
@@ -1012,7 +1012,7 @@
                         "id": 2047,
                         "name": "salt",
                         "localizedName": "salt",
-                        "image": "salt.jpg"
+                        "image": "https://bit.ly/3jP4hnL"
                      }
                   ],
                   "equipment": [
@@ -1101,7 +1101,7 @@
          {
             "id": 1159,
             "aisle": "Cheese",
-            "image": "goat-cheese.jpg",
+            "image": "https://bit.ly/3jMQiPm",
             "consistency": "solid",
             "name": "goat cheese",
             "original": "1 5-ounce log goat cheese",
@@ -1127,7 +1127,7 @@
          {
             "id": 10111549,
             "aisle": "Pasta and Rice",
-            "image": "tomato-sauce-or-pasta-sauce.jpg",
+            "image": "https://bit.ly/30OQlCL",
             "consistency": "solid",
             "name": "marinara sauce",
             "original": "1-2 cups marinara sauce",
@@ -1153,7 +1153,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "4 medium zucchini",
@@ -1178,7 +1178,7 @@
          }
       ],
       "id": 605475,
-      "title": "zucchini stuffed with goat cheese & marinara {3-ingredient }",
+      "title": "zucchini stuffed with goat cheese & marinara",
       "readyInMinutes": 18,
       "servings": 8,
       "sourceUrl": "http://www.thewickednoodle.com/stuffed-zucchini/",
@@ -1215,25 +1215,25 @@
                         "id": 10111549,
                         "name": "marinara sauce",
                         "localizedName": "marinara sauce",
-                        "image": "tomato-sauce-or-pasta-sauce.jpg"
+                        "image": "https://bit.ly/30OQlCL"
                      },
                      {
                         "id": 1159,
                         "name": "goat cheese",
                         "localizedName": "goat cheese",
-                        "image": "goat-cheese.jpg"
+                        "image": "https://bit.ly/3jMQiPm"
                      },
                      {
                         "id": 1082047,
                         "name": "kosher salt",
                         "localizedName": "kosher salt",
-                        "image": "salt.jpg"
+                        "image": "https://bit.ly/3jP4hnL"
                      },
                      {
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 0,
@@ -1316,7 +1316,7 @@
          {
             "id": 1033,
             "aisle": "Cheese",
-            "image": "parmesan.jpg",
+            "image": "https://bit.ly/2GDf8D3",
             "consistency": "solid",
             "name": "parmesan cheese",
             "original": "1/2 cup additional grated Parmesan cheese",
@@ -1346,7 +1346,7 @@
          {
             "id": 18376,
             "aisle": "Bakery/Bread;Oil, Vinegar, Salad Dressing;Baking",
-            "image": "breadcrumbs.jpg",
+            "image": "https://bit.ly/34Os9Bs",
             "consistency": "solid",
             "name": "seasoned bread crumbs",
             "original": "1/2 cup Seasoned Gluten Free Bread Crumbs",
@@ -1376,7 +1376,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "1 lb. zucchini, sliced to 1/4-inch thick",
@@ -1468,13 +1468,13 @@
                         "id": 18376,
                         "name": "seasoned breadcrumbs",
                         "localizedName": "seasoned breadcrumbs",
-                        "image": "breadcrumbs.jpg"
+                        "image": "https://bit.ly/34Os9Bs"
                      },
                      {
                         "id": 1033,
                         "name": "parmesan",
                         "localizedName": "parmesan",
-                        "image": "parmesan.jpg"
+                        "image": "https://bit.ly/2GDf8D3"
                      }
                   ],
                   "equipment": [
@@ -1500,13 +1500,13 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 18064,
                         "name": "bread",
                         "localizedName": "bread",
-                        "image": "white-bread.jpg"
+                        "image": "https://bit.ly/3iUTRlm"
                      },
                      {
                         "id": 0,
@@ -1579,7 +1579,7 @@
          {
             "id": 1026,
             "aisle": "Cheese",
-            "image": "mozzarella.png",
+            "image": "https://bit.ly/30Ry7Aq",
             "consistency": "solid",
             "name": "mozzarella cheese",
             "original": "Sliced provolone or mozzarella cheese, cut into small squares",
@@ -1611,7 +1611,7 @@
          {
             "id": 98924,
             "aisle": "Baking",
-            "image": "brown-flour.jpg",
+            "image": "https://bit.ly/2SJFTIe",
             "consistency": "solid",
             "name": "pizza mix",
             "original": "Several thin pepperoni pizza slices, cut in half",
@@ -1643,7 +1643,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "1 small zucchini (or more)",
@@ -1735,7 +1735,7 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      }
                   ],
                   "equipment": [
@@ -1773,13 +1773,13 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 1041009,
                         "name": "cheese",
                         "localizedName": "cheese",
-                        "image": "cheddar-cheese.png"
+                        "image": "https://bit.ly/3deTeBR"
                      }
                   ],
                   "equipment": [
@@ -1805,13 +1805,13 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 1041009,
                         "name": "cheese",
                         "localizedName": "cheese",
-                        "image": "cheddar-cheese.png"
+                        "image": "https://bit.ly/3deTeBR"
                      }
                   ],
                   "equipment": [
@@ -1841,13 +1841,13 @@
                         "id": 10111549,
                         "name": "marinara sauce",
                         "localizedName": "marinara sauce",
-                        "image": "tomato-sauce-or-pasta-sauce.jpg"
+                        "image": "https://bit.ly/30OQlCL"
                      },
                      {
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 0,
@@ -1887,7 +1887,7 @@
          {
             "id": 11167,
             "aisle": "Produce",
-            "image": "corn-on-the-cob.jpg",
+            "image": "https://bit.ly/36RRpJP",
             "consistency": "solid",
             "name": "fresh corn",
             "original": "1/2 cup fresh or frozen corn",
@@ -1917,7 +1917,7 @@
          {
             "id": 1006164,
             "aisle": "Pasta and Rice;Ethnic Foods",
-            "image": "salsa.jpg",
+            "image": "https://bit.ly/2GTLV6m",
             "consistency": "solid",
             "name": "picante sauce",
             "original": "1/2 cup salsa or picante sauce",
@@ -1943,7 +1943,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "1 medium zucchini, diced",
@@ -2026,7 +2026,7 @@
                         "id": 11477,
                         "name": "zucchini",
                         "localizedName": "zucchini",
-                        "image": "zucchini.jpg"
+                        "image": "https://bit.ly/33Nvx0n"
                      },
                      {
                         "id": 14412,
@@ -2062,7 +2062,7 @@
                         "id": 6164,
                         "name": "salsa",
                         "localizedName": "salsa",
-                        "image": "salsa.png"
+                        "image": "https://bit.ly/30OQlCL"
                      }
                   ],
                   "equipment": []
@@ -2096,7 +2096,7 @@
          {
             "id": 1033,
             "aisle": "Cheese",
-            "image": "parmesan.jpg",
+            "image": "https://bit.ly/2GDf8D3",
             "consistency": "solid",
             "name": "parmesan cheese",
             "original": "1/2 cup fresh grated parmesan cheese (not bottled kind)",
@@ -2130,7 +2130,7 @@
          {
             "id": 4639,
             "aisle": "Oil, Vinegar, Salad Dressing",
-            "image": "ranch-dressing.jpg",
+            "image": "https://bit.ly/3nGWcnA",
             "consistency": "liquid",
             "name": "ranch dressing",
             "original": "1/2 cup favorite brand ranch dressing",
@@ -2156,7 +2156,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "3 zucchini (roughly 1.5 lbs)",
@@ -2226,7 +2226,7 @@
          {
             "id": 1123,
             "aisle": "Milk, Eggs, Other Dairy",
-            "image": "egg.png",
+            "image": "https://bit.ly/30SsoKN",
             "consistency": "solid",
             "name": "eggs",
             "original": "2 x eggs, whisked lightly with a little salt and pepper",
@@ -2256,7 +2256,7 @@
          {
             "id": 10011282,
             "aisle": "Produce",
-            "image": "red-onion.png",
+            "image": "https://bit.ly/2FjBo47",
             "consistency": "solid",
             "name": "red onion",
             "original": "1 x red onion, finely sliced",
@@ -2288,7 +2288,7 @@
          {
             "id": 11477,
             "aisle": "Produce",
-            "image": "zucchini.jpg",
+            "image": "https://bit.ly/33Nvx0n",
             "consistency": "solid",
             "name": "zucchini",
             "original": "Male zucchini flowers",
@@ -2361,7 +2361,7 @@
          {
             "id": 10123,
             "aisle": "Meat",
-            "image": "raw-bacon.png",
+            "image": "https://bit.ly/3lzJR2m",
             "consistency": "solid",
             "name": "bacon",
             "original": "Bacon Wrapped Chicken – No one can resist this cheese stuffed, bacon wrapped chicken! Brush on some bbq sauce and serve with mashed potatoes and corn and you're in business!",
@@ -2391,7 +2391,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "Brown Sugar Pineapple Chicken – My favorite grilling recipe! I love the sweet glaze on this chicken and the pineapple is insanely good. Serve with rice or on a burger bun with lettuce!",
@@ -2423,7 +2423,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "Sheet Pan Chicken Fajitas – Easiest fajitas ever! Chop eveything up, toss in seasoning, and bake until done. Just add tortillas!",
@@ -2449,7 +2449,7 @@
          {
             "id": 20444,
             "aisle": "Pasta and Rice",
-            "image": "uncooked-white-rice.png",
+            "image": "https://bit.ly/30Pwtzi",
             "consistency": "solid",
             "name": "rice",
             "original": "Chicken & Wild Rice Casserole – Comfort food all the way! This recipe remind of of Sunday supper at my grandma's house.",
@@ -2514,19 +2514,19 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 1041009,
                         "name": "cheese",
                         "localizedName": "cheese",
-                        "image": "cheddar-cheese.png"
+                        "image": "https://bit.ly/3deTeBR"
                      },
                      {
                         "id": 10123,
                         "name": "bacon",
                         "localizedName": "bacon",
-                        "image": "raw-bacon.png"
+                        "image": "https://bit.ly/3lzJR2m"
                      }
                   ],
                   "equipment": []
@@ -2576,7 +2576,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 0,
@@ -2607,7 +2607,7 @@
                         "id": 20444,
                         "name": "rice",
                         "localizedName": "rice",
-                        "image": "uncooked-white-rice.png"
+                        "image": "https://bit.ly/30Pwtzi"
                      }
                   ],
                   "equipment": []
@@ -2626,7 +2626,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [],
@@ -2643,7 +2643,7 @@
                         "id": 1042027,
                         "name": "seasoning",
                         "localizedName": "seasoning",
-                        "image": "seasoning.png"
+                        "image": "https://bit.ly/34FAOWW"
                      },
                      {
                         "id": 18364,
@@ -2655,7 +2655,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -2687,7 +2687,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": []
@@ -2721,7 +2721,7 @@
          {
             "id": 18064,
             "aisle": "Bakery/Bread",
-            "image": "white-bread.jpg",
+            "image": "https://bit.ly/3iUTRlm",
             "consistency": "solid",
             "name": "bread",
             "original": "8 slices of your favorite bread",
@@ -2751,7 +2751,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "chicken fajitas, click for recipe",
@@ -2781,7 +2781,7 @@
          {
             "id": 93838,
             "aisle": "Cheese",
-            "image": "taleggio-cheese.jpg",
+            "image": "https://bit.ly/3k0Bnko",
             "consistency": "solid",
             "name": "havarti cheese",
             "original": "4 thicker slices of havarti cheese",
@@ -2858,7 +2858,7 @@
                         "id": 1001,
                         "name": "butter",
                         "localizedName": "butter",
-                        "image": "butter-sliced.jpg"
+                        "image": "https://bit.ly/3lETZap"
                      }
                   ],
                   "equipment": [
@@ -2884,13 +2884,13 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 18064,
                         "name": "bread",
                         "localizedName": "bread",
-                        "image": "white-bread.jpg"
+                        "image": "https://bit.ly/3iUTRlm"
                      }
                   ],
                   "equipment": []
@@ -2903,19 +2903,19 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 1041009,
                         "name": "cheese",
                         "localizedName": "cheese",
-                        "image": "cheddar-cheese.png"
+                        "image": "https://bit.ly/3deTeBR"
                      },
                      {
                         "id": 18064,
                         "name": "bread",
                         "localizedName": "bread",
-                        "image": "white-bread.jpg"
+                        "image": "https://bit.ly/3iUTRlm"
                      }
                   ],
                   "equipment": []
@@ -2928,7 +2928,7 @@
                         "id": 1041009,
                         "name": "cheese",
                         "localizedName": "cheese",
-                        "image": "cheddar-cheese.png"
+                        "image": "https://bit.ly/3deTeBR"
                      }
                   ],
                   "equipment": [
@@ -2964,7 +2964,7 @@
                         "id": 6164,
                         "name": "salsa",
                         "localizedName": "salsa",
-                        "image": "salsa.png"
+                        "image": "https://bit.ly/30OQlCL"
                      }
                   ],
                   "equipment": []
@@ -2998,7 +2998,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "21 chicken potstickers (16 oz pkg.)",
@@ -3028,7 +3028,7 @@
          {
             "id": 6970,
             "aisle": "Canned and Jarred",
-            "image": "chicken-broth.png",
+            "image": "https://bit.ly/3jJxKPQ",
             "consistency": "liquid",
             "name": "low sodium chicken broth",
             "original": "8 cups chicken broth, low sodium",
@@ -3058,7 +3058,7 @@
          {
             "id": 11291,
             "aisle": "Produce",
-            "image": "spring-onions.jpg",
+            "image": "https://bit.ly/3jRG53W",
             "consistency": "solid",
             "name": "scallions",
             "original": "1/4 cup scallions",
@@ -3118,7 +3118,7 @@
                         "id": 6194,
                         "name": "chicken broth",
                         "localizedName": "chicken broth",
-                        "image": "chicken-broth.png"
+                        "image": "https://bit.ly/3jJxKPQ"
                      },
                      {
                         "id": 99034,
@@ -3130,7 +3130,7 @@
                         "id": 11291,
                         "name": "green onions",
                         "localizedName": "green onions",
-                        "image": "spring-onions.jpg"
+                        "image": "https://bit.ly/3jRG53W"
                      }
                   ],
                   "equipment": [
@@ -3175,7 +3175,7 @@
          {
             "id": 2063,
             "aisle": "Produce",
-            "image": "rosemary.jpg",
+            "image": "https://bit.ly/3iPGFxO",
             "consistency": "solid",
             "name": "fresh rosemary",
             "original": "3 sprigs of fresh rosemary",
@@ -3205,7 +3205,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "whole chicken",
             "original": "5-6lbs. of whole chicken",
@@ -3235,7 +3235,7 @@
          {
             "id": 14084,
             "aisle": "Alcoholic Beverages",
-            "image": "red-wine.jpg",
+            "image": "https://bit.ly/36RETtL",
             "consistency": "liquid",
             "name": "wine",
             "original": "12 oz. bottle of white wine and herb marinade",
@@ -3298,7 +3298,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": []
@@ -3311,7 +3311,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -3331,25 +3331,25 @@
                         "id": 2063,
                         "name": "fresh rosemary",
                         "localizedName": "fresh rosemary",
-                        "image": "rosemary.jpg"
+                        "image": "https://bit.ly/3iPGFxO"
                      },
                      {
                         "id": 14106,
                         "name": "white wine",
                         "localizedName": "white wine",
-                        "image": "white-wine.jpg"
+                        "image": "https://bit.ly/3nEUCSU"
                      },
                      {
                         "id": 0,
                         "name": "marinade",
                         "localizedName": "marinade",
-                        "image": "seasoning.png"
+                        "image": "https://bit.ly/34FAOWW"
                      },
                      {
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [],
@@ -3398,7 +3398,7 @@
          {
             "id": 11215,
             "aisle": "Produce",
-            "image": "garlic.png",
+            "image": "https://bit.ly/34HK5Oc",
             "consistency": "solid",
             "name": "garlic cloves",
             "original": "OPTIONAL Whole garlic cloves, peeled",
@@ -3430,7 +3430,7 @@
          {
             "id": 1002044,
             "aisle": "Produce;Spices and Seasonings",
-            "image": "mixed-fresh-herbs.jpg",
+            "image": "https://bit.ly/2GO7lCj",
             "consistency": "solid",
             "name": "herbs",
             "original": "OPTIONAL Fresh herbs",
@@ -3460,7 +3460,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "whole chicken",
             "original": "1 whole chicken, small enough to fit in your slow cooker",
@@ -3539,7 +3539,7 @@
          {
             "id": 11265,
             "aisle": "Produce",
-            "image": "portabello-mushrooms.jpg",
+            "image": "https://bit.ly/3k1TFlH",
             "consistency": "solid",
             "name": "portobello mushrooms",
             "original": "1 1/2 pounds portobello mushrooms, diced",
@@ -3569,7 +3569,7 @@
          {
             "id": 2043,
             "aisle": "Spices and Seasonings",
-            "image": "turmeric.jpg",
+            "image": "https://bit.ly/33KHWlI",
             "consistency": "solid",
             "name": "turmeric",
             "original": "2 teaspoons turmeric",
@@ -3595,7 +3595,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "whole chicken",
             "original": "1 whole chicken",
@@ -3685,19 +3685,19 @@
                         "id": 11260,
                         "name": "mushrooms",
                         "localizedName": "mushrooms",
-                        "image": "mushrooms.png"
+                        "image": "https://bit.ly/36QFM5N"
                      },
                      {
                         "id": 2043,
                         "name": "turmeric",
                         "localizedName": "turmeric",
-                        "image": "turmeric.jpg"
+                        "image": "https://bit.ly/33KHWlI"
                      },
                      {
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": []
@@ -3710,13 +3710,13 @@
                         "id": 11260,
                         "name": "mushrooms",
                         "localizedName": "mushrooms",
-                        "image": "mushrooms.png"
+                        "image": "https://bit.ly/36QFM5N"
                      },
                      {
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -3736,7 +3736,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -3760,7 +3760,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": []
@@ -3800,7 +3800,7 @@
          {
             "id": 1001,
             "aisle": "Milk, Eggs, Other Dairy",
-            "image": "butter-sliced.jpg",
+            "image": "https://bit.ly/3lETZap",
             "consistency": "solid",
             "name": "butter",
             "original": "2 tbsp butter softened",
@@ -3830,7 +3830,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "1 whole chicken about 3-5 pounds",
@@ -3860,7 +3860,7 @@
          {
             "id": 1012034,
             "aisle": "Spices and Seasonings",
-            "image": "seasoning.png",
+            "image": "https://bit.ly/34FAOWW",
             "consistency": "solid",
             "name": "rub",
             "original": "2 tbsp Trader Joe's BBQ Rub and Seasoning or bbq rub",
@@ -3919,7 +3919,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -3939,7 +3939,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": []
@@ -3952,13 +3952,13 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 1065062,
                         "name": "meat",
                         "localizedName": "meat",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -3978,7 +3978,7 @@
                         "id": 1001,
                         "name": "butter",
                         "localizedName": "butter",
-                        "image": "butter-sliced.jpg"
+                        "image": "https://bit.ly/3lETZap"
                      },
                      {
                         "id": 0,
@@ -3997,19 +3997,19 @@
                         "id": 1062034,
                         "name": "barbecue seasoning",
                         "localizedName": "barbecue seasoning",
-                        "image": "seasoning.png"
+                        "image": "https://bit.ly/34FAOWW"
                      },
                      {
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 1012034,
                         "name": "dry seasoning rub",
                         "localizedName": "dry seasoning rub",
-                        "image": "seasoning.png"
+                        "image": "https://bit.ly/34FAOWW"
                      }
                   ],
                   "equipment": []
@@ -4048,7 +4048,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -4072,7 +4072,7 @@
                         "id": 1065062,
                         "name": "meat",
                         "localizedName": "meat",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [
@@ -4102,7 +4102,7 @@
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      }
                   ],
                   "equipment": [],
@@ -4140,7 +4140,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "2 cups prepared ham, tuna or chicken salad",
@@ -4170,7 +4170,7 @@
          {
             "id": 11291,
             "aisle": "Produce",
-            "image": "spring-onions.jpg",
+            "image": "https://bit.ly/3jRG53W",
             "consistency": "solid",
             "name": "green onion tops",
             "original": "Whole chives or green onion tops",
@@ -4200,7 +4200,7 @@
          {
             "id": 18069,
             "aisle": "Bakery/Bread",
-            "image": "white-bread.jpg",
+            "image": "https://bit.ly/3iUTRlm",
             "consistency": "solid",
             "name": "white sandwich bread",
             "original": "1 loaf (16 ounces) thin white sandwich bread, crusts removed",
@@ -4265,7 +4265,7 @@
                         "id": 18064,
                         "name": "bread",
                         "localizedName": "bread",
-                        "image": "white-bread.jpg"
+                        "image": "https://bit.ly/3iUTRlm"
                      }
                   ],
                   "equipment": [
@@ -4291,7 +4291,7 @@
                         "id": 18064,
                         "name": "bread",
                         "localizedName": "bread",
-                        "image": "white-bread.jpg"
+                        "image": "https://bit.ly/3iUTRlm"
                      },
                      {
                         "id": 11156,
@@ -4343,7 +4343,7 @@
          {
             "id": 20040,
             "aisle": "Pasta and Rice",
-            "image": "uncooked-brown-rice.png",
+            "image": "https://bit.ly/33N6336",
             "consistency": "solid",
             "name": "brown rice",
             "original": "1 package (8.8 ounces) ready-to-serve brown rice",
@@ -4373,7 +4373,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "1 package (13.2 ounces) breaded chicken nuggets",
@@ -4399,7 +4399,7 @@
          {
             "id": 12585,
             "aisle": "Nuts;Savory Snacks",
-            "image": "cashews.jpg",
+            "image": "https://bit.ly/3iPB7DJ",
             "consistency": "solid",
             "name": "salted cashews",
             "original": "3 tablespoons salted cashews",
@@ -4515,7 +4515,7 @@
                         "id": 20444,
                         "name": "rice",
                         "localizedName": "rice",
-                        "image": "uncooked-white-rice.png"
+                        "image": "https://bit.ly/30Pwtzi"
                      }
                   ],
                   "equipment": [
@@ -4535,7 +4535,7 @@
                         "id": 12087,
                         "name": "cashews",
                         "localizedName": "cashews",
-                        "image": "cashews.jpg"
+                        "image": "https://bit.ly/3iPB7DJ"
                      }
                   ],
                   "equipment": []
@@ -4567,7 +4567,7 @@
          {
             "id": 5006,
             "aisle": "Meat",
-            "image": "whole-chicken.jpg",
+            "image": "https://bit.ly/2SGoXT3",
             "consistency": "solid",
             "name": "chicken",
             "original": "1 cup your favorite chicken salad",
@@ -4597,7 +4597,7 @@
          {
             "id": 2033,
             "aisle": "Spices and Seasonings;Baking",
-            "image": "poppyseed.png",
+            "image": "https://bit.ly/30Sdrsf",
             "consistency": "solid",
             "name": "poppy seeds",
             "original": "2 tablespoons poppy seeds",
@@ -4623,7 +4623,7 @@
          {
             "id": 93618,
             "aisle": "Refrigerated",
-            "image": "crescent-rolls.jpg",
+            "image": "https://bit.ly/2SLOTN6",
             "consistency": "solid",
             "name": "refrigerated crescent rolls",
             "original": "1 (8-oz.) can refrigerated crescent rolls",
@@ -4687,13 +4687,13 @@
                         "id": 93618,
                         "name": "refrigerated crescent rolls",
                         "localizedName": "refrigerated crescent rolls",
-                        "image": "crescent-rolls.jpg"
+                        "image": "https://bit.ly/2SLOTN6"
                      },
                      {
                         "id": 5006,
                         "name": "whole chicken",
                         "localizedName": "whole chicken",
-                        "image": "whole-chicken.jpg"
+                        "image": "https://bit.ly/2SGoXT3"
                      },
                      {
                         "id": 0,
@@ -4738,7 +4738,7 @@
                         "id": 2033,
                         "name": "poppy seeds",
                         "localizedName": "poppy seeds",
-                        "image": "poppyseed.png"
+                        "image": "https://bit.ly/30Sdrsf"
                      },
                      {
                         "id": 0,
@@ -4756,7 +4756,7 @@
                         "id": 1123,
                         "name": "egg",
                         "localizedName": "egg",
-                        "image": "egg.png"
+                        "image": "https://bit.ly/30SsoKN"
                      }
                   ],
                   "equipment": []
@@ -4805,7 +4805,7 @@
      {
         "id": 2069,
         "aisle": "Oil, Vinegar, Salad Dressing",
-        "image": "balsamic-vinegar.jpg",
+        "image": "https://bit.ly/2GRZ7sr",
         "consistency": "liquid",
         "name": "balsamic vinegar",
         "original": "1 /2 cup good balsamic vinegar",
@@ -4835,7 +4835,7 @@
      {
         "id": 9112,
         "aisle": "Produce",
-        "image": "grapefruit.png",
+        "image": "https://bit.ly/2SLF6Xo",
         "consistency": "solid",
         "name": "grapefruit",
         "original": "2 ruby red grapefruit",
@@ -4865,7 +4865,7 @@
      {
         "id": 9037,
         "aisle": "Produce",
-        "image": "avocado.jpg",
+        "image": "https://bit.ly/2SLFepQ",
         "consistency": "solid",
         "name": "hass avocado",
         "original": "1 Hass avocado",
@@ -4930,7 +4930,7 @@
                     "id": 9037,
                     "name": "avocado",
                     "localizedName": "avocado",
-                    "image": "avocado.jpg"
+                    "image": "https://bit.ly/2SLFepQ"
                  }
               ],
               "equipment": []
@@ -4943,13 +4943,13 @@
                     "id": 9112,
                     "name": "grapefruit",
                     "localizedName": "grapefruit",
-                    "image": "grapefruit.png"
+                    "image": "https://bit.ly/2SLF6Xo"
                  },
                  {
                     "id": 9037,
                     "name": "avocado",
                     "localizedName": "avocado",
-                    "image": "avocado.jpg"
+                    "image": "https://bit.ly/2SLFepQ"
                  }
               ],
               "equipment": []
@@ -4996,7 +4996,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocado",
           "original": "1 ripe avocado",
@@ -5026,7 +5026,7 @@
       {
           "id": 1009,
           "aisle": "Cheese",
-          "image": "cheddar-cheese.png",
+          "image": "https://bit.ly/3deTeBR",
           "consistency": "solid",
           "name": "cheddar cheese",
           "original": "20 g finely grated cheddar cheese (1/4 cup)",
@@ -5056,7 +5056,7 @@
       {
           "id": 1001116,
           "aisle": "Milk, Eggs, Other Dairy",
-          "image": "plain-yogurt.jpg",
+          "image": "https://cache.magicmaman.com/data/photo/w600_c18/xo/yaourtcitron.jpg",
           "consistency": "liquid",
           "name": "natural yoghurt",
           "original": "70 g thick natural yoghurt (1/4 cup)",
@@ -5133,7 +5133,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocado",
           "original": "1 ripe avocado",
@@ -5163,7 +5163,7 @@
       {
           "id": 4025,
           "aisle": "Condiments",
-          "image": "mayonnaise.png",
+          "image": "https://bit.ly/30VNqIi",
           "consistency": "liquid",
           "name": "mayonnaise",
           "original": "1 tablespoon mayonnaise (reduced fat OK)",
@@ -5193,7 +5193,7 @@
       {
           "id": 6164,
           "aisle": "Pasta and Rice;Ethnic Foods",
-          "image": "salsa.png",
+          "image": "https://bit.ly/30OQlCL",
           "consistency": "solid",
           "name": "salsa",
           "original": "2 tablespoons drained salsa (fresh chunky salsa works best)",
@@ -5279,7 +5279,7 @@
                       "id": 9037,
                       "name": "avocado",
                       "localizedName": "avocado",
-                      "image": "avocado.jpg"
+                      "image": "https://bit.ly/2SLFepQ"
                   }
                   ],
                   "equipment": []
@@ -5292,13 +5292,13 @@
                       "id": 4025,
                       "name": "mayonnaise",
                       "localizedName": "mayonnaise",
-                      "image": "mayonnaise.png"
+                      "image": "https://bit.ly/30VNqIi"
                   },
                   {
                       "id": 6164,
                       "name": "salsa",
                       "localizedName": "salsa",
-                      "image": "salsa.png"
+                      "image": "https://bit.ly/30OQlCL"
                   }
                   ],
                   "equipment": []
@@ -5338,7 +5338,7 @@
       {
           "id": 9040,
           "aisle": "Produce",
-          "image": "bananas.jpg",
+          "image": "https://bit.ly/33N6CtK",
           "consistency": "solid",
           "name": "banana",
           "original": "1 frozen banana",
@@ -5368,7 +5368,7 @@
       {
           "id": 9316,
           "aisle": "Produce",
-          "image": "strawberries.png",
+          "image": "https://bit.ly/3lBKCYG",
           "consistency": "solid",
           "name": "strawberries",
           "original": "1 cup frozen sliced strawberries",
@@ -5400,7 +5400,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocado",
           "original": "1 ripe avocado, sliced",
@@ -5530,7 +5530,7 @@
                       "id": 9040,
                       "name": "banana",
                       "localizedName": "banana",
-                      "image": "bananas.jpg"
+                      "image": "https://bit.ly/33N6CtK"
                   }
                   ],
                   "equipment": []
@@ -5564,7 +5564,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocado",
           "original": "1 small avocado, cut into thin slices",
@@ -5594,7 +5594,7 @@
       {
           "id": 1011026,
           "aisle": "Cheese",
-          "image": "cheddar-cheese.png",
+          "image": "https://bit.ly/3deTeBR",
           "consistency": "solid",
           "name": "shredded cheese",
           "original": "1/2 cup cheese, shredded (i used a 3 cheese blend of monterey jack, cheddar and mozzarella)",
@@ -5626,7 +5626,7 @@
       {
           "id": 20140,
           "aisle": "Pasta and Rice;Health Foods",
-          "image": "farro-or-spelt.jpg",
+          "image": "https://bit.ly/3iWBUCZ",
           "consistency": "solid",
           "name": "spelt",
           "original": "2 whole wheat or spelt tortillas",
@@ -5730,7 +5730,7 @@
                       "id": 1041009,
                       "name": "cheese",
                       "localizedName": "cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   }
                   ],
                   "equipment": []
@@ -5749,7 +5749,7 @@
                       "id": 1041009,
                       "name": "cheese",
                       "localizedName": "cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   }
                   ],
                   "equipment": []
@@ -5812,7 +5812,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocado",
           "original": "1 ripe avocado, cut in half and sliced",
@@ -5846,7 +5846,7 @@
       {
           "id": 1017,
           "aisle": "Cheese",
-          "image": "cream-cheese.jpg",
+          "image": "https://bit.ly/2SGHVsy",
           "consistency": "solid",
           "name": "cream cheese",
           "original": "1/4 cup cream cheese",
@@ -5872,7 +5872,7 @@
       {
           "id": 18069,
           "aisle": "Bakery/Bread",
-          "image": "white-bread.jpg",
+          "image": "https://bit.ly/3iUTRlm",
           "consistency": "solid",
           "name": "white bread",
           "original": "4 slices of bread (i know the bread in the picture above looks like white bread, but it's not. it's sourdough from our local farmer's market. you can use any kind of bread you like, though.)",
@@ -5934,7 +5934,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                       "id": 0,
@@ -5946,7 +5946,7 @@
                       "id": 18064,
                       "name": "bread",
                       "localizedName": "bread",
-                      "image": "white-bread.jpg"
+                      "image": "https://bit.ly/3iUTRlm"
                   }
                   ],
                   "equipment": []
@@ -5959,13 +5959,13 @@
                       "id": 9037,
                       "name": "avocado",
                       "localizedName": "avocado",
-                      "image": "avocado.jpg"
+                      "image": "https://bit.ly/2SLFepQ"
                   },
                   {
                       "id": 18064,
                       "name": "bread",
                       "localizedName": "bread",
-                      "image": "white-bread.jpg"
+                      "image": "https://bit.ly/3iUTRlm"
                   }
                   ],
                   "equipment": []
@@ -5997,7 +5997,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocado",
           "original": "1/3 cup completely mashed avocado (about ½ of a large avocado)",
@@ -6029,7 +6029,7 @@
       {
           "id": 19904,
           "aisle": "Sweet Snacks",
-          "image": "dark-chocolate-pieces.jpg",
+          "image": "https://bit.ly/36P3xeJ",
           "consistency": "solid",
           "name": "dark chocolate",
           "original": "1 cup roughly chopped high quality dark chocolate",
@@ -6061,7 +6061,7 @@
       {
           "id": 19165,
           "aisle": "Baking",
-          "image": "cocoa-powder.png",
+          "image": "https://www.bakerykart.com/upload/large/jb800-cocoa-large.jpg",
           "consistency": "solid",
           "name": "unsweetened cocoa powder",
           "original": "1 tbsp unsweetened dark cocoa powder (for dusting)",
@@ -6136,7 +6136,7 @@
                       "id": 9037,
                       "name": "avocado",
                       "localizedName": "avocado",
-                      "image": "avocado.jpg"
+                      "image": "https://bit.ly/2SLFepQ"
                   },
                   {
                       "id": 14412,
@@ -6213,7 +6213,7 @@
                       "id": 9037,
                       "name": "avocado",
                       "localizedName": "avocado",
-                      "image": "avocado.jpg"
+                      "image": "https://bit.ly/2SLFepQ"
                   },
                   {
                       "id": 0,
@@ -6262,7 +6262,7 @@
                       "id": 19165,
                       "name": "cocoa powder",
                       "localizedName": "cocoa powder",
-                      "image": "cocoa-powder.png"
+                      "image": "https://www.bakerykart.com/upload/large/jb800-cocoa-large.jpg"
                   },
                   {
                       "id": 0,
@@ -6288,7 +6288,7 @@
                       "id": 19165,
                       "name": "cocoa powder",
                       "localizedName": "cocoa powder",
-                      "image": "cocoa-powder.png"
+                      "image": "https://www.bakerykart.com/upload/large/jb800-cocoa-large.jpg"
                   },
                   {
                       "id": 0,
@@ -6334,7 +6334,7 @@
       {
           "id": 9037,
           "aisle": "Produce",
-          "image": "avocado.jpg",
+          "image": "https://bit.ly/2SLFepQ",
           "consistency": "solid",
           "name": "avocados",
           "original": "2 large avocados, pitted,peeled and mashed",
@@ -6368,7 +6368,7 @@
       {
           "id": 9160,
           "aisle": "Produce",
-          "image": "lime-juice.png",
+          "image": "https://bit.ly/3nzWzA6",
           "consistency": "liquid",
           "name": "lime juice",
           "original": "1 tablespoon lime juice",
@@ -6394,7 +6394,7 @@
       {
           "id": 6164,
           "aisle": "Pasta and Rice;Ethnic Foods",
-          "image": "salsa.png",
+          "image": "https://bit.ly/30OQlCL",
           "consistency": "solid",
           "name": "salsa",
           "original": "1/3 cup thick & chunky salsa",
@@ -6494,7 +6494,7 @@
       {
           "id": 1009,
           "aisle": "Cheese",
-          "image": "cheddar-cheese.png",
+          "image": "https://bit.ly/3deTeBR",
           "consistency": "solid",
           "name": "cheddar cheese",
           "original": "Several handfuls of shredded cheddar cheese",
@@ -6524,7 +6524,7 @@
       {
           "id": 19003,
           "aisle": "Savory Snacks",
-          "image": "fritos-or-corn-chips.jpg",
+          "image": "https://bit.ly/34DrKBK",
           "consistency": "solid",
           "name": "corn chips",
           "original": "2 ounces Fritos® Corn Chips",
@@ -6554,7 +6554,7 @@
       {
           "id": 1009,
           "aisle": "Cheese",
-          "image": "cheddar-cheese.png",
+          "image": "https://bit.ly/3deTeBR",
           "consistency": "solid",
           "name": "mild cheddar",
           "original": "1 can Wolf Brand Chili, either hot or mild, no beans",
@@ -6625,13 +6625,13 @@
                       "id": 1041009,
                       "name": "cheese",
                       "localizedName": "cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   },
                   {
                       "id": 19003,
                       "name": "corn chips",
                       "localizedName": "corn chips",
-                      "image": "fritos-or-corn-chips.jpg"
+                      "image": "https://bit.ly/34DrKBK"
                   }
                   ],
                   "equipment": [
@@ -6664,7 +6664,7 @@
                       "id": 1041009,
                       "name": "cheese",
                       "localizedName": "cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   }
                   ],
                   "equipment": []
@@ -6748,7 +6748,7 @@
       {
           "id": 6164,
           "aisle": "Pasta and Rice;Ethnic Foods",
-          "image": "salsa.png",
+          "image": "https://bit.ly/30OQlCL",
           "consistency": "solid",
           "name": "salsa",
           "original": "¼ cucharadita de salsa Tabasco",
@@ -6933,7 +6933,7 @@
                       "id": 6164,
                       "name": "salsa",
                       "localizedName": "salsa",
-                      "image": "salsa.png"
+                      "image": "https://bit.ly/30OQlCL"
                   },
                   {
                       "id": 0,
@@ -7005,7 +7005,7 @@
       {
           "id": 1031009,
           "aisle": "Cheese",
-          "image": "cheddar-cheese.png",
+          "image": "https://bit.ly/3deTeBR",
           "consistency": "solid",
           "name": "sharp cheddar",
           "original": "1 ¼ cup shredded Cabot Horseradish or Sharp Cheddar, 5 ounces",
@@ -7180,7 +7180,7 @@
                       "id": 1009,
                       "name": "cheddar cheese",
                       "localizedName": "cheddar cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   },
                   {
                       "id": 18413,
@@ -7273,7 +7273,7 @@
       {
           "id": 1017,
           "aisle": "Cheese",
-          "image": "cream-cheese.jpg",
+          "image": "https://bit.ly/2SGHVsy",
           "consistency": "solid",
           "name": "cream cheese",
           "original": "1 package (8 ounces) fat free cream cheese, cubed",
@@ -7305,7 +7305,7 @@
       {
           "id": 6164,
           "aisle": "Pasta and Rice;Ethnic Foods",
-          "image": "salsa.png",
+          "image": "https://bit.ly/30OQlCL",
           "consistency": "solid",
           "name": "salsa",
           "original": "1 cup salsa",
@@ -7383,7 +7383,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                       "id": 11819,
@@ -7395,7 +7395,7 @@
                       "id": 6164,
                       "name": "salsa",
                       "localizedName": "salsa",
-                      "image": "salsa.png"
+                      "image": "https://bit.ly/30OQlCL"
                   }
                   ],
                   "equipment": [
@@ -7483,7 +7483,7 @@
       {
           "id": 10011693,
           "aisle": "Canned and Jarred",
-          "image": "tomatoes-canned.png",
+          "image": "https://bit.ly/30V0UnH",
           "consistency": "solid",
           "name": "canned tomatoes",
           "original": "10-1/2 ounces canned tomatoes with chiles (I used rotele)",
@@ -7515,7 +7515,7 @@
       {
           "id": 43274,
           "aisle": "Cheese",
-          "image": "cream-cheese.jpg",
+          "image": "https://bit.ly/2SGHVsy",
           "consistency": "solid",
           "name": "light cream cheese",
           "original": "8 ounces light cream cheese, cubed",
@@ -7632,7 +7632,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                       "id": 0,
@@ -7655,7 +7655,7 @@
                       "id": 19003,
                       "name": "corn chips",
                       "localizedName": "corn chips",
-                      "image": "fritos-or-corn-chips.jpg"
+                      "image": "https://bit.ly/34DrKBK"
                   }
                   ],
                   "equipment": []
@@ -7689,7 +7689,7 @@
       {
           "id": 1017,
           "aisle": "Cheese",
-          "image": "cream-cheese.jpg",
+          "image": "https://bit.ly/2SGHVsy",
           "consistency": "solid",
           "name": "cream cheese",
           "original": "1 bar of cream cheese, softened",
@@ -7811,7 +7811,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   }
                   ],
                   "equipment": [
@@ -8271,7 +8271,7 @@
       {
           "id": 1017,
           "aisle": "Cheese",
-          "image": "cream-cheese.jpg",
+          "image": "https://bit.ly/2SGHVsy",
           "consistency": "solid",
           "name": "cream cheese",
           "original": "4. In a medium size mixing bowl (using a hand mixer or a sturdy spatula) beat together cream cheese, powdered sugar, egg, salt and vanilla bean paste until smooth and creamy. Set aside.",
@@ -8387,7 +8387,7 @@
                       "id": 1123,
                       "name": "egg",
                       "localizedName": "egg",
-                      "image": "egg.png"
+                      "image": "https://bit.ly/30SsoKN"
                   },
                   {
                       "id": 4582,
@@ -8468,7 +8468,7 @@
                       "id": 2047,
                       "name": "salt",
                       "localizedName": "salt",
-                      "image": "salt.jpg"
+                      "image": "https://bit.ly/3jP4hnL"
                   }
                   ],
                   "equipment": [
@@ -8512,19 +8512,19 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                       "id": 2047,
                       "name": "salt",
                       "localizedName": "salt",
-                      "image": "salt.jpg"
+                      "image": "https://bit.ly/3jP4hnL"
                   },
                   {
                       "id": 1123,
                       "name": "egg",
                       "localizedName": "egg",
-                      "image": "egg.png"
+                      "image": "https://bit.ly/30SsoKN"
                   }
                   ],
                   "equipment": [
@@ -8556,7 +8556,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                       "id": 11124,
@@ -8588,7 +8588,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   }
                   ],
                   "equipment": [
@@ -8703,7 +8703,7 @@
       {
           "id": 1033,
           "aisle": "Cheese",
-          "image": "parmesan.jpg",
+          "image": "https://bit.ly/2GDf8D3",
           "consistency": "solid",
           "name": "parmesan cheese",
           "original": "1/3 cup shredded Parmesan Cheese",
@@ -8886,7 +8886,7 @@
                       "id": 0,
                       "name": "minced garlic",
                       "localizedName": "minced garlic",
-                      "image": "garlic.png"
+                      "image": "https://bit.ly/34HK5Oc"
                   }
                   ],
                   "equipment": [],
@@ -8903,7 +8903,7 @@
                       "id": 1001,
                       "name": "butter",
                       "localizedName": "butter",
-                      "image": "butter-sliced.jpg"
+                      "image": "https://bit.ly/3lETZap"
                   },
                   {
                       "id": 20081,
@@ -8935,13 +8935,13 @@
                       "id": 6194,
                       "name": "chicken broth",
                       "localizedName": "chicken broth",
-                      "image": "chicken-broth.png"
+                      "image": "https://bit.ly/3jJxKPQ"
                   },
                   {
                       "id": 1082047,
                       "name": "kosher salt",
                       "localizedName": "kosher salt",
-                      "image": "salt.jpg"
+                      "image": "https://bit.ly/3jP4hnL"
                   },
                   {
                       "id": 1002030,
@@ -9011,7 +9011,7 @@
                       "id": 1033,
                       "name": "parmesan",
                       "localizedName": "parmesan",
-                      "image": "parmesan.jpg"
+                      "image": "https://bit.ly/2GDf8D3"
                   },
                   {
                       "id": 10511297,
@@ -9148,7 +9148,7 @@
       {
           "id": 1026,
           "aisle": "Cheese",
-          "image": "mozzarella.png",
+          "image": "https://bit.ly/30Ry7Aq",
           "consistency": "solid",
           "name": "mozzarella cheese",
           "original": "2 cups mozzarella cheese grated",
@@ -9289,7 +9289,7 @@
                       "id": 1026,
                       "name": "mozzarella",
                       "localizedName": "mozzarella",
-                      "image": "mozzarella.png"
+                      "image": "https://bit.ly/30Ry7Aq"
                   },
                   {
                       "id": 11090,
@@ -9362,7 +9362,7 @@
       {
           "id": 1082047,
           "aisle": "Spices and Seasonings",
-          "image": "salt.jpg",
+          "image": "https://bit.ly/3jP4hnL",
           "consistency": "solid",
           "name": "kosher salt",
           "original": "Kosher salt",
@@ -9603,7 +9603,7 @@
       {
           "id": 10011693,
           "aisle": "Canned and Jarred",
-          "image": "tomatoes-canned.png",
+          "image": "https://bit.ly/30V0UnH",
           "consistency": "solid",
           "name": "canned tomatoes",
           "original": "10-1/2 ounces canned tomatoes with chiles (I used rotele)",
@@ -9635,7 +9635,7 @@
       {
           "id": 43274,
           "aisle": "Cheese",
-          "image": "cream-cheese.jpg",
+          "image": "https://bit.ly/2SGHVsy",
           "consistency": "solid",
           "name": "light cream cheese",
           "original": "8 ounces light cream cheese, cubed",
@@ -9752,7 +9752,7 @@
                       "id": 1017,
                       "name": "cream cheese",
                       "localizedName": "cream cheese",
-                      "image": "cream-cheese.jpg"
+                      "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                       "id": 0,
@@ -9775,7 +9775,7 @@
                       "id": 19003,
                       "name": "corn chips",
                       "localizedName": "corn chips",
-                      "image": "fritos-or-corn-chips.jpg"
+                      "image": "https://bit.ly/34DrKBK"
                   }
                   ],
                   "equipment": []
@@ -9841,7 +9841,7 @@
       {
           "id": 93618,
           "aisle": "Refrigerated",
-          "image": "crescent-rolls.jpg",
+          "image": "https://bit.ly/2SLOTN6",
           "consistency": "solid",
           "name": "refrigerated crescent dinner rolls",
           "original": "1 can (8 oz.) refrigerated crescent dinner rolls",
@@ -9997,7 +9997,7 @@
                       "id": 1192,
                       "name": "velveeta cheese",
                       "localizedName": "velveeta cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   },
                   {
                       "id": 0,
@@ -10503,7 +10503,7 @@
       {
           "id": 93618,
           "aisle": "Refrigerated",
-          "image": "crescent-rolls.jpg",
+          "image": "https://bit.ly/2SLOTN6",
           "consistency": "solid",
           "name": "refrigerated crescent dinner rolls",
           "original": "1 (8 ounce) can refrigerated crescent dinner rolls",
@@ -10848,7 +10848,7 @@
       {
           "id": 11533,
           "aisle": "Canned and Jarred",
-          "image": "tomatoes-canned.png",
+          "image": "https://bit.ly/30V0UnH",
           "consistency": "solid",
           "name": "stewed tomatoes",
           "original": "1 large canned stewed tomatoes",
@@ -11112,7 +11112,7 @@
                       "id": 2047,
                       "name": "salt",
                       "localizedName": "salt",
-                      "image": "salt.jpg"
+                      "image": "https://bit.ly/3jP4hnL"
                   }
                   ],
                   "equipment": []
@@ -11137,7 +11137,7 @@
                       "id": 1192,
                       "name": "velveeta cheese",
                       "localizedName": "velveeta cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   },
                   {
                       "id": 1077,
@@ -11179,7 +11179,7 @@
                       "id": 1192,
                       "name": "velveeta cheese",
                       "localizedName": "velveeta cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   },
                   {
                       "id": 0,
@@ -11283,7 +11283,7 @@
       {
           "id": 1192,
           "aisle": "Cheese",
-          "image": "cheddar-cheese.png",
+          "image": "https://bit.ly/3deTeBR",
           "consistency": "solid",
           "name": "velveeta cheese",
           "original": "16 oz. Velveeta cheese, cubed",
@@ -11348,7 +11348,7 @@
                       "id": 1041009,
                       "name": "cheese",
                       "localizedName": "cheese",
-                      "image": "cheddar-cheese.png"
+                      "image": "https://bit.ly/3deTeBR"
                   },
                   {
                       "id": 0,
@@ -11399,7 +11399,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "banana",
         "original": "1 large, ripe banana",
@@ -11429,7 +11429,7 @@
      {
         "id": 1001116,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "plain-yogurt.jpg",
+        "image": "https://cache.magicmaman.com/data/photo/w600_c18/xo/yaourtcitron.jpg",
         "consistency": "liquid",
         "name": "plain yogurt",
         "original": "1 1/2 cups plain yogurt (I used a mixture of half Greek and half regular yogurt)",
@@ -11532,7 +11532,7 @@
                     "id": 1256,
                     "name": "greek yogurt",
                     "localizedName": "greek yogurt",
-                    "image": "plain-yogurt.jpg"
+                    "image": "https://cache.magicmaman.com/data/photo/w600_c18/xo/yaourtcitron.jpg"
                  },
                  {
                     "id": 19074,
@@ -11550,13 +11550,13 @@
                     "id": 9040,
                     "name": "banana",
                     "localizedName": "banana",
-                    "image": "bananas.jpg"
+                    "image": "https://bit.ly/33N6CtK"
                  },
                  {
                     "id": 1116,
                     "name": "yogurt",
                     "localizedName": "yogurt",
-                    "image": "plain-yogurt.jpg"
+                    "image": "https://cache.magicmaman.com/data/photo/w600_c18/xo/yaourtcitron.jpg"
                  },
                  {
                     "id": 9087,
@@ -11601,7 +11601,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "banana",
         "original": "1 medium ripe banana, cut in half lengthwise",
@@ -11730,7 +11730,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "bananas",
         "original": "2 bananas",
@@ -11861,7 +11861,7 @@
                     "id": 9040,
                     "name": "banana",
                     "localizedName": "banana",
-                    "image": "bananas.jpg"
+                    "image": "https://bit.ly/33N6CtK"
                  }
               ],
               "equipment": []
@@ -11906,7 +11906,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "bananas",
         "original": "2 small bananas, sliced on the bias",
@@ -11936,7 +11936,7 @@
      {
         "id": 19165,
         "aisle": "Baking",
-        "image": "cocoa-powder.png",
+        "image": "https://www.bakerykart.com/upload/large/jb800-cocoa-large.jpg",
         "consistency": "solid",
         "name": "cocoa powder",
         "original": "4 tsps cocoa powder",
@@ -12041,7 +12041,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "bananas",
         "original": "4 large ripe bananas, peeled and cut into thirds crosswise",
@@ -12184,7 +12184,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "banana",
         "original": "1/2 banana, thinly sliced",
@@ -12308,7 +12308,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "bananas",
         "original": "3 x firm but ripe bananas",
@@ -12447,7 +12447,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "bananas",
         "original": "2 bananas, peeled and cut crosswise into thirds",
@@ -12509,7 +12509,7 @@
      {
         "id": 19903,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "semisweet chocolate",
         "original": "8 ozs semisweet chocolate, chopped",
@@ -12584,7 +12584,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "banana",
         "original": "1 ripe banana",
@@ -12736,7 +12736,7 @@
                     "id": 9160,
                     "name": "lime juice",
                     "localizedName": "lime juice",
-                    "image": "lime-juice.png"
+                    "image": "https://bit.ly/3nzWzA6"
                  },
                  {
                     "id": 0,
@@ -12760,7 +12760,7 @@
                     "id": 9040,
                     "name": "banana",
                     "localizedName": "banana",
-                    "image": "bananas.jpg"
+                    "image": "https://bit.ly/33N6CtK"
                  },
                  {
                     "id": 19335,
@@ -12879,7 +12879,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "banana",
         "original": "1 large ripe banana, sliced",
@@ -12973,7 +12973,7 @@
                     "id": 9040,
                     "name": "banana",
                     "localizedName": "banana",
-                    "image": "bananas.jpg"
+                    "image": "https://bit.ly/33N6CtK"
                  },
                  {
                     "id": 1053,
@@ -13050,7 +13050,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "16 ounces dark chocolate, finely chopped",
@@ -13171,7 +13171,7 @@
                     "id": 19904,
                     "name": "dark chocolate",
                     "localizedName": "dark chocolate",
-                    "image": "dark-chocolate-pieces.jpg"
+                    "image": "https://bit.ly/36P3xeJ"
                  },
                  {
                     "id": 19081,
@@ -13303,7 +13303,7 @@
                     "id": 19904,
                     "name": "dark chocolate",
                     "localizedName": "dark chocolate",
-                    "image": "dark-chocolate-pieces.jpg"
+                    "image": "https://bit.ly/36P3xeJ"
                  },
                  {
                     "id": 93759,
@@ -13420,7 +13420,7 @@
      {
         "id": 10019904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate candy bars",
         "original": "6 1.5 oz. Hershey's Chocolate bars, with or without almonds",
@@ -13528,7 +13528,7 @@
                     "id": 18334,
                     "name": "pie crust",
                     "localizedName": "pie crust",
-                    "image": "pie-crust.jpg"
+                    "image": "https://bit.ly/3iPvKV5"
                  },
                  {
                     "id": 12061,
@@ -13603,7 +13603,7 @@
      {
         "id": 19165,
         "aisle": "Baking",
-        "image": "cocoa-powder.png",
+        "image": "https://www.bakerykart.com/upload/large/jb800-cocoa-large.jpg",
         "consistency": "solid",
         "name": "cocoa powder",
         "original": "Cocoa powder to coat the chocolate",
@@ -13661,7 +13661,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "400 gram (14 oz) good quality dark chocolate (70% cacao), but you can also use semisweet for less bitter taste.",
@@ -13873,7 +13873,7 @@
                     "id": 19165,
                     "name": "cocoa powder",
                     "localizedName": "cocoa powder",
-                    "image": "cocoa-powder.png"
+                    "image": "https://www.bakerykart.com/upload/large/jb800-cocoa-large.jpg"
                  }
               ],
               "equipment": []
@@ -13959,7 +13959,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "25g dark chocolate",
@@ -14171,7 +14171,7 @@
      {
         "id": 10019904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate candy bars",
         "original": "1 (16 ounce) package m&m's plain chocolate candy",
@@ -14331,7 +14331,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "7oz Sugar-Free Dark Chocolate",
@@ -14485,7 +14485,7 @@
                     "id": 19904,
                     "name": "dark chocolate",
                     "localizedName": "dark chocolate",
-                    "image": "dark-chocolate-pieces.jpg"
+                    "image": "https://bit.ly/36P3xeJ"
                  },
                  {
                     "id": 19081,
@@ -14559,7 +14559,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "5 oz dark chocolate, melted (if desired, tempered)",
@@ -14933,7 +14933,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "8 ounces dark chocolate",
@@ -15199,7 +15199,7 @@
      {
         "id": 9040,
         "aisle": "Produce",
-        "image": "bananas.jpg",
+        "image": "https://bit.ly/33N6CtK",
         "consistency": "solid",
         "name": "bananas",
         "original": "2 x bananas, thinly sliced diagonally",
@@ -15229,7 +15229,7 @@
      {
         "id": 19904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate",
         "original": "1/2 cup dark chocolate, roughly chopped",
@@ -15335,7 +15335,7 @@
      {
         "id": 10019904,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "dark chocolate candy bars",
         "original": "1 cup m&m's plain chocolate candy",
@@ -15469,7 +15469,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "eggs (preferably 1-2 weeks old)",
@@ -15495,7 +15495,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "Yield: 12 eggs",
@@ -15521,7 +15521,7 @@
      {
         "id": 1129,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "hard-boiled-egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "hard boiled eggs",
         "original": "Learn how to make perfectly hard-boiled eggs with this simple tutorial.",
@@ -15551,7 +15551,7 @@
      {
         "id": 1129,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "hard-boiled-egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "hard-boiled eggs",
         "original": "Hard-Boiled Eggs",
@@ -15749,7 +15749,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -15801,7 +15801,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -15837,7 +15837,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -15886,7 +15886,7 @@
      {
         "id": 19903,
         "aisle": "Sweet Snacks",
-        "image": "dark-chocolate-pieces.jpg",
+        "image": "https://bit.ly/36P3xeJ",
         "consistency": "solid",
         "name": "bittersweet chocolate",
         "original": "1 lb. dark, semisweet or bittersweet chocolate, coarsely chopped",
@@ -15918,7 +15918,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "8 large eggs, cold",
@@ -15948,7 +15948,7 @@
      {
         "id": 1145,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "butter-sliced.jpg",
+        "image": "https://bit.ly/3lETZap",
         "consistency": "solid",
         "name": "unsalted butter",
         "original": "16 Tbsp. (2 sticks) unsalted butter, cut into 16 pieces",
@@ -16017,7 +16017,7 @@
                     "id": 1001,
                     "name": "butter",
                     "localizedName": "butter",
-                    "image": "butter-sliced.jpg"
+                    "image": "https://bit.ly/3lETZap"
                  },
                  {
                     "id": 14412,
@@ -16029,7 +16029,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  },
                  {
                     "id": 10018364,
@@ -16276,7 +16276,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "egg",
         "original": "1 large egg",
@@ -16328,7 +16328,7 @@
      {
         "id": 1145,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "butter-sliced.jpg",
+        "image": "https://bit.ly/3lETZap",
         "consistency": "solid",
         "name": "unsalted butter",
         "original": "1/2 cup unsalted butter, room temperature",
@@ -16429,7 +16429,7 @@
                     "id": 1001,
                     "name": "butter",
                     "localizedName": "butter",
-                    "image": "butter-sliced.jpg"
+                    "image": "https://bit.ly/3lETZap"
                  },
                  {
                     "id": 0,
@@ -16441,7 +16441,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -16578,7 +16578,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "egg",
         "original": "1 egg, at room temperature",
@@ -16608,7 +16608,7 @@
      {
         "id": 20444,
         "aisle": "Pasta and Rice",
-        "image": "uncooked-white-rice.png",
+        "image": "https://bit.ly/30Pwtzi",
         "consistency": "solid",
         "name": "rice",
         "original": "4 rice bowls water",
@@ -16730,7 +16730,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "egg",
         "original": "1 egg or 1/2 tablespoon butter, melted (optional)",
@@ -16891,7 +16891,7 @@
                     "id": 1001,
                     "name": "butter",
                     "localizedName": "butter",
-                    "image": "butter-sliced.jpg"
+                    "image": "https://bit.ly/3lETZap"
                  },
                  {
                     "id": 0,
@@ -16909,7 +16909,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -17025,7 +17025,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "6 eggs, beaten",
@@ -17173,7 +17173,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -17203,7 +17203,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": []
@@ -17243,7 +17243,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "egg",
         "original": "1 egg, beaten",
@@ -17414,7 +17414,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -17434,13 +17434,13 @@
                     "id": 0,
                     "name": "breaded chicken",
                     "localizedName": "breaded chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 5006,
                     "name": "whole chicken",
                     "localizedName": "whole chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 11282,
@@ -17458,7 +17458,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -17478,7 +17478,7 @@
                     "id": 5006,
                     "name": "whole chicken",
                     "localizedName": "whole chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -17537,7 +17537,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "egg",
         "original": "1 egg",
@@ -17655,7 +17655,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -17700,7 +17700,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": []
@@ -17786,7 +17786,7 @@
      {
         "id": 1129,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "hard-boiled-egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "hard cooked eggs",
         "original": "12 hard-cooked eggs, cut lengthwise in half",
@@ -17868,7 +17868,7 @@
                     "id": 0,
                     "name": "cream cheese spread",
                     "localizedName": "cream cheese spread",
-                    "image": "cream-cheese.jpg"
+                    "image": "https://bit.ly/2SGHVsy"
                  },
                  {
                     "id": 2046,
@@ -17921,7 +17921,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "2 large eggs, scrambled",
@@ -17977,7 +17977,7 @@
      {
         "id": 11291,
         "aisle": "Produce",
-        "image": "spring-onions.jpg",
+        "image": "https://bit.ly/3jRG53W",
         "consistency": "solid",
         "name": "scallions",
         "original": "1 medium scallions , sliced",
@@ -18074,7 +18074,7 @@
                     "id": 1041009,
                     "name": "cheese",
                     "localizedName": "cheese",
-                    "image": "cheddar-cheese.png"
+                    "image": "https://bit.ly/3deTeBR"
                  },
                  {
                     "id": 11282,
@@ -18086,7 +18086,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -18185,7 +18185,7 @@
      {
         "id": 1042027,
         "aisle": null,
-        "image": "seasoning.png",
+        "image": "https://bit.ly/34FAOWW",
         "consistency": "solid",
         "name": "seasoning",
         "original": "1/4 cup all purpose greek seasoning , blend",
@@ -18473,7 +18473,7 @@
      {
         "id": 5006,
         "aisle": "Meat",
-        "image": "whole-chicken.jpg",
+        "image": "https://bit.ly/2SGoXT3",
         "consistency": "solid",
         "name": "chicken",
         "original": "1 cup DICED and COOKED CHICKEN",
@@ -18612,7 +18612,7 @@
                     "id": 5006,
                     "name": "whole chicken",
                     "localizedName": "whole chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 12155,
@@ -18802,7 +18802,7 @@
                     "id": 10123,
                     "name": "bacon",
                     "localizedName": "bacon",
-                    "image": "raw-bacon.png"
+                    "image": "https://bit.ly/3lzJR2m"
                  },
                  {
                     "id": 1019,
@@ -19272,7 +19272,7 @@
      {
         "id": 43274,
         "aisle": "Cheese",
-        "image": "cream-cheese.jpg",
+        "image": "https://bit.ly/2SGHVsy",
         "consistency": "solid",
         "name": "light cream cheese",
         "original": "8 oz light cream cheese",
@@ -19383,7 +19383,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "4 eggs",
@@ -19530,7 +19530,7 @@
                     "id": 1123,
                     "name": "egg",
                     "localizedName": "egg",
-                    "image": "egg.png"
+                    "image": "https://bit.ly/30SsoKN"
                  }
               ],
               "equipment": [
@@ -19620,7 +19620,7 @@
      {
         "id": 10123,
         "aisle": "Meat",
-        "image": "raw-bacon.png",
+        "image": "https://bit.ly/3lzJR2m",
         "consistency": "solid",
         "name": "bacon",
         "original": "250 g bacon",
@@ -20150,7 +20150,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic",
         "original": "Whole gloves of garlic, unpeeled",
@@ -20310,7 +20310,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic",
         "original": "6 bulbs fresh heirloom garlic",
@@ -20340,7 +20340,7 @@
      {
         "id": 1012047,
         "aisle": "Spices and Seasonings",
-        "image": "salt.jpg",
+        "image": "https://bit.ly/3jP4hnL",
         "consistency": "solid",
         "name": "sea-salt",
         "original": "unrefined sea salt",
@@ -20438,7 +20438,7 @@
      {
         "id": 10111297,
         "aisle": "Produce",
-        "image": "mixed-fresh-herbs.jpg",
+        "image": "https://bit.ly/2GO7lCj",
         "consistency": "solid",
         "name": "fresh herbs",
         "original": "handful of fresh herbs (any combination is fine. My fav is basil and parsley)",
@@ -20470,7 +20470,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic",
         "original": "1-3 cloves of garlic, smushed in garlic press",
@@ -20496,7 +20496,7 @@
      {
         "id": 1145,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "butter-sliced.jpg",
+        "image": "https://bit.ly/3lETZap",
         "consistency": "solid",
         "name": "unsalted butter",
         "original": "1 stick of unsalted butter, softened (not melted, just softened)",
@@ -20601,7 +20601,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic",
         "original": "4-6 cloves garlic, smashed",
@@ -20720,7 +20720,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -20756,7 +20756,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -20797,7 +20797,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -20868,7 +20868,7 @@
      {
         "id": 1001,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "butter-sliced.jpg",
+        "image": "https://bit.ly/3lETZap",
         "consistency": "solid",
         "name": "butter",
         "original": "¼ cup butter",
@@ -20894,7 +20894,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic",
         "original": "4 cloves garlic",
@@ -21013,19 +21013,19 @@
                     "id": 0,
                     "name": "poultry",
                     "localizedName": "poultry",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 1001,
                     "name": "butter",
                     "localizedName": "butter",
-                    "image": "butter-sliced.jpg"
+                    "image": "https://bit.ly/3lETZap"
                  },
                  {
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -21090,7 +21090,7 @@
                     "id": 0,
                     "name": "garlic butter",
                     "localizedName": "garlic butter",
-                    "image": "butter-sliced.jpg"
+                    "image": "https://bit.ly/3lETZap"
                  }
               ],
               "equipment": []
@@ -21122,7 +21122,7 @@
      {
         "id": 98849,
         "aisle": "Canned and Jarred",
-        "image": "tomatoes-canned.png",
+        "image": "https://bit.ly/30V0UnH",
         "consistency": "solid",
         "name": "canned fire roasted tomatoes",
         "original": "1 14.5 oz. can FIRE ROASTED TOMATOES (regular or garlic), undrained",
@@ -21158,7 +21158,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic cloves",
         "original": "2-3 GARLIC CLOVES, minced or crushed",
@@ -21190,7 +21190,7 @@
      {
         "id": 11477,
         "aisle": "Produce",
-        "image": "zucchini.jpg",
+        "image": "https://bit.ly/33Nvx0n",
         "consistency": "solid",
         "name": "zucchini",
         "original": "2 small ZUCCHINI, sliced into half moons",
@@ -21330,7 +21330,7 @@
                     "id": 1017,
                     "name": "cream cheese",
                     "localizedName": "cream cheese",
-                    "image": "cream-cheese.jpg"
+                    "image": "https://bit.ly/2SGHVsy"
                  },
                  {
                     "id": 11529,
@@ -21342,7 +21342,7 @@
                     "id": 11215,
                     "name": "garlic",
                     "localizedName": "garlic",
-                    "image": "garlic.png"
+                    "image": "https://bit.ly/34HK5Oc"
                  },
                  {
                     "id": 2044,
@@ -21366,7 +21366,7 @@
                     "id": 2047,
                     "name": "salt",
                     "localizedName": "salt",
-                    "image": "salt.jpg"
+                    "image": "https://bit.ly/3jP4hnL"
                  }
               ],
               "equipment": [
@@ -21455,7 +21455,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic clove",
         "original": "1 garlic clove, cut in half",
@@ -21485,7 +21485,7 @@
      {
         "id": 1033,
         "aisle": "Cheese",
-        "image": "parmesan.jpg",
+        "image": "https://bit.ly/2GDf8D3",
         "consistency": "solid",
         "name": "parmesan cheese",
         "original": "Parmesan cheese shavings",
@@ -21511,7 +21511,7 @@
      {
         "id": 10310123,
         "aisle": "Meat",
-        "image": "raw-bacon.png",
+        "image": "https://bit.ly/3lzJR2m",
         "consistency": "solid",
         "name": "thick-cut bacon",
         "original": "12 1/2-inch-thick, 3-inch-long slices baguette, toasted",
@@ -21574,19 +21574,19 @@
                     "id": 1041009,
                     "name": "cheese",
                     "localizedName": "cheese",
-                    "image": "cheddar-cheese.png"
+                    "image": "https://bit.ly/3deTeBR"
                  },
                  {
                     "id": 11215,
                     "name": "garlic",
                     "localizedName": "garlic",
-                    "image": "garlic.png"
+                    "image": "https://bit.ly/34HK5Oc"
                  },
                  {
                     "id": 1012034,
                     "name": "dry seasoning rub",
                     "localizedName": "dry seasoning rub",
-                    "image": "seasoning.png"
+                    "image": "https://bit.ly/34FAOWW"
                  }
               ],
               "equipment": []
@@ -21656,7 +21656,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic clove",
         "original": "a clove of garlic, chopped",
@@ -21788,7 +21788,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic clove",
         "original": "1 small garlic clove, pressed",
@@ -21818,7 +21818,7 @@
      {
         "id": 4025,
         "aisle": "Condiments",
-        "image": "mayonnaise.png",
+        "image": "https://bit.ly/30VNqIi",
         "consistency": "liquid",
         "name": "mayonnaise",
         "original": "1/3 cup mayonnaise",
@@ -21914,13 +21914,13 @@
                     "id": 4025,
                     "name": "mayonnaise",
                     "localizedName": "mayonnaise",
-                    "image": "mayonnaise.png"
+                    "image": "https://bit.ly/30VNqIi"
                  },
                  {
                     "id": 11215,
                     "name": "garlic",
                     "localizedName": "garlic",
-                    "image": "garlic.png"
+                    "image": "https://bit.ly/34HK5Oc"
                  }
               ],
               "equipment": [
@@ -21991,7 +21991,7 @@
      {
         "id": 11215,
         "aisle": "Produce",
-        "image": "garlic.png",
+        "image": "https://bit.ly/34HK5Oc",
         "consistency": "solid",
         "name": "garlic",
         "original": "1 large head garlic",
@@ -22017,7 +22017,7 @@
      {
         "id": 14106,
         "aisle": "Alcoholic Beverages",
-        "image": "white-wine.jpg",
+        "image": "https://bit.ly/3nEUCSU",
         "consistency": "liquid",
         "name": "white wine",
         "original": "2 tablespoons white wine or vermouth",
@@ -22084,7 +22084,7 @@
                     "id": 11215,
                     "name": "garlic",
                     "localizedName": "garlic",
-                    "image": "garlic.png"
+                    "image": "https://bit.ly/34HK5Oc"
                  }
               ],
               "equipment": [
@@ -22114,7 +22114,7 @@
                     "id": 11215,
                     "name": "garlic",
                     "localizedName": "garlic",
-                    "image": "garlic.png"
+                    "image": "https://bit.ly/34HK5Oc"
                  }
               ],
               "equipment": [
@@ -22146,13 +22146,13 @@
                     "id": 2047,
                     "name": "salt",
                     "localizedName": "salt",
-                    "image": "salt.jpg"
+                    "image": "https://bit.ly/3jP4hnL"
                  },
                  {
                     "id": 14084,
                     "name": "wine",
                     "localizedName": "wine",
-                    "image": "red-wine.jpg"
+                    "image": "https://bit.ly/36RETtL"
                  }
               ],
               "equipment": [
@@ -22178,7 +22178,7 @@
                     "id": 11215,
                     "name": "garlic",
                     "localizedName": "garlic",
-                    "image": "garlic.png"
+                    "image": "https://bit.ly/34HK5Oc"
                  },
                  {
                     "id": 10018364,
@@ -22616,7 +22616,7 @@
                     "id": 5006,
                     "name": "whole chicken",
                     "localizedName": "whole chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 20420,
@@ -22684,7 +22684,7 @@
                     "id": 5006,
                     "name": "whole chicken",
                     "localizedName": "whole chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 0,
@@ -22869,7 +22869,7 @@
                     "id": 18064,
                     "name": "bread",
                     "localizedName": "bread",
-                    "image": "white-bread.jpg"
+                    "image": "https://bit.ly/3iUTRlm"
                  },
                  {
                     "id": 10151,
@@ -22954,7 +22954,7 @@
      {
         "id": 93618,
         "aisle": "Refrigerated",
-        "image": "crescent-rolls.jpg",
+        "image": "https://bit.ly/2SLOTN6",
         "consistency": "solid",
         "name": "refrigerated crescent dinner rolls",
         "original": "1 can (8 oz.) refrigerated crescent dinner rolls",
@@ -23110,7 +23110,7 @@
                     "id": 1192,
                     "name": "velveeta cheese",
                     "localizedName": "velveeta cheese",
-                    "image": "cheddar-cheese.png"
+                    "image": "https://bit.ly/3deTeBR"
                  },
                  {
                     "id": 0,
@@ -23186,7 +23186,7 @@
      {
         "id": 1123,
         "aisle": "Milk, Eggs, Other Dairy",
-        "image": "egg.png",
+        "image": "https://bit.ly/30SsoKN",
         "consistency": "solid",
         "name": "eggs",
         "original": "2 eggs",
@@ -23341,7 +23341,7 @@
      {
         "id": 93618,
         "aisle": "Refrigerated",
-        "image": "crescent-rolls.jpg",
+        "image": "https://bit.ly/2SLOTN6",
         "consistency": "solid",
         "name": "refrigerated crescent dinner rolls",
         "original": "1 (8 ounce) can refrigerated crescent dinner rolls",
@@ -24491,7 +24491,7 @@
      {
         "id": 20444,
         "aisle": "Pasta and Rice",
-        "image": "uncooked-white-rice.png",
+        "image": "https://bit.ly/30Pwtzi",
         "consistency": "solid",
         "name": "rice",
         "original": "Japanese rice",
@@ -24639,7 +24639,7 @@
                     "id": 20444,
                     "name": "rice",
                     "localizedName": "rice",
-                    "image": "uncooked-white-rice.png"
+                    "image": "https://bit.ly/30Pwtzi"
                  }
               ],
               "equipment": []
@@ -24658,7 +24658,7 @@
                     "id": 20444,
                     "name": "rice",
                     "localizedName": "rice",
-                    "image": "uncooked-white-rice.png"
+                    "image": "https://bit.ly/30Pwtzi"
                  }
               ],
               "equipment": [
@@ -24698,13 +24698,13 @@
                     "id": 0,
                     "name": "furikake",
                     "localizedName": "furikake",
-                    "image": "seasoning.png"
+                    "image": "https://bit.ly/34FAOWW"
                  },
                  {
                     "id": 20444,
                     "name": "rice",
                     "localizedName": "rice",
-                    "image": "uncooked-white-rice.png"
+                    "image": "https://bit.ly/30Pwtzi"
                  }
               ],
               "equipment": []
@@ -24734,7 +24734,7 @@
      {
         "id": 9037,
         "aisle": "Produce",
-        "image": "avocado.jpg",
+        "image": "https://bit.ly/2SLFepQ",
         "consistency": "solid",
         "name": "avocado",
         "original": "1 Avocado",
@@ -24885,7 +24885,7 @@
      {
         "id": 12087,
         "aisle": "Nuts;Savory Snacks",
-        "image": "cashews.jpg",
+        "image": "https://bit.ly/3iPB7DJ",
         "consistency": "solid",
         "name": "cashew nuts",
         "original": "A Handful of toasted Cashew nuts (don't toast them if you are going Raw)",
@@ -25287,7 +25287,7 @@
      {
         "id": 6164,
         "aisle": "Pasta and Rice;Ethnic Foods",
-        "image": "salsa.png",
+        "image": "https://bit.ly/30OQlCL",
         "consistency": "solid",
         "name": "salsa",
         "original": "1 tablespoon salsa",
@@ -25381,7 +25381,7 @@
      {
         "id": 1017,
         "aisle": "Cheese",
-        "image": "cream-cheese.jpg",
+        "image": "https://bit.ly/2SGHVsy",
         "consistency": "solid",
         "name": "cream cheese",
         "original": "3 tablespoons fat-free cream cheese with chives",
@@ -25515,7 +25515,7 @@
      {
         "id": 18064,
         "aisle": "Bakery/Bread",
-        "image": "white-bread.jpg",
+        "image": "https://bit.ly/3iUTRlm",
         "consistency": "solid",
         "name": "bread",
         "original": "2 12-inch loaf soft-crusted bread",
@@ -25676,7 +25676,7 @@
      {
         "id": 4025,
         "aisle": "Condiments",
-        "image": "mayonnaise.png",
+        "image": "https://bit.ly/30VNqIi",
         "consistency": "liquid",
         "name": "mayonnaise",
         "original": "1 tbsp mayonnaise",
@@ -25788,7 +25788,7 @@
                     "id": 4025,
                     "name": "mayonnaise",
                     "localizedName": "mayonnaise",
-                    "image": "mayonnaise.png"
+                    "image": "https://bit.ly/30VNqIi"
                  },
                  {
                     "id": 10015121,
@@ -26058,7 +26058,7 @@
      {
         "id": 11291,
         "aisle": "Produce",
-        "image": "spring-onions.jpg",
+        "image": "https://bit.ly/3jRG53W",
         "consistency": "solid",
         "name": "green onions",
         "original": "4 green onions",
@@ -26359,7 +26359,7 @@
      {
         "id": 1065062,
         "aisle": null,
-        "image": "whole-chicken.jpg",
+        "image": "https://bit.ly/2SGoXT3",
         "consistency": "solid",
         "name": "meat",
         "original": "Easy Meat Lover's Pizza",
@@ -26385,7 +26385,7 @@
      {
         "id": 1065062,
         "aisle": null,
-        "image": "whole-chicken.jpg",
+        "image": "https://bit.ly/2SGoXT3",
         "consistency": "solid",
         "name": "meat",
         "original": "We developed this Easy Meat Lover's Pizza as part of a sponsored post for SheKnows and the makers of the HORMEL® NATURAL CHOICE® brand. All opinions are 100% mine.",
@@ -26417,7 +26417,7 @@
      {
         "id": 98924,
         "aisle": "Baking",
-        "image": "brown-flour.jpg",
+        "image": "https://bit.ly/2SJFTIe",
         "consistency": "solid",
         "name": "pizza mix",
         "original": "This Easy Meat Lover's Pizza is proof positive that you can still enjoy a delicious pizza night at home even if you're making an effort to eat a cleaner diet.",
@@ -26543,7 +26543,7 @@
      {
         "id": 1065062,
         "aisle": null,
-        "image": "whole-chicken.jpg",
+        "image": "https://bit.ly/2SGoXT3",
         "consistency": "solid",
         "name": "meat",
         "original": "2-3 cups filling: any favorite combination of cooked meat, cooked veggies, and cheese",
@@ -26826,7 +26826,7 @@
      {
         "id": 10123,
         "aisle": "Meat",
-        "image": "raw-bacon.png",
+        "image": "https://bit.ly/3lzJR2m",
         "consistency": "solid",
         "name": "bacon",
         "original": "leftover bacon",
@@ -27013,7 +27013,7 @@
      {
         "id": 6970,
         "aisle": "Canned and Jarred",
-        "image": "chicken-broth.png",
+        "image": "https://bit.ly/3jJxKPQ",
         "consistency": "liquid",
         "name": "reduced sodium chicken broth",
         "original": "1 cup reduced sodium chicken broth",
@@ -27157,13 +27157,13 @@
                     "id": 5006,
                     "name": "whole chicken",
                     "localizedName": "whole chicken",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 1006615,
                     "name": "broth",
                     "localizedName": "broth",
-                    "image": "chicken-broth.png"
+                    "image": "https://bit.ly/3jJxKPQ"
                  }
               ],
               "equipment": [
@@ -27387,7 +27387,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [],
@@ -27404,7 +27404,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -27450,7 +27450,7 @@
                     "id": 1006615,
                     "name": "broth",
                     "localizedName": "broth",
-                    "image": "chicken-broth.png"
+                    "image": "https://bit.ly/3jJxKPQ"
                  },
                  {
                     "id": 0,
@@ -27462,7 +27462,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": []
@@ -27556,7 +27556,7 @@
      {
         "id": 10011282,
         "aisle": "Produce",
-        "image": "red-onion.png",
+        "image": "https://bit.ly/2FjBo47",
         "consistency": "solid",
         "name": "red onion",
         "original": "1 medium red onion, thickly sliced",
@@ -27672,7 +27672,7 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  }
               ],
               "equipment": [
@@ -27704,13 +27704,13 @@
                     "id": 1065062,
                     "name": "meat",
                     "localizedName": "meat",
-                    "image": "whole-chicken.jpg"
+                    "image": "https://bit.ly/2SGoXT3"
                  },
                  {
                     "id": 2047,
                     "name": "salt",
                     "localizedName": "salt",
-                    "image": "salt.jpg"
+                    "image": "https://bit.ly/3jP4hnL"
                  }
               ],
               "equipment": [
@@ -27760,7 +27760,7 @@
                     "id": 6164,
                     "name": "salsa",
                     "localizedName": "salsa",
-                    "image": "salsa.png"
+                    "image": "https://bit.ly/30OQlCL"
                  }
               ],
               "equipment": []
@@ -27820,7 +27820,7 @@
      {
         "id": 6164,
         "aisle": "Pasta and Rice;Ethnic Foods",
-        "image": "salsa.png",
+        "image": "https://bit.ly/30OQlCL",
         "consistency": "solid",
         "name": "salsa",
         "original": "½ cup salsa",
@@ -27938,7 +27938,7 @@
                     "id": 6164,
                     "name": "salsa",
                     "localizedName": "salsa",
-                    "image": "salsa.png"
+                    "image": "https://bit.ly/30OQlCL"
                  }
               ],
               "equipment": [
@@ -28179,7 +28179,7 @@
                     "id": 1032027,
                     "name": "seasoning mix",
                     "localizedName": "seasoning mix",
-                    "image": "seasoning.png"
+                    "image": "https://bit.ly/34FAOWW"
                  }
               ],
               "equipment": []
@@ -28192,7 +28192,7 @@
                     "id": 6164,
                     "name": "salsa",
                     "localizedName": "salsa",
-                    "image": "salsa.png"
+                    "image": "https://bit.ly/30OQlCL"
                  },
                  {
                     "id": 23572,
@@ -29536,7 +29536,7 @@
      {
         "id": 14132,
         "aisle": "Alcoholic Beverages",
-        "image": "white-wine.jpg",
+        "image": "https://bit.ly/3nEUCSU",
         "consistency": "liquid",
         "name": "vermouth",
         "original": "1 ounce sweet vermouth",
@@ -30290,7 +30290,7 @@
                      "id": 18064,
                      "name": "bread",
                      "localizedName": "bread",
-                     "image": "white-bread.jpg"
+                     "image": "https://bit.ly/3iUTRlm"
                   },
                   {
                      "id": 1077,
@@ -30302,13 +30302,13 @@
                      "id": 2047,
                      "name": "salt",
                      "localizedName": "salt",
-                     "image": "salt.jpg"
+                     "image": "https://bit.ly/3jP4hnL"
                   },
                   {
                      "id": 1123,
                      "name": "egg",
                      "localizedName": "egg",
-                     "image": "egg.png"
+                     "image": "https://bit.ly/30SsoKN"
                   }
                ],
                "equipment": [],
@@ -30325,19 +30325,19 @@
                      "id": 10023572,
                      "name": "ground beef",
                      "localizedName": "ground beef",
-                     "image": "fresh-ground-beef.jpg"
+                     "image": "https://bit.ly/3nCA25M"
                   },
                   {
                      "id": 1041009,
                      "name": "cheese",
                      "localizedName": "cheese",
-                     "image": "cheddar-cheese.png"
+                     "image": "https://bit.ly/3deTeBR"
                   },
                   {
                      "id": 1002044,
                      "name": "herbs",
                      "localizedName": "herbs",
-                     "image": "mixed-fresh-herbs.jpg"
+                     "image": "https://bit.ly/2GO7lCj"
                   },
                   {
                      "id": 11282,
@@ -30456,7 +30456,7 @@
                      "id": 11215,
                      "name": "garlic",
                      "localizedName": "garlic",
-                     "image": "garlic.png"
+                     "image": "https://bit.ly/34HK5Oc"
                   }
                ],
                "equipment": []
@@ -30469,13 +30469,13 @@
                      "id": 1006615,
                      "name": "broth",
                      "localizedName": "broth",
-                     "image": "chicken-broth.png"
+                     "image": "https://bit.ly/3jJxKPQ"
                   },
                   {
                      "id": 1002044,
                      "name": "herbs",
                      "localizedName": "herbs",
-                     "image": "mixed-fresh-herbs.jpg"
+                     "image": "https://bit.ly/2GO7lCj"
                   }
                ],
                "equipment": [],
@@ -30574,13 +30574,13 @@
                      "id": 1006615,
                      "name": "broth",
                      "localizedName": "broth",
-                     "image": "chicken-broth.png"
+                     "image": "https://bit.ly/3jJxKPQ"
                   },
                   {
                      "id": 2047,
                      "name": "salt",
                      "localizedName": "salt",
-                     "image": "salt.jpg"
+                     "image": "https://bit.ly/3jP4hnL"
                   }
                ],
                "equipment": []
@@ -30593,13 +30593,13 @@
                      "id": 1001033,
                      "name": "asiago cheese",
                      "localizedName": "asiago cheese",
-                     "image": "parmesan.jpg"
+                     "image": "https://bit.ly/2GDf8D3"
                   },
                   {
                      "id": 1033,
                      "name": "parmesan",
                      "localizedName": "parmesan",
-                     "image": "parmesan.jpg"
+                     "image": "https://bit.ly/2GDf8D3"
                   },
                   {
                      "id": 0,
@@ -30667,7 +30667,7 @@
       {
          "id": 1038,
          "aisle": "Cheese",
-         "image": "parmesan.jpg",
+         "image": "https://bit.ly/2GDf8D3",
          "consistency": "solid",
          "name": "pecorino romano",
          "original": "2 1/2 ozs very finely grated Pecorino Romano (such as Locatelli) (3/4 cup plus 2 Tbsps)",
@@ -30931,7 +30931,7 @@
                      "id": 10011282,
                      "name": "red onion",
                      "localizedName": "red onion",
-                     "image": "red-onion.png"
+                     "image": "https://bit.ly/2FjBo47"
                   },
                   {
                      "id": 20420,
@@ -30982,7 +30982,7 @@
       {
          "id": 10111549,
          "aisle": "Pasta and Rice",
-         "image": "tomato-sauce-or-pasta-sauce.jpg",
+         "image": "https://bit.ly/30OQlCL",
          "consistency": "solid",
          "name": "marinara sauce",
          "original": "4.5 cups homemade marinara $2.52",
@@ -31237,7 +31237,7 @@
       {
          "id": 1011026,
          "aisle": "Cheese",
-         "image": "cheddar-cheese.png",
+         "image": "https://bit.ly/3deTeBR",
          "consistency": "solid",
          "name": "shredded cheese",
          "original": "½ cup shredded cheese",
@@ -31340,7 +31340,7 @@
                      "id": 1041009,
                      "name": "cheese",
                      "localizedName": "cheese",
-                     "image": "cheddar-cheese.png"
+                     "image": "https://bit.ly/3deTeBR"
                   }
                ],
                "equipment": [
@@ -31370,7 +31370,7 @@
                      "id": 1041009,
                      "name": "cheese",
                      "localizedName": "cheese",
-                     "image": "cheddar-cheese.png"
+                     "image": "https://bit.ly/3deTeBR"
                   }
                ],
                "equipment": [
@@ -31760,7 +31760,7 @@
                      "id": 1041009,
                      "name": "cheese",
                      "localizedName": "cheese",
-                     "image": "cheddar-cheese.png"
+                     "image": "https://bit.ly/3deTeBR"
                   },
                   {
                      "id": 1077,
@@ -31818,7 +31818,7 @@
                      "id": 4639,
                      "name": "ranch dressing",
                      "localizedName": "ranch dressing",
-                     "image": "ranch-dressing.jpg"
+                     "image": "https://bit.ly/3nGWcnA"
                   }
                ],
                "equipment": []
@@ -32017,7 +32017,7 @@
                      "id": 2047,
                      "name": "salt",
                      "localizedName": "salt",
-                     "image": "salt.jpg"
+                     "image": "https://bit.ly/3jP4hnL"
                   }
                ],
                "equipment": []
@@ -32042,7 +32042,7 @@
                      "id": 1192,
                      "name": "velveeta cheese",
                      "localizedName": "velveeta cheese",
-                     "image": "cheddar-cheese.png"
+                     "image": "https://bit.ly/3deTeBR"
                   },
                   {
                      "id": 1077,
@@ -32084,7 +32084,7 @@
                      "id": 1192,
                      "name": "velveeta cheese",
                      "localizedName": "velveeta cheese",
-                     "image": "cheddar-cheese.png"
+                     "image": "https://bit.ly/3deTeBR"
                   },
                   {
                      "id": 0,
@@ -32152,7 +32152,7 @@
       {
          "id": 1026,
          "aisle": "Cheese",
-         "image": "mozzarella.png",
+         "image": "https://bit.ly/30Ry7Aq",
          "consistency": "solid",
          "name": "mozzarella cheese",
          "original": "2 -3 ounces mozzarella cheese, grated",
@@ -32259,7 +32259,7 @@
       {
          "id": 6972,
          "aisle": "Ethnic Foods",
-         "image": "tomato-sauce-or-pasta-sauce.jpg",
+         "image": "https://bit.ly/30OQlCL",
          "consistency": "solid",
          "name": "chili sauce",
          "original": "1 bottle heinz chili sauce",
@@ -32285,7 +32285,7 @@
       {
          "id": 10023572,
          "aisle": "Meat",
-         "image": "fresh-ground-beef.jpg",
+         "image": "https://bit.ly/3nCA25M",
          "consistency": "solid",
          "name": "ground beef",
          "original": "1 lb ground beef",
@@ -32447,7 +32447,7 @@
       {
          "id": 9160,
          "aisle": "Produce",
-         "image": "lime-juice.png",
+         "image": "https://bit.ly/3nzWzA6",
          "consistency": "liquid",
          "name": "lime juice",
          "original": "¼ cup fresh lime juice",
@@ -32511,7 +32511,7 @@
                      "id": 9160,
                      "name": "lime juice",
                      "localizedName": "lime juice",
-                     "image": "lime-juice.png"
+                     "image": "https://bit.ly/3nzWzA6"
                   },
                   {
                      "id": 11124,
@@ -32783,7 +32783,7 @@
       {
          "id": 6194,
          "aisle": "Canned and Jarred",
-         "image": "chicken-broth.png",
+         "image": "https://bit.ly/3jJxKPQ",
          "consistency": "liquid",
          "name": "chicken broth",
          "original": "1 cup chicken broth",
@@ -32809,7 +32809,7 @@
       {
          "id": 11291,
          "aisle": "Produce",
-         "image": "spring-onions.jpg",
+         "image": "https://bit.ly/3jRG53W",
          "consistency": "solid",
          "name": "green onions",
          "original": "1 bunch green onions with tops, chopped",
@@ -32871,7 +32871,7 @@
                      "id": 6194,
                      "name": "chicken broth",
                      "localizedName": "chicken broth",
-                     "image": "chicken-broth.png"
+                     "image": "https://bit.ly/3jJxKPQ"
                   },
                   {
                      "id": 11124,
@@ -33000,7 +33000,7 @@
       {
          "id": 6984,
          "aisle": "Canned and Jarred",
-         "image": "chicken-broth.png",
+         "image": "https://bit.ly/3jJxKPQ",
          "consistency": "liquid",
          "name": "fat-free chicken broth",
          "original": "1 can (14 oz.) fat-free reduced-sodium chicken broth",
@@ -33070,7 +33070,7 @@
                      "id": 1006615,
                      "name": "broth",
                      "localizedName": "broth",
-                     "image": "chicken-broth.png"
+                     "image": "https://bit.ly/3jJxKPQ"
                   }
                ],
                "equipment": [
@@ -33100,7 +33100,7 @@
                      "id": 0,
                      "name": "cream cheese spread",
                      "localizedName": "cream cheese spread",
-                     "image": "cream-cheese.jpg"
+                     "image": "https://bit.ly/2SGHVsy"
                   }
                ],
                "equipment": []
@@ -33419,7 +33419,7 @@
       {
          "id": 1017,
          "aisle": "Cheese",
-         "image": "cream-cheese.jpg",
+         "image": "https://bit.ly/2SGHVsy",
          "consistency": "solid",
          "name": "cream cheese",
          "original": "3/4 cup whipped cream cheese",
@@ -33554,7 +33554,7 @@
       {
          "id": 1033,
          "aisle": "Cheese",
-         "image": "parmesan.jpg",
+         "image": "https://bit.ly/2GDf8D3",
          "consistency": "solid",
          "name": "parmesan cheese",
          "original": "2 Tbsp. KRAFT Grated Parmesan Cheese",
@@ -33631,7 +33631,7 @@
                      "id": 1033,
                      "name": "parmesan",
                      "localizedName": "parmesan",
-                     "image": "parmesan.jpg"
+                     "image": "https://bit.ly/2GDf8D3"
                   }
                ],
                "equipment": []
@@ -33798,7 +33798,7 @@
                      "id": 43274,
                      "name": "reduced fat cream cheese",
                      "localizedName": "reduced fat cream cheese",
-                     "image": "cream-cheese.jpg"
+                     "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                      "id": 11206,
@@ -34009,7 +34009,7 @@
                      "id": 1017,
                      "name": "cream cheese",
                      "localizedName": "cream cheese",
-                     "image": "cream-cheese.jpg"
+                     "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                      "id": 11206,
@@ -34059,7 +34059,7 @@
                      "id": 1017,
                      "name": "cream cheese",
                      "localizedName": "cream cheese",
-                     "image": "cream-cheese.jpg"
+                     "image": "https://bit.ly/2SGHVsy"
                   },
                   {
                      "id": 11583,
@@ -34147,7 +34147,7 @@
       {
          "id": 1129,
          "aisle": "Milk, Eggs, Other Dairy",
-         "image": "hard-boiled-egg.png",
+         "image": "https://bit.ly/30SsoKN",
          "consistency": "solid",
          "name": "hard cooked eggs",
          "original": "6 hard-cooked eggs",
@@ -34173,7 +34173,7 @@
       {
          "id": 4641,
          "aisle": "Condiments",
-         "image": "mayonnaise.png",
+         "image": "https://bit.ly/30VNqIi",
          "consistency": "liquid",
          "name": "reduced fat mayo",
          "original": "3 Tbsp. KRAFT Mayo Garlic & Herb Naturally Flavored Reduced Fat Mayonnaise",
@@ -34236,7 +34236,7 @@
                      "id": 1123,
                      "name": "egg",
                      "localizedName": "egg",
-                     "image": "egg.png"
+                     "image": "https://bit.ly/30SsoKN"
                   }
                ],
                "equipment": []
@@ -34249,7 +34249,7 @@
                      "id": 4025,
                      "name": "mayonnaise",
                      "localizedName": "mayonnaise",
-                     "image": "mayonnaise.png"
+                     "image": "https://bit.ly/30VNqIi"
                   },
                   {
                      "id": 1125,
@@ -34423,7 +34423,7 @@
       {
          "id": 2047,
          "aisle": "Spices and Seasonings",
-         "image": "salt.jpg",
+         "image": "https://bit.ly/3jP4hnL",
          "consistency": "solid",
          "name": "salt",
          "original": "1/2 tsp salt (or to taste)",
@@ -34498,7 +34498,7 @@
                      "id": 2047,
                      "name": "salt",
                      "localizedName": "salt",
-                     "image": "salt.jpg"
+                     "image": "https://bit.ly/3jP4hnL"
                   }
                ],
                "equipment": [
@@ -34734,7 +34734,7 @@
                      "id": 11215,
                      "name": "garlic",
                      "localizedName": "garlic",
-                     "image": "garlic.png"
+                     "image": "https://bit.ly/34HK5Oc"
                   },
                   {
                      "id": 11216,
@@ -34823,7 +34823,7 @@
                      "id": 2043,
                      "name": "turmeric",
                      "localizedName": "turmeric",
-                     "image": "turmeric.jpg"
+                     "image": "https://bit.ly/33KHWlI"
                   },
                   {
                      "id": 11124,
@@ -34899,7 +34899,7 @@
                      "id": 10220445,
                      "name": "cooked rice",
                      "localizedName": "cooked rice",
-                     "image": "uncooked-white-rice.png"
+                     "image": "https://bit.ly/30Pwtzi"
                   }
                ],
                "equipment": []
@@ -35206,7 +35206,7 @@
                      "id": 20444,
                      "name": "rice",
                      "localizedName": "rice",
-                     "image": "uncooked-white-rice.png"
+                     "image": "https://bit.ly/30Pwtzi"
                   }
                ],
                "equipment": []
@@ -36125,7 +36125,7 @@
       {
          "id": 20444,
          "aisle": "Pasta and Rice",
-         "image": "uncooked-white-rice.png",
+         "image": "https://bit.ly/30Pwtzi",
          "consistency": "solid",
          "name": "rice",
          "original": "Rice 100 gr",
@@ -36868,7 +36868,7 @@
       {
          "id": 19904,
          "aisle": "Sweet Snacks",
-         "image": "dark-chocolate-pieces.jpg",
+         "image": "https://bit.ly/36P3xeJ",
          "consistency": "solid",
          "name": "dark chocolate",
          "original": "7oz Sugar-Free Dark Chocolate",
@@ -37022,7 +37022,7 @@
                      "id": 19904,
                      "name": "dark chocolate",
                      "localizedName": "dark chocolate",
-                     "image": "dark-chocolate-pieces.jpg"
+                     "image": "https://bit.ly/36P3xeJ"
                   },
                   {
                      "id": 19081,
@@ -37255,7 +37255,7 @@
                      "id": 1001,
                      "name": "butter",
                      "localizedName": "butter",
-                     "image": "butter-sliced.jpg"
+                     "image": "https://bit.ly/3lETZap"
                   },
                   {
                      "id": 10018166,
@@ -37323,7 +37323,7 @@
       {
          "id": 19903,
          "aisle": "Sweet Snacks",
-         "image": "dark-chocolate-pieces.jpg",
+         "image": "https://bit.ly/36P3xeJ",
          "consistency": "solid",
          "name": "bittersweet chocolate",
          "original": "3 lbs (about 9 1/2 cups) bittersweet chocolate couverture, finely chopped",
@@ -37521,7 +37521,7 @@
       {
          "id": 19903,
          "aisle": "Sweet Snacks",
-         "image": "dark-chocolate-pieces.jpg",
+         "image": "https://bit.ly/36P3xeJ",
          "consistency": "solid",
          "name": "semi-sweet chocolate candy melts",
          "original": "5 ounces semi-sweet chocolate candy melts",
@@ -37660,7 +37660,7 @@
                      "id": 19903,
                      "name": "semisweet chocolate",
                      "localizedName": "semisweet chocolate",
-                     "image": "dark-chocolate-pieces.jpg"
+                     "image": "https://bit.ly/36P3xeJ"
                   },
                   {
                      "id": 19087,
@@ -37880,7 +37880,7 @@
       {
          "id": 10019904,
          "aisle": "Sweet Snacks",
-         "image": "dark-chocolate-pieces.jpg",
+         "image": "https://bit.ly/36P3xeJ",
          "consistency": "solid",
          "name": "dark chocolate bar",
          "original": "1 4 oz. chocolate bar (any kind – I used semisweet/dark)",
@@ -37910,7 +37910,7 @@
       {
          "id": 1123,
          "aisle": "Milk, Eggs, Other Dairy",
-         "image": "egg.png",
+         "image": "https://bit.ly/30SsoKN",
          "consistency": "solid",
          "name": "egg",
          "original": "1 egg + 1 Tablespoon water",
@@ -38058,7 +38058,7 @@
                      "id": 1123,
                      "name": "egg",
                      "localizedName": "egg",
-                     "image": "egg.png"
+                     "image": "https://bit.ly/30SsoKN"
                   }
                ],
                "equipment": [
@@ -38096,7 +38096,7 @@
                      "id": 1123,
                      "name": "egg",
                      "localizedName": "egg",
-                     "image": "egg.png"
+                     "image": "https://bit.ly/30SsoKN"
                   }
                ],
                "equipment": []
@@ -38109,7 +38109,7 @@
                      "id": 1123,
                      "name": "egg",
                      "localizedName": "egg",
-                     "image": "egg.png"
+                     "image": "https://bit.ly/30SsoKN"
                   }
                ],
                "equipment": [
@@ -38182,7 +38182,7 @@
       {
          "id": 12087,
          "aisle": "Nuts;Savory Snacks",
-         "image": "cashews.jpg",
+         "image": "https://bit.ly/3iPB7DJ",
          "consistency": "solid",
          "name": "cashews",
          "original": "2 cups cashews, soaked for 2 hours",
@@ -38347,7 +38347,7 @@
                      "id": 12087,
                      "name": "cashews",
                      "localizedName": "cashews",
-                     "image": "cashews.jpg"
+                     "image": "https://bit.ly/3iPB7DJ"
                   }
                ],
                "equipment": [
@@ -38842,7 +38842,7 @@
       {
          "id": 19903,
          "aisle": "Sweet Snacks",
-         "image": "dark-chocolate-pieces.jpg",
+         "image": "https://bit.ly/36P3xeJ",
          "consistency": "solid",
          "name": "semisweet chocolate",
          "original": "8 ounces semisweet chocolate, chopped",
@@ -38944,7 +38944,7 @@
       {
          "id": 19903,
          "aisle": "Sweet Snacks",
-         "image": "dark-chocolate-pieces.jpg",
+         "image": "https://bit.ly/36P3xeJ",
          "consistency": "solid",
          "name": "semi-sweet chocolate disks",
          "original": "12 ounces semi-sweet chocolate disks",
@@ -39394,7 +39394,7 @@
       {
          "id": 1031009,
          "aisle": "Cheese",
-         "image": "cheddar-cheese.png",
+         "image": "https://bit.ly/3deTeBR",
          "consistency": "solid",
          "name": "sharp cheddar",
          "original": "1 large sharp knife",
@@ -39420,7 +39420,7 @@
       {
          "id": 1031009,
          "aisle": "Cheese",
-         "image": "cheddar-cheese.png",
+         "image": "https://bit.ly/3deTeBR",
          "consistency": "solid",
          "name": "sharp cheddar",
          "original": "-1 large sharp knife",
@@ -40757,7 +40757,7 @@
       {
          "id": 1001,
          "aisle": "Milk, Eggs, Other Dairy",
-         "image": "butter-sliced.jpg",
+         "image": "https://bit.ly/3lETZap",
          "consistency": "solid",
          "name": "butter",
          "original": "3 tablespoons butter",
@@ -40910,7 +40910,7 @@
                      "id": 1001,
                      "name": "butter",
                      "localizedName": "butter",
-                     "image": "butter-sliced.jpg"
+                     "image": "https://bit.ly/3lETZap"
                   },
                   {
                      "id": 16112,
@@ -40961,7 +40961,7 @@
                      "id": 1001,
                      "name": "butter",
                      "localizedName": "butter",
-                     "image": "butter-sliced.jpg"
+                     "image": "https://bit.ly/3lETZap"
                   }
                ],
                "equipment": [
@@ -40985,7 +40985,7 @@
                      "id": 1001,
                      "name": "butter",
                      "localizedName": "butter",
-                     "image": "butter-sliced.jpg"
+                     "image": "https://bit.ly/3lETZap"
                   }
                ],
                "equipment": []
@@ -41079,7 +41079,7 @@
       {
          "id": 93618,
          "aisle": "Refrigerated",
-         "image": "crescent-rolls.jpg",
+         "image": "https://bit.ly/2SLOTN6",
          "consistency": "solid",
          "name": "refrigerated crescent rolls",
          "original": "1 tube (8 ounces) refrigerated crescent rolls",

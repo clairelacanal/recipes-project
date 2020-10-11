@@ -1,12 +1,133 @@
-<div class="recipes-zone">
-  {{#each recipes}}
-      <div class="card">
-        <img src={{image}} class="card-img-top" alt="{{title}}-image">
-        <div class="card-body">
-          <p class="card-title">{{title}}</p>
-          <p class="card-text">{{readyInMinutes}} min</p>
-          {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">EN SAVOIR PLUS</a></button>{{/if}}
-        </div>
+<section class="page">
+  <h2 id="h2allrecipes">RECIPES</h2>
+  <div id ="changeingredients">
+    <a href="/">Change your ingredients</a>
+  </div>
+
+  <div id="recipes-container">
+    <div id="recipes-filter">
+      <form action="/search" method="GET">
+        <p>Diets</p>
+          <div>
+            <input type="checkbox" name="lacto ovo vegetarian" id="vege-diet">
+            <label for="vege-diet">Vegetarian</label>
+          </div>
+          <div>
+            <input type="checkbox" name="vegan" id="vegan-diet">
+            <label for="vegan-diet">Vegan</label>
+          </div>
+          <div>
+            <input type="checkbox" name="gluten free" id="gluten-diet">
+            <label for="veg-diet">Gluten Free</label>
+          </div>
+          <div>
+            <input type="checkbox" name="dairy free" id="dairy-diet">
+            <label for="veg-diet">Dairy Free</label>
+          </div>    
+        <p>Cuisine</p>  
+          <div>
+            <input type="checkbox" name="American" id="american-cuisine">
+            <label for="american-cuisine">American</label>
+          </div>
+          <div>
+            <input type="checkbox" name="British" id="british-cuisine">
+            <label for="british-cuisine">British</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Chinese" id="chinese-cuisine">
+            <label for="chinese-cuisine">Chinese</label>
+          </div>
+          <div>
+            <input type="checkbox" name="French" id="french-cuisine">
+            <label for="french-cuisine">French</label>
+          </div>
+          <div>
+            <input type="checkbox" name="German" id="german-cuisine">
+            <label for="german-cuisine">German</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Indian" id="indian-cuisine">
+            <label for="indian-cuisine">Indian</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Italian" id="italian-cuisine">
+            <label for="italian-cuisine">Italian</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Japanese" id="japanese-cuisine">
+            <label for="japanese-cuisine">Japanse</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Korean" id="korean-cuisine">
+            <label for="korean-cuisine">Korean</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Mediterranean" id="mediterranean-cuisine">
+            <label for="mediterranean-cuisine">Mediterranean</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Mexican" id="mexican-cuisine">
+            <label for="mexican-cuisine">Mexican</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Thai" id="thai-cuisine">
+            <label for="thai-cuisine">Thai</label>
+          </div>
+        <p>Dish Types</p>
+          <div>
+            <input type="checkbox" name="main course" id="main-type">
+            <label for="main-type">Main course</label>
+          </div>
+          <div>
+            <input type="checkbox" name="main dish" id="main-type">
+            <label for="main-type">Main dish</label>
+          </div>
+          <div>
+            <input type="checkbox" name="side dish" id="side-type">
+            <label for="side-type">Side dish</label>
+          </div>
+          <div>
+            <input type="checkbox" name="dessert" id="dessert-type">
+            <label for="dessert-type">Dessert</label>
+          </div>
+          <div>
+            <input type="checkbox" name="appetizer" id="appetizer-type">
+            <label for="appetizer-type">Appetizer</label>
+          </div>
+          <div>
+            <input type="checkbox" name="condiment" id="condiment-type">
+            <label for="condiment-type">Condiment</label>
+          </div>
+          <div>
+            <input type="checkbox" name="salad" id="salad-type">
+            <label for="salad-type">Salad</label>
+          </div>
+          <div>
+            <input type="checkbox" name="breakfast" id="breakfast-type">
+            <label for="breakfast-type">Breakfast</label>
+          </div>
+          <div>
+            <input type="checkbox" name="soup" id="soup-type">
+            <label for="soup-type">Soup</label>
+          </div>
+        <button>Search</button>
+      </form>
+      
     </div>
-  {{/each}}
-</div>
+
+
+    <div class="recipes-zone">
+      {{#each recipes}}
+          <div class="card">
+            <img src={{image}} class="card-img-top" alt="{{title}}-image">
+            <div class="card-body">
+              <p class="card-title">{{title}}</p>
+              <p class="card-text">{{readyInMinutes}} min</p>
+              {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">SEE THE RECIPE</a></button>{{/if}}
+            </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>
+</section>

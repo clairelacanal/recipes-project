@@ -10,9 +10,13 @@ const recipeSchema = new Schema({
 	ingredients: [{ type : Schema.Types.ObjectId, ref: 'Ingredient' }],
 	instructions: String,
 	analyzedInstructions: [Object],
+	vegetarian: Boolean,
+	vegan: Boolean,
+	glutenFree: Boolean,
+	dairyFree: Boolean,
 	dishTypes: [String],
 	cuisines: [String],
-	diets: [String],
+	diets: [String]
   //review: [ { type : Schema.Types.ObjectId, ref: 'Comment' } ] 
 },
 {		
