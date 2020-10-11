@@ -66,7 +66,7 @@ router.post('/', (req,res,next) => {
 router.get('/search', (req, res, next) => {
   
   let queries = Object.keys(req.query);
-  console.log(queries) // [ 'french', 'main' ]
+  //console.log(queries) // [ 'french', 'main' ]
 
   let diets = [];
   let cuisines = [];
@@ -92,9 +92,9 @@ router.get('/search', (req, res, next) => {
     ]})
 
     .then(recipesFromDB => {
-      console.log("recipes from DBbbbb",recipesFromDB);
+      //console.log("recipes from DBbbbb",recipesFromDB);
       res.render('recipes/all-recipes-filter', {
-        recipes: recipesFromDB
+        recipes: recipesFromDB, 
       })
     }).catch(err => console.log(err))
   
@@ -102,10 +102,15 @@ router.get('/search', (req, res, next) => {
 
 //GET route pour afficher le détail d'une recette
 router.get('/recipes/:id/detail-recipe', (req, res, next) => {
+  if (!req.session.user) {
+    res.redirect('/login')
+  }
+
   Recipe.findById(req.params.id)
   .populate('ingredients')
   .then((recipesDetails) => {
     res.render('recipes/detail-recipe', {
+      user: req.session.user,
       recipes:recipesDetails
     })
   }).catch(err => {
@@ -115,8 +120,12 @@ router.get('/recipes/:id/detail-recipe', (req, res, next) => {
 
 // GET route pour afficher le formulaire de création de notre recette
 router.get('/create', fileUploader.single('image'), (req, res, next) => {
+  if (!req.session.user) {
+    res.redirect('/login')
+  }
   res.render('profile/create-recipe')
 })
+
 
 //POST route pour traiter les données du formulaire
 router.post('/create', fileUploader.single('image'), (req, res, next) => {
@@ -248,6 +257,7 @@ router.get('/userProfile/:id/my-own-recipes', fileUploader.single('image'), (req
 })
 })
 
+
 //POST route pour delete mes propres recettes
 router.post('/recipes/:id/delete',(req,res,next)=> {
   Recipe.findByIdAndDelete(req.params.id).then(recipe => {
@@ -264,7 +274,6 @@ router.post('/recipes/:id/delete',(req,res,next)=> {
   })
   }).catch(err => next(err))
 })
-
 
 
 //GET route - Affichage du formulaire pour editer
@@ -428,10 +437,6 @@ router.post('/recipes/:id/edit', fileUploader.single('image'), (req, res, next) 
     }).catch(err => next(err))
   })
   })
-
-
-
-
 
 
 
