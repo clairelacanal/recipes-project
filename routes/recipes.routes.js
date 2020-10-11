@@ -106,7 +106,8 @@ router.get('/recipes/:id/detail-recipe', (req, res, next) => {
   .populate('ingredients')
   .then((recipesDetails) => {
     res.render('recipes/detail-recipe', {
-      recipes:recipesDetails
+      recipes:recipesDetails,
+      userid:req.session.userid
     })
   }).catch(err => {
     next(err)
@@ -431,16 +432,28 @@ router.post('/recipes/:id/edit', fileUploader.single('image'), (req, res, next) 
 
 // GET route pour afficher les recettes favorites de la base de données 
 router.get('/userProfile/:id/favorite-recipes', fileUploader.single('image'), (req, res, next) => {
+  let numberOfFavoriteRecipes;
+  let hasSomeFavorieRecipes = false;
+
+  if(numberOfFavoriteRecipes > 0) {
+    hasSomeFavorieRecipes = true;
+  }
+
   User.findById(req.params.id)
-  .populate('myRecipes')
+  .populate('favoriteRecipes')
   .then((user) => {
-    res.render('profile/my-own-recipes', {
-      recipes:user.myRecipes,
-      numberOfRecipes:user.myRecipes.length
+    res.render('profile/favorite-recipes', {
+      recipes:user.favoriteRecipes,
+      numberOfFavoriteRecipes:user.favoriteRecipes.length,
+      hasSomeFavorieRecipes:hasSomeFavorieRecipes
     }) 
   }).catch(err => {
     next(err)
 })
+})
+
+router.get('userProfile/:id/addRecipe/:recipeid', fileUploader.single('image'), (req, res, next) => {
+  alert(req.params.id);
 })
 
 

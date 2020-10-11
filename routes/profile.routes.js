@@ -8,15 +8,17 @@ const User = require('../models/User.model');
 
 
 //GET route - Route d'affichage de mon userProfile
-router.get('/userProfile', (req, res, next) => {
+router.get('/userProfile',(req, res, next) => {
   req.session.user.id = req.session.userid;
+  
+
   // verifier que le user est logge
   if (!req.session.user) {
     res.redirect('/login')
     return
   }
   res.render("profile/profile-user", {
-    user: req.session.user
+    user: req.session.user,
   })
 })
 
@@ -42,31 +44,42 @@ router.post('/userProfile/:id/account-settings', fileUploader.single('image'),(r
   const plainPassword = req.body.password;
   const hashedPassword = bcryptjs.hashSync(plainPassword, salt);
 
-
   if (req.file) {
     photoUser = req.file.path;
   } else {
     photoUser = req.body.existingImage;
   }
 
-
-  User.findByIdAndUpdate(req.params.id,{
-    username,
-    email,
-    passwordHash:hashedPassword,
-    photoUser
-  },{ new: true }).then((user) => {
-    res.render('profile/profile-user', {
-      user:user
-    });
-  }).catch(err =>{
-    next(err);
-  })
+  if (plainPassword === '') {
+    User.findByIdAndUpdate(req.params.id,{
+      username,
+      email,
+      photoUser
+    },{ new: true }).then((user) => {
+      req.session.user = user;
+      res.render('profile/profile-user', {
+        user:user
+      });
+    }).catch(err =>{
+      next(err);
+    })
+  } else {
+    User.findByIdAndUpdate(req.params.id,{
+      username,
+      email,
+      passwordHash:hashedPassword,
+      photoUser
+    },{ new: true }).then((user) => {
+      req.session.user = user;
+      res.render('profile/profile-user', {
+        user:user
+      });
+    }).catch(err =>{
+      next(err);
+    })
+  }
 })
 
-router.get('/userProfile/:id/favorite-recipes',(req,res,next) => {
-  res.render('profile/favorite-recipes')
-})
 
 router.get('/userProfile/:id/logout',(req,res,next) => {
   res.render('profile/logout')

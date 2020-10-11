@@ -59,9 +59,11 @@ router.get("/login", (req, res, next) => {
 router.post("/login", (req, res, next) => {
   console.log('SESSION =====> ', req.session);
   
-  const {username, email, password} = req.body;
+  const {email, password} = req.body;
 
-  if (username == '' || email === '' || password === '') {
+  console.log(JSON.stringify(email + ":" + password))
+
+  if (email === '' || password === '') {
     res.render('auth/login', {
       errorMessage: 'Please enter your email and password to login.'
     });

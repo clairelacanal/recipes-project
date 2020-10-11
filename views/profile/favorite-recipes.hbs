@@ -1,19 +1,18 @@
 <section id="my-favorite-recipes">
   <h1>MY FAVORITE RECIPES</h1>
 
-  {{!--LE USER N'A PAS ENCORE DE RECETTE FAVORITE--}}
-  {{#if false}}
-  <div class="favorite-recipes">
-    <h1>YOU HAVE {{numberOfFavoriteRecipes}} favorite recipes</h1>
-    <p>To add favorite recipe, you have to like the recipe on the recipe details page</p>
-  </div>
-  {{/if}}
 
   {{!--LE USER A AU MOINS UNE RECETTE FAVORITE--}}
-  {{#if true}}
+  {{#if hasSomeFavorieRecipes}}
   <div class="favorite-recipes">
     <h1>YOU HAVE {{numberOfFavoriteRecipes}} favorite recipes</h1>
   </div>
+  {{else}}
+  <div class="favorite-recipes">
+    <h1>YOU HAVE 0 favorite recipes</h1>
+    <p>To add favorite recipe, you have to like the recipe on the recipe details page</p>
+  </div>
+  
   {{/if}}
 
 </section>
