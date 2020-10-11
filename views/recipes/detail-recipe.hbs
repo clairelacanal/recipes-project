@@ -1,10 +1,15 @@
-  <section id="details-recipes">
+  <section class='page' id="details-recipes">
+    
     <div class="name-of-recipe">
+      <div class="linkpages">
+        <a href="/recipes">See all recipes</a>
+      </div>
       <h2>{{recipes.title}}</h2>
       <div class="logos">
         <img src="/images/heart.png" alt="logo-heart" id="heart">
       </div>
     </div>
+   
 
 
     <div class="infos">
@@ -28,24 +33,25 @@
       </ul>
     </div>
 
-    <div id="img-container">
-      <div class="ingredients-used">
-        <h5>Ingredients</h5>
-        <div class="ingredients">
-          {{#each recipes.ingredients}}
+    <div id="photo-recipe">
+      <img src="{{recipes.image}}" alt="">
+    </div>
+
+    <div class="ingredients-used">
+      <h5>Ingredients</h5>
+      <div class="ingredients">
+        {{#each recipes.ingredients}}
           <div>
             <img src="{{this.image}}" alt="">
             <p>{{this.name}}</p>
           </div>
-          {{/each}}
-        </div>
+        {{/each}}
       </div>
-      <img id="photo-recipe" src="{{recipes.image}}" alt="">
     </div>
 
     {{#if recipes.analyzedInstructions}}
     <div class="recipe">
-      <h5>Instructions :</h5>
+      <h5>Instructions</h5>
       {{#each recipes.analyzedInstructions}}
       <ul>
         {{#each this.steps}}
@@ -57,6 +63,7 @@
       {{/each}}
     </div>
     {{/if}}
+  
 <!--
     <div class="comment">
       <h5>Comment :</h5>

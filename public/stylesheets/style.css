@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -345,7 +344,7 @@ nav ul li a:hover {
   padding: 40px 40px 20px 40px;
   text-align: center; }
 
-#changeingredients {
+.linkpages {
   width: 200px;
   margin: 0 auto 50px auto;
   text-align: center;
@@ -354,7 +353,7 @@ nav ul li a:hover {
   padding: 5px;
   background-color: white; }
 
-#changeingredients a {
+.linkpages a {
   text-decoration: none;
   color: var(--rosefonce); }
 
@@ -562,6 +561,9 @@ button {
 ##     ##       ## ##       ##   ##           ##        ##   ##   ##     ## ##        ##  ##       
 ##     ## ##    ## ##       ##    ##          ##        ##    ##  ##     ## ##        ##  ##       
  #######   ######  ######## ##     ##         ##        ##     ##  #######  ##       #### ########  */
+#user-profil {
+  height: 85vh; }
+
 .container-user {
   display: flex;
   flex-direction: column;
@@ -668,28 +670,30 @@ button {
 ########  ########    ##    ##     ## #### ########  ######     ##     ## ########  ######  #### ##        ########  ######   */
 .name-of-recipe {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 3em; }
+  margin-top: 3em;
+  align-items: center; }
 
 .name-of-recipe img {
   width: 40px;
-  margin: 10px 10px 0 0; }
+  margin: 20px 0; }
 
 .name-of-recipe h2 {
-  width: 70%; }
+  width: 70%;
+  text-align: center; }
 
 .infos {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  margin-top: 1em;
+  justify-content: center;
+  margin: 1em auto 40px auto;
   padding: 1em;
   border-radius: 30px;
   font-size: 20px;
   background-color: var(--rosefonce);
-  margin-bottom: 40px; }
+  width: 70%; }
 
 .infos ul {
   display: flex;
@@ -705,33 +709,39 @@ button {
   color: white;
   font-weight: 500; }
 
-#img-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px; }
-
 #photo-recipe {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   width: 60%; }
+
+.recipe-container {
+  display: flex; }
 
 .ingredients-used {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  border-radius: 0.8em;
-  width: 35%; }
+  align-items: center;
+  margin: 30px auto 10px auto;
+  width: 60%;
+  border-top: solid 1px var(--vertfonce);
+  border-bottom: solid 1px var(--vertfonce); }
 
 h5 {
   color: var(--vertfonce);
   font-size: 30px;
   text-transform: uppercase;
-  margin: 0 10px 20px 10px; }
+  margin: 40px 10px 20px 10px; }
 
 .ingredients p {
   margin-top: 1em;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-size: 17px;
+  text-align: center; }
 
 .ingredients {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 .ingredients div {
   display: flex;
@@ -740,31 +750,29 @@ h5 {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  margin: 15px; }
+  margin: 40px; }
 
 .ingredients img {
-  height: 100px; }
-
-.ingredients-used ul li:before {
-  content: "→ ";
-  /* caractère UTF-8 */ }
+  height: 100px;
+  border-radius: 50%; }
 
 .recipe {
-  background-color: var(--rose);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: 2em;
-  padding: 1.5em;
-  border-radius: 0.8em; }
-
-.recipe h5 {
-  margin-left: 2em;
-  color: var(--vertfonce); }
+  align-items: center;
+  border-radius: 0.8em;
+  width: 60%;
+  margin: 0 auto 0 auto; }
 
 .recipe ul ol {
-  margin-top: 1em; }
+  margin: 0;
+  padding: 10px 0 10px 0;
+  line-height: 1.5em; }
+
+.recipe ul {
+  margin: 0;
+  padding: 0;
+  font-size: 20px; }
 
 .comment {
   background-color: var(--rose);
@@ -781,10 +789,7 @@ h5 {
   color: var(--vertfonce); }
 
 #details-recipes {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3em; }
+  padding: 40px; }
 
 /*
  ######  ########  ########    ###    ######## ########    ########  ########  ######  #### ########  ######## 
