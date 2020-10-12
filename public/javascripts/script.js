@@ -75,5 +75,5 @@ function addLike(){
 
 
 function addToMyFavorite(recipeId,userid) {
-  axios.post("http://localhost:3000/userProfile/"+userid+"/"+recipeId+"/add-favorite-recipes")   
+  axios.post("https://basil-recipes.herokuapp.com/userProfile/"+userid+"/"+recipeId+"/add-favorite-recipes")   
 }
