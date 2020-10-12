@@ -37,7 +37,7 @@
           <nav>
             <ul>
               <li><a href="/recipes">Recipes</a></li>
-              <li><a href="/">Create</a></li>
+              <li><a href="/create">Create</a></li>
               <li><a href="/signup">Sign Up</a></li>
               <li><a href="/login">Log In</a></li>
             </ul>
@@ -56,12 +56,12 @@
         </div>
         <div class="bar-search">
           <form action="/" method="POST" autocomplete="off">
-              <input type="search" id="ingredients-search-1" name="ingredient1" placeholder="Chicken">
+              <input type="search" id="ingredients-search-1" name="ingredient1" placeholder="Example: chicken" required="required">
               <div id="suggestions-input-1">
               </div>
-            <input type="search" id="ingredients-search-2" name="ingredient2" placeholder="Tomatoes">
+            <input type="search" id="ingredients-search-2" name="ingredient2" placeholder="Example: tomatoes">
             <div id="suggestions-input-2"></div>
-            <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Egg">
+            <input type="search" id="ingredients-search-3" name="ingredient3" placeholder="Example: egg">
             <div id="suggestions-input-3"></div>
             <button id="btn-search">search</button>
           </form>
@@ -72,7 +72,7 @@
   </section>
   <footer>
       <div class="elements-footer">
-        <p>Contact</p>
+        <p><a href="mailto:laura.bonavent@gmail.com" id="contact">Contact</a></p>
       </div>
   </footer>
 

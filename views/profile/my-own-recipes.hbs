@@ -1,26 +1,29 @@
 
-<div id="section-my-recipes">
-  <h1>MY RECIPES</h1>
-  <div class="container-my-recipes">
-    <h1>YOU HAVE CREATED {{numberOfRecipes}} RECIPES</h1>
-    <div class="recipes-zone">
-  {{#each recipes}}
-      <div class="card">
-        <img src={{image}} class="card-img-top" alt="{{title}}-image">
-        <div class="card-body">
-          <p class="card-title">{{title}}</p>
-          <p class="card-text">{{readyInMinutes}} min</p>
-          {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">EN SAVOIR PLUS</a></button>{{/if}}
-          <div class="modify-and-delete">
-            <a href="/recipes/{{id}}/edit">MODIFY</a>
-            <form action="/recipes/{{id}}/delete" method="POST"><button>DELETE</button></form>
+<section class="page">
+  <div id="section-my-recipes">
+    <h2>MY CREATED RECIPES</h2>
+    <div class="container-my-recipes">
+      <h3>YOU HAVE CREATED {{numberOfRecipes}} RECIPES</h3>
+      <div class="linkpages">
+        <a href="/create">Create a recipe</a>
+      </div>
+      <div class="recipes-zone">
+        {{#each recipes}}
+            <div class="card" id="card-own-recipe">
+              <img src={{image}} class="card-img-top" alt="{{title}}-image">
+              <div class="card-body">
+                <p class="card-title">{{title}}</p>
+                <p class="card-text">{{readyInMinutes}} min</p>
+                {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">SEE THE RECIPE</a></button>{{/if}}
+                <div class="modify-and-delete">
+                  <a href="/recipes/{{id}}/edit">MODIFY</a>
+                  <form action="/recipes/{{id}}/delete" method="POST"><button>DELETE</button></form>
+                </div>
+              </div>
           </div>
-        </div>
+        {{/each}}
+      </div>
     </div>
-  {{/each}}
-</div>
-    <button><a href="/create">Create a Recipe</a></button>
   </div>
-</div>
-
+</section> 
 
