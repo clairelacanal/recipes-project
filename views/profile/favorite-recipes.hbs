@@ -1,30 +1,34 @@
-<section id="my-favorite-recipes">
-  <h1>MY FAVORITE RECIPES</h1>
-
-
-  {{!--LE USER A AU MOINS UNE RECETTE FAVORITE--}}
-  {{#if hasSomeFavorieRecipes}}
-  <div class="favorite-recipes">
-    <h1>YOU HAVE {{numberOfFavoriteRecipes}} favorite recipes</h1>
-    <div class="recipes-zone">
-      {{#each recipes}}
-          <div class="card">
-            <img src={{image}} class="card-img-top" alt="{{title}}-image">
-            <div class="card-body">
-              <p class="card-title">{{title}}</p>
-              <p class="card-text">{{readyInMinutes}} min</p>
-              {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">SEE THE RECIPE</a></button>{{/if}}
-            </div>
-        </div>
-      {{/each}}
+<section class="page" id="page-2">
+  <div id="section-my-recipes">
+    <h2>MY FAVORITE RECIPES</h2>
+    {{!--LE USER A AU MOINS UNE RECETTE FAVORITE--}}
+    {{#if hasSomeFavorieRecipes}}
+    <div class="container-my-recipes">
+      <h3>YOU HAVE {{numberOfFavoriteRecipes}} FAVORITE RECIPES</h3>
+      <div class="linkpages">
+        <a href="/recipes">See all recipes</a>
+      </div>
+      <div class="recipes-zone">
+        {{#each recipes}}
+            <div class="card">
+              <img src={{image}} class="card-img-top" alt="{{title}}-image">
+              <div class="card-body">
+                <p class="card-title">{{title}}</p>
+                <p class="card-text">{{readyInMinutes}} min</p>
+                {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">SEE THE RECIPE</a></button>{{/if}}
+              </div>
+          </div>
+        {{/each}}
+      </div>
     </div>
+    {{else}}
+    <!--
+    <div class="favorite-recipes">
+      <h1>YOU HAVE 0 favorite recipes</h1>
+      <p>To add favorite recipe, you have to like the recipe on the recipe details page</p>
+    </div>
+    -->
+    
+    {{/if}}
   </div>
-  {{else}}
-  <div class="favorite-recipes">
-    <h1>YOU HAVE 0 favorite recipes</h1>
-    <p>To add favorite recipe, you have to like the recipe on the recipe details page</p>
-  </div>
-  
-  {{/if}}
-
 </section>

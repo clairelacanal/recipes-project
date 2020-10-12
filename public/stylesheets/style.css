@@ -22,7 +22,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: var(--roboto);
-  background: linear-gradient(246deg, rgba(231, 244, 1, 0.445816) 0%, white 12%);
+  background: linear-gradient(246deg, rgba(231, 244, 1, 0.445816) 0%, white 30%);
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -269,14 +269,8 @@ nav ul li a:hover {
   font-weight: 700;
   text-transform: uppercase; }
 
-/*.cards {
-  margin-top: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; 
-}*/
 .card-body {
-  margin: 0 10px;
+  margin: 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -308,12 +302,13 @@ nav ul li a:hover {
 
 .card img {
   width: 280px;
+  height: 200px;
   border-radius: 10px 10px 0 0;
   margin-bottom: 10px; }
 
 .card-title {
   margin: 0;
-  height: 3em;
+  height: 3.6em;
   font-weight: 700;
   font-size: 17px;
   text-align: center; }
@@ -347,6 +342,9 @@ nav ul li a:hover {
   margin: 10px 60px;
   background-color: white;
   border-radius: 30px; }
+
+#page-2 {
+  min-height: 80vh; }
 
 #h2allrecipes {
   padding: 40px 40px 20px 40px;
@@ -933,7 +931,6 @@ h5 {
 
 #card-own-recipe {
   height: auto;
-  margin-bottom: 50px;
-  padding: 1em; }
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
