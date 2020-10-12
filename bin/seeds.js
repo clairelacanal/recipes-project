@@ -1,3 +1,7 @@
+require('dotenv').config({
+   path: require('path').resolve(__dirname, '../.env')
+ })
+
 require('debug')('foo')
 
 const mongoose = require('mongoose')
@@ -37,7 +41,7 @@ const recipesData = require('./data.json')
 ]
 */
 
-mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
+mongoose.connect(process.env.MONGODB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
