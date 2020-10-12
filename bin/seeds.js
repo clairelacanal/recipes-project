@@ -1,3 +1,7 @@
+require('dotenv').config({
+   path: require('path').resolve(__dirname, '../.env')
+ })
+
 require('debug')('foo')
 
 const mongoose = require('mongoose')
@@ -8,7 +12,7 @@ const Ingredient = require('../models/Ingredients.model.js')
 Recipe.collection.drop()
 Ingredient.collection.drop()
 
-const DB_NAME = "recipes-project";
+//const DB_NAME = "recipes-project";
 
 // Recipie
 //   ingredients -> Ingredient
@@ -37,13 +41,14 @@ const recipesData = require('./data.json')
 ]
 */
 
-mongoose.connect(`mongodb://localhost/${DB_NAME}`, {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => {
-    console.log('Connected to the database')
-})
+mongoose
+  .connect(process.env.MONGODB_URI, {useNewUrlParser: true})
+  .then(x => {
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+  })
+  .catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
 
 //
 // 1. creer les ingredients en base (issus de chq recette des datas)

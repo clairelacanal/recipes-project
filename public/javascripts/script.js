@@ -58,3 +58,22 @@ function addStep() {
   divStep.appendChild(labelStep);
 	document.getElementById('all-steps').appendChild(divStep);
 }
+
+function addLike(){
+  let heartImage = document.getElementById("heart");
+  let currentImage = heartImage.getAttribute("src");
+  let divId = document.getElementById("idRecipe");
+  let recipeId = divId.getAttribute("value");
+  let userid = divId.getAttribute("user");
+  if (currentImage === "/images/heart.png") {
+    heartImage.setAttribute("src", "/images/heart-full.png");
+    addToMyFavorite(recipeId,userid);
+  } else {
+    heartImage.setAttribute("src", "/images/heart.png");
+  }
+}
+
+
+function addToMyFavorite(recipeId,userid) {
+  axios.post("https://basil-recipes.herokuapp.com/userProfile/"+userid+"/"+recipeId+"/add-favorite-recipes")   
+}

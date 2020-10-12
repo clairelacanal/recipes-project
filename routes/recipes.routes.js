@@ -110,8 +110,8 @@ router.get('/recipes/:id/detail-recipe', (req, res, next) => {
   .populate('ingredients')
   .then((recipesDetails) => {
     res.render('recipes/detail-recipe', {
-      user: req.session.user,
-      recipes:recipesDetails
+      recipes:recipesDetails,
+      userid:req.session.userid
     })
   }).catch(err => {
     next(err)
@@ -438,8 +438,44 @@ router.post('/recipes/:id/edit', fileUploader.single('image'), (req, res, next) 
   })
   })
 
+// GET route pour afficher les recettes favorites de la base de données 
+router.get('/userProfile/:id/favorite-recipes', fileUploader.single('image'), (req, res, next) => {
+  let numberOfFavoriteRecipes;
+  let hasSomeFavorieRecipes = true;
+
+  User.findById(req.params.id)
+  .populate('favoriteRecipes')
+  .then((user) => {
+    console.log(user.favoriteRecipes);
+    res.render('profile/favorite-recipes', {
+      recipes:user.favoriteRecipes,
+      numberOfFavoriteRecipes:user.favoriteRecipes.length,
+      hasSomeFavorieRecipes:hasSomeFavorieRecipes
+    }) 
+  }).catch(err => {
+    next(err)
+})
+})
+
+router.get('/userProfile/:id/addRecipe/:recipeid', fileUploader.single('image'), (req, res, next) => {
+  alert(req.params.id);
+})
 
 
+// POST route - je rajoute une recette à mes favoris
+router.post('/userProfile/:userid/:recipeId/add-favorite-recipes', fileUploader.single('image'), (req, res, next) => {
+  let userid = req.params.userid;
+  let recipeId = req.params.recipeId;
+  Recipe.findById(recipeId).then(recipeFromDb => {
+    User.findById(userid).populate('favoriteRecipes').then(userFromDb => {
+      let favoriteRecipes = userFromDb.favoriteRecipes;
+      favoriteRecipes.push(recipeFromDb);
+      User.findByIdAndUpdate(userid, {favoriteRecipes}, {new:true}).then(finalUser => {
+        console.log(finalUser.favoriteRecipes.length);
+      })
+    }) 
+  })
+}) 
 
 // export router
 module.exports = router;

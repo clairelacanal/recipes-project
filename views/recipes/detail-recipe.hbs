@@ -1,4 +1,5 @@
   <section class='page' id="details-recipes">
+    <div id="idRecipe" value={{recipes.id}} user={{userid}} style="display: none;"></div>
     
     <div class="name-of-recipe">
       <div class="linkpages">
@@ -6,7 +7,7 @@
       </div>
       <h2>{{recipes.title}}</h2>
       <div class="logos">
-        <img src="/images/heart.png" alt="logo-heart" id="heart">
+        <img src="/images/heart.png" alt="logo-heart" id="heart" onclick="addLike()">
       </div>
     </div>
    
