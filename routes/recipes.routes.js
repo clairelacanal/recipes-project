@@ -462,7 +462,6 @@ router.get('/userProfile/:id/addRecipe/:recipeid', fileUploader.single('image'),
 })
 
 
-<<<<<<< HEAD
 // POST route - je rajoute une recette à mes favoris
 router.post('/userProfile/:userid/:recipeId/add-favorite-recipes', fileUploader.single('image'), (req, res, next) => {
   let userid = req.params.userid;
@@ -478,7 +477,5 @@ router.post('/userProfile/:userid/:recipeId/add-favorite-recipes', fileUploader.
   })
 }) 
 
-=======
->>>>>>> 9a2ef667de91eb2e03011165f15eafe1f1957709
 // export router
 module.exports = router;
