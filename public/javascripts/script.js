@@ -1,7 +1,3 @@
-const express = require('express');
-const User = require("../../models/User.model");
-const Recipe = require("../../models/Recipe.model");
-
 document.addEventListener('DOMContentLoaded', () => {
 
   console.log('IronGenerator JS imported successfully!');
@@ -67,28 +63,17 @@ function addLike(){
   let heartImage = document.getElementById("heart");
   let currentImage = heartImage.getAttribute("src");
   let divId = document.getElementById("idRecipe");
-  console.log("HELLO")
   let recipeId = divId.getAttribute("value");
-  let recipe;
-  let recipePromise = Recipe.findById(recipeId)
-  .then(recipeFound => {
-    recipe = recipeFound})
-    .catch (err => {console.log(err)});
-
-
-  console.log("COUCOU")
   let userid = divId.getAttribute("user");
   if (currentImage === "/images/heart.png") {
     heartImage.setAttribute("src", "/images/heart-full.png");
-    // Promise.all(recipePromise).then(responses => {
-    //   User.findById(userid).then((user)=> {
-    //     user.favoriteRecipes.push(recipe);
-    //     let newFavoriteRecipes = user.favoriteRecipes;
-    //     User.findByIdAndUpdate(req.session.userid, {favoriteRecipes:newFavoriteRecipes})
-    // })
-    // });
+    addToMyFavorite(recipeId,userid);
   } else {
     heartImage.setAttribute("src", "/images/heart.png");
   }
 }
 
+
+function addToMyFavorite(recipeId,userid) {
+  axios.post("http://localhost:3000/userProfile/"+userid+"/"+recipeId+"/add-favorite-recipes")   
+}

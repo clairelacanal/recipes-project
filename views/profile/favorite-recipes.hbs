@@ -6,6 +6,18 @@
   {{#if hasSomeFavorieRecipes}}
   <div class="favorite-recipes">
     <h1>YOU HAVE {{numberOfFavoriteRecipes}} favorite recipes</h1>
+    <div class="recipes-zone">
+      {{#each recipes}}
+          <div class="card">
+            <img src={{image}} class="card-img-top" alt="{{title}}-image">
+            <div class="card-body">
+              <p class="card-title">{{title}}</p>
+              <p class="card-text">{{readyInMinutes}} min</p>
+              {{#if true}}<button><a href="/recipes/{{id}}/detail-recipe">SEE THE RECIPE</a></button>{{/if}}
+            </div>
+        </div>
+      {{/each}}
+    </div>
   </div>
   {{else}}
   <div class="favorite-recipes">
