@@ -22,7 +22,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: var(--roboto);
-  background: linear-gradient(246deg, rgba(231, 244, 1, 0.445816) 0%, white 30%);
+  background: linear-gradient(197deg, rgba(231, 244, 1, 0.445816) 0%, white 30%);
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -342,9 +342,6 @@ nav ul li a:hover {
   margin: 10px 60px;
   background-color: white;
   border-radius: 30px; }
-
-#page-2 {
-  min-height: 80vh; }
 
 #h2allrecipes {
   padding: 40px 40px 20px 40px;
